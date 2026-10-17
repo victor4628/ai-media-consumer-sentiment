@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "source": "output/presentation/Consumer_Sentiment_Findings_GPT_v3_Reviewed.pptx",
+  "output": "output/presentation/Consumer_Sentiment_Findings_GPT_v3_Page9_Fixed.pptx",
+  "changed_slides": [
+    9
+  ],
+  "unchanged_slides": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10
+  ],
+  "unchanged_slide_renders": "Pixel-identical before/after",
+  "changed_package_parts": [
+    "ppt/slides/slide9.xml",
+    "ppt/slides/charts/chart8.xml",
+    "ppt/embeddings/chart-data-snapshot-008.xlsx"
+  ],
+  "all_numeric_chart_values_preserved": true,
+  "all_speaker_notes_preserved": true,
+  "repair": "Fixed category labels on left, reduced title font from 38 to 36, split conclusion into two lines, separated footer.",
+  "native_PowerPoint_execution": false
+}

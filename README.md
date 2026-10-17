@@ -3,7 +3,7 @@
 当前版本 **gpt_core_v3_final，五个阶段已完成**。唯一当前文件清单为 `reports/CURRENT_DELIVERABLES.json`。旧 Flash 报告、PPT、讲稿和旧 ZIP 保留为历史文件，不用于本次提交。
 
 - 报告：`output/report/Consumer_Sentiment_Research_GPT_v3.pdf`，12 页，按六个研究问题组织。
-- PPT：`output/presentation/Consumer_Sentiment_Findings_GPT_v3_Reviewed.pptx`，10 页主讲，末页 Key Takeaways，无附录。
+- PPT：`output/presentation/Consumer_Sentiment_Findings_GPT_v3_Page9_Fixed.pptx`，10 页主讲，末页 Key Takeaways，无附录。
 - 纯英文讲稿：`reports/final_gpt_v3/SPEAKER_SCRIPT.en.md`，943 词；同一文本已写入逐页备注。
 - 离线仪表盘：`reports/dashboard.html`，模型、日期和平台筛选，本地 SVG 图表及 CSV 导出。
 - 当前分享包：`output/submission/Consumer_Sentiment_GPT_v3_Submission.zip`。

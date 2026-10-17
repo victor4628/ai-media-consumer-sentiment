@@ -6,7 +6,7 @@ def write(p,s):q=ROOT/p;q.parent.mkdir(parents=True,exist_ok=True);q.write_text(
 def js(p,s):write(p,json.dumps(s,ensure_ascii=False,indent=2)+'\n')
 current={'version':'gpt_core_v3_final','status':'All five stages complete; see FINAL_QA for verification boundaries','research_cutoff':'2026-10-16','delivered_date':'2026-10-17',
  'report':'output/report/Consumer_Sentiment_Research_GPT_v3.pdf','report_pages':12,'report_source':'reports/final_gpt_v3/RESEARCH_REPORT.en.md',
- 'presentation':'output/presentation/Consumer_Sentiment_Findings_GPT_v3_Reviewed.pptx','presentation_slides':10,'timed_slides':10,'appendix_slides':0,
+ 'presentation':'output/presentation/Consumer_Sentiment_Findings_GPT_v3_Page9_Fixed.pptx','presentation_slides':10,'timed_slides':10,'appendix_slides':0,
  'script':'reports/final_gpt_v3/SPEAKER_SCRIPT.en.md','script_configuration':'configs/presentation_gpt_core_v3.json','main_script_words':943,'suggested_script_seconds':445,'script_language':'English only','timing_boundary':'Estimated, not a live rehearsal',
  'dashboard':'reports/dashboard.html','submission':'output/submission/Consumer_Sentiment_GPT_v3_Submission.zip',
  'analysis':'reports/gpt_core_v3/analysis.json','measurement_review':'reports/gpt_core_v3/validation.json','human_validation':False,'primary_coding':'All 1473 direct GPT judgments; exact immutable model versions not retained','review_coding':'Cached DeepSeek V4 sample review, 150 news and 150 X attempted','new_paid_API_calls':0,'older_outputs':'Historical files are retained; use only the paths in this manifest for the current submission.'}
@@ -17,7 +17,7 @@ write('README.md','''# Media narratives and consumer sentiment
 当前版本 **gpt_core_v3_final，五个阶段已完成**。唯一当前文件清单为 `reports/CURRENT_DELIVERABLES.json`。旧 Flash 报告、PPT、讲稿和旧 ZIP 保留为历史文件，不用于本次提交。
 
 - 报告：`output/report/Consumer_Sentiment_Research_GPT_v3.pdf`，12 页，按六个研究问题组织。
-- PPT：`output/presentation/Consumer_Sentiment_Findings_GPT_v3_Reviewed.pptx`，10 页主讲，末页 Key Takeaways，无附录。
+- PPT：`output/presentation/Consumer_Sentiment_Findings_GPT_v3_Page9_Fixed.pptx`，10 页主讲，末页 Key Takeaways，无附录。
 - 纯英文讲稿：`reports/final_gpt_v3/SPEAKER_SCRIPT.en.md`，943 词；同一文本已写入逐页备注。
 - 离线仪表盘：`reports/dashboard.html`，模型、日期和平台筛选，本地 SVG 图表及 CSV 导出。
 - 当前分享包：`output/submission/Consumer_Sentiment_GPT_v3_Submission.zip`。

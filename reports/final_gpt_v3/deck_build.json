@@ -1,5 +1,5 @@
 {
-  "file": "output/presentation/Consumer_Sentiment_Findings_GPT_v3_Reviewed.pptx",
+  "file": "output/presentation/Consumer_Sentiment_Findings_GPT_v3_Page9_Fixed.pptx",
   "slides": 10,
   "native_chart_slides": [
     3,
@@ -10,5 +10,6 @@
     8,
     9
   ],
-  "render_folder": "tmp/gpt_v3_deck"
+  "render_folder": "tmp/gpt_v3_slide9_fix",
+  "revision": "Slide 9 typography and diverging-chart axis label placement"
 }

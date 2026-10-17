@@ -6,7 +6,7 @@
   "report": "output/report/Consumer_Sentiment_Research_GPT_v3.pdf",
   "report_pages": 12,
   "report_source": "reports/final_gpt_v3/RESEARCH_REPORT.en.md",
-  "presentation": "output/presentation/Consumer_Sentiment_Findings_GPT_v3_Reviewed.pptx",
+  "presentation": "output/presentation/Consumer_Sentiment_Findings_GPT_v3_Page9_Fixed.pptx",
   "presentation_slides": 10,
   "timed_slides": 10,
   "appendix_slides": 0,

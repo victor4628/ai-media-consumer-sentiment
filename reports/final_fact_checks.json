@@ -1,0 +1,72 @@
+{
+  "scope": "Purposive illustration, 5 numeric claims in 4 headlines; not a random audit, no platform accuracy rate; primary AI labels unchanged.",
+  "method": "Match period, metric, rate convention and release vintage, then compare numbers at displayed 0.1 percentage-point precision. Publication metadata must follow the official release.",
+  "claims": [
+    {
+      "item_id": "gdelt:ec1eb677a5ce5709c34f43e0",
+      "source": "abcnews.go.com",
+      "article_url": "https://abcnews.go.com/US/wireStory/us-economy-accelerated-solid-65-rate-quarter-79139521",
+      "claim": "2021 Q2 real GDP, advance, QoQ annualized",
+      "reported_percent": 6.5,
+      "official_percent": 6.5,
+      "official_release_utc": "2021-07-29T12:30:00Z",
+      "metadata_publication_utc": "2021-07-29T12:40:00+00:00",
+      "official_url": "https://www.bea.gov/news/2021/gross-domestic-product-second-quarter-2021-advance-estimate-and-annual-update",
+      "verdict": "matches contemporaneous official release",
+      "availability_caveat": "Conditional on GDELT publication metadata; publisher timestamp not independently verified."
+    },
+    {
+      "item_id": "gdelt:872db267dc34350b7eefb7b4",
+      "source": "abcnews.go.com",
+      "article_url": "https://abcnews.go.com/US/wireStory/inflation-eased-july-consumer-prices-rose-63-year-88890523",
+      "claim": "2022 July headline PCE, YoY",
+      "reported_percent": 6.3,
+      "official_percent": 6.3,
+      "official_release_utc": "2022-08-26T12:30:00Z",
+      "metadata_publication_utc": "2022-08-26T12:33:00+00:00",
+      "official_url": "https://www.bea.gov/news/2022/personal-income-and-outlays-july-2022",
+      "verdict": "matches contemporaneous official release",
+      "availability_caveat": "Conditional on GDELT publication metadata; publisher timestamp not independently verified."
+    },
+    {
+      "item_id": "gdelt:9b18bbecf80ac2356bf562c2",
+      "source": "startribune.com",
+      "article_url": "https://www.startribune.com/us-economy-grew-3-2-in-q3-an-upgrade-from-earlier-estimate/600238008/",
+      "claim": "2022 Q3 real GDP, third, QoQ annualized",
+      "reported_percent": 3.2,
+      "official_percent": 3.2,
+      "official_release_utc": "2022-12-22T13:30:00Z",
+      "metadata_publication_utc": "2022-12-22T13:40:00+00:00",
+      "official_url": "https://www.bea.gov/sites/default/files/2022-12/gdp3q22_3rd_0.pdf",
+      "verdict": "matches contemporaneous official release",
+      "availability_caveat": "Conditional on GDELT publication metadata; publisher timestamp not independently verified."
+    },
+    {
+      "item_id": "gdelt:49fe044086a7bf5a8b66f120",
+      "source": "mprnews.org",
+      "article_url": "https://www.mprnews.org/story/2025/01/30/us-economy-grows-solid-23-in-octoberdecember-on-eve-of-trump-return-to-white-house-28-in-24",
+      "claim": "2024 Q4 real GDP, advance, QoQ annualized",
+      "reported_percent": 2.3,
+      "official_percent": 2.3,
+      "official_release_utc": "2025-01-30T13:30:00Z",
+      "metadata_publication_utc": "2025-01-30T15:33:00+00:00",
+      "official_url": "https://www.bea.gov/news/2025/gross-domestic-product-4th-quarter-and-year-2024-advance-estimate",
+      "verdict": "matches contemporaneous official release",
+      "availability_caveat": "Conditional on GDELT publication metadata; publisher timestamp not independently verified."
+    },
+    {
+      "item_id": "gdelt:49fe044086a7bf5a8b66f120",
+      "source": "mprnews.org",
+      "article_url": "https://www.mprnews.org/story/2025/01/30/us-economy-grows-solid-23-in-octoberdecember-on-eve-of-trump-return-to-white-house-28-in-24",
+      "claim": "2024 real GDP, annual over annual",
+      "reported_percent": 2.8,
+      "official_percent": 2.8,
+      "official_release_utc": "2025-01-30T13:30:00Z",
+      "metadata_publication_utc": "2025-01-30T15:33:00+00:00",
+      "official_url": "https://www.bea.gov/news/2025/gross-domestic-product-4th-quarter-and-year-2024-advance-estimate",
+      "verdict": "matches contemporaneous official release",
+      "availability_caveat": "Conditional on GDELT publication metadata; publisher timestamp not independently verified."
+    }
+  ],
+  "other_numeric_texts": "Unchecked, not false. Twitter claims are not covered."
+}

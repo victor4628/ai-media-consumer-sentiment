@@ -1,0 +1,6 @@
+{
+  "ids": [
+    "twitter:1258395384960950272"
+  ],
+  "scope": "Fixed private-text normalization result; arithmetic can replay exclusions but cannot independently re-extract duplicates without private texts."
+}

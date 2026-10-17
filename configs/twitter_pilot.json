@@ -1,0 +1,17 @@
+{
+  "endpoint": "https://api.twitterapi.io/twitter/tweet/advanced_search",
+  "query_type": "Latest",
+  "query": "(economy OR inflation OR prices OR wages OR hiring OR layoffs OR recession OR rent) lang:en",
+  "windows": [
+    {"since": "2020-06-15", "until": "2020-06-16"},
+    {"since": "2022-06-15", "until": "2022-06-16"},
+    {"since": "2024-06-14", "until": "2024-06-15"},
+    {"since": "2026-09-15", "until": "2026-09-16"}
+  ],
+  "max_pages_per_window": 1,
+  "max_requests": 4,
+  "request_delay_seconds": 5.5,
+  "usd_per_tweet": 0.00015,
+  "min_usd_per_call": 0.00015,
+  "scope": "Access pilot only; selected days and capped pages are not representative monthly samples; US relevance must be coded"
+}

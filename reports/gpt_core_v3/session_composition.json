@@ -1,0 +1,76 @@
+{
+  "counts": {
+    "original_300": {
+      "news": 150,
+      "eligible": 195,
+      "twitter": 150
+    },
+    "new_first_540": {
+      "news": 183,
+      "eligible": 377,
+      "twitter": 357
+    },
+    "new_last_633": {
+      "twitter": 477,
+      "eligible": 487,
+      "news": 156
+    }
+  },
+  "descriptive_by_session_and_platform": {
+    "original_300": {
+      "news": {
+        "candidate_n": 150,
+        "eligible_n": 75,
+        "first_publication": "2019-10-02T04:00:00+00:00",
+        "last_publication": "2026-07-13T10:18:00+00:00",
+        "negative_share": 0.41333333333333333,
+        "emotional_or_mixed_share": 0.41333333333333333
+      },
+      "twitter": {
+        "candidate_n": 150,
+        "eligible_n": 120,
+        "first_publication": "2019-10-02T22:53:30+00:00",
+        "last_publication": "2026-07-13T19:58:45+00:00",
+        "negative_share": 0.48333333333333334,
+        "emotional_or_mixed_share": 0.8666666666666667
+      }
+    },
+    "new_first_540": {
+      "news": {
+        "candidate_n": 183,
+        "eligible_n": 78,
+        "first_publication": "2019-10-02T04:00:00+00:00",
+        "last_publication": "2022-08-26T19:31:00+00:00",
+        "negative_share": 0.44871794871794873,
+        "emotional_or_mixed_share": 0.1282051282051282
+      },
+      "twitter": {
+        "candidate_n": 357,
+        "eligible_n": 299,
+        "first_publication": "2019-10-02T22:49:14+00:00",
+        "last_publication": "2022-09-03T13:56:00+00:00",
+        "negative_share": 0.5284280936454849,
+        "emotional_or_mixed_share": 0.842809364548495
+      }
+    },
+    "new_last_633": {
+      "news": {
+        "candidate_n": 156,
+        "eligible_n": 77,
+        "first_publication": "2022-09-20T21:32:00+00:00",
+        "last_publication": "2026-07-13T12:00:00+00:00",
+        "negative_share": 0.4935064935064935,
+        "emotional_or_mixed_share": 0.18181818181818182
+      },
+      "twitter": {
+        "candidate_n": 477,
+        "eligible_n": 410,
+        "first_publication": "2022-09-03T13:56:45+00:00",
+        "last_publication": "2026-07-13T19:59:38+00:00",
+        "negative_share": 0.5463414634146342,
+        "emotional_or_mixed_share": 0.8731707317073171
+      }
+    }
+  },
+  "limitation": "Session cohorts differ in dates and platforms; differences cannot isolate model effects. No prospective randomly assigned identical-model comparison."
+}

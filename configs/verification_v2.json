@@ -1,0 +1,18 @@
+{
+  "study_id": "cross_family_v2",
+  "sample_items": 300,
+  "news_items": 150,
+  "twitter_items": 150,
+  "development_items": 100,
+  "heldout_items": 200,
+  "reviewers": {
+    "V4": "Cached independent deepseek-v4-pro judgments from original role B",
+    "GPT": "Direct judgments by the assistant in this Codex conversation; immutable model identifier not exposed"
+  },
+  "human_annotations": false,
+  "incremental_paid_api_requests": 0,
+  "comparison_report": "reports/cross_family_validation.json",
+  "main_feature_labels": "Original frozen Flash-coded 1473-item corpus; no selective replacement",
+  "adjudication": "Disagreements remain unresolved; no historical third-call majority is applied to the revised pair",
+  "independence_limit": "Project-level summaries and a few illustrative texts were already visible in conversation; V4 item judgments withheld until GPT judgments sealed"
+}

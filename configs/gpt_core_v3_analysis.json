@@ -1,0 +1,17 @@
+{
+ "version":"gpt_core_v3",
+ "status":"Analysis choices fixed after direct coding seal and before viewing new media analysis results; retrospective exploratory research, not prospective preregistration.",
+ "primary_labels":"data/private/gpt_core_v3/GPT_primary.jsonl",
+ "media_start":"2019-10","media_end":"2026-07",
+ "evaluation_start":"2023-01-01","minimum_training_months":24,
+ "evaluation_vintage":"2026-10-16",
+ "primary_min_news":1,"primary_min_twitter":3,
+ "baseline_features":["unemployment","pce_yoy","gdp_growth"],
+ "tone_features":["news_tone","twitter_tone"],
+ "frame_features":["price_levels_share","political_blame_share","emotional_share","household_share","prices_topic_share","employment_topic_share"],
+ "feature_aggregation":"Previous calendar month. News equal weight per observed outlet; Twitter equal item weight. Content shares use eligible texts, including uncertain economic tone. Tone excludes uncertain; mixed maps to zero.",
+ "price_level_reference":"December 2018 PCEPI, using numerator and denominator from the same origin vintage",
+ "exploratory_extensions":["Economy only, economy plus memory, and economy plus memory plus income and cumulative prices; each with/without tone on identical months","All content features together and each fixed feature pair added to economy plus memory, with all results retained","Minimum coverage 2 news/5 tweets and 3 news/5 tweets","Deduplicate identical text after removing URLs, within platform/month; no semantic story deduplication","Strict nonempty US-relevant economic sample versus all economic texts as a geography sensitivity","First-session/new-session coding composition and original 300-review strata","Penalty 0.1 and 10 for baseline/media comparisons without choosing a winner","Forecast changes by calendar year and before/after January 2025","Full macro-period predictions on all 200 monthly origins to assess strength of baseline","Descriptive OLS accounting plus price-level control sensitivity; residual never assigned to media"],
+ "inference":"Fixed existing segment-preserving 3-month circular block bootstrap of paired MAE changes; show all requested comparisons, not best-only. Report small sparse noncontinuous sample and retrospective model coding. No respondent-level exposure, causal or psychological mechanism identification.",
+ "new_paid_api_calls":0
+}

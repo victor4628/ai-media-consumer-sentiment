@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "sealed_items": 1473,
+  "media_months": 82,
+  "prediction_months": 40,
+  "macro_months": 200,
+  "verified": [
+    "Input identities and primary source roles",
+    "Literal evidence/schema validity",
+    "Sanitized export parity and hash",
+    "Monthly aggregation counts and bounded shares",
+    "Prior-month mapping and origin-available cumulative-price calculations",
+    "Forecast training precedes cutoff and target",
+    "All forecast MAE/RMSE and paired differences independently reconciled",
+    "OLS coefficients/fits/R2 and accounting totals reconciled",
+    "Eight PNG/SVG figure pairs present"
+  ],
+  "visual_review": "All eight plotted PNGs inspected; filtering legend, accounting legend colors and forecast legend spacing corrected.",
+  "unit_tests_observed": 44,
+  "new_paid_api_calls": 0,
+  "limits": "These checks establish computational consistency and traceability, not semantic label accuracy or causal identification."
+}

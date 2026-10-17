@@ -1,0 +1,144 @@
+{
+  "news": {
+    "counts": {
+      "candidate": 489,
+      "economic": 463,
+      "eligible": 230,
+      "tone_scored": 230,
+      "economic_but_US_uncertain": 144,
+      "economic_but_US_no": 89,
+      "no_economic_substance": 26
+    },
+    "dimensions": {
+      "tone": {
+        "mixed": 26,
+        "positive": 53,
+        "negative": 104,
+        "neutral": 47
+      },
+      "language_style": {
+        "factual": 175,
+        "mixed": 34,
+        "emotional": 21
+      },
+      "price_frame": {
+        "neither": 174,
+        "levels": 11,
+        "changes": 37,
+        "both": 8
+      },
+      "scope_frame": {
+        "neither": 74,
+        "national": 131,
+        "household": 17,
+        "both": 8
+      },
+      "time_frame": {
+        "current": 126,
+        "future": 77,
+        "both": 17,
+        "neither": 10
+      },
+      "factual_calibration": {
+        "no_numeric_claim": 194,
+        "not_checkable": 36
+      },
+      "political_attribution": {
+        "none": 163,
+        "blame": 50,
+        "credit": 15,
+        "both": 2
+      }
+    },
+    "pooled_item_shares": {
+      "price_levels_share": 0.08260869565217391,
+      "political_blame_share": 0.22608695652173913,
+      "emotional_share": 0.2391304347826087,
+      "household_share": 0.10869565217391304,
+      "prices_topic_share": 0.2565217391304348,
+      "employment_topic_share": 0.24347826086956523
+    },
+    "topics_multilabel": {
+      "employment": 56,
+      "growth": 58,
+      "other": 80,
+      "prices": 59,
+      "housing": 29,
+      "household_finances": 25,
+      "wages": 5
+    },
+    "negative_share": 0.45217391304347826,
+    "numeric_claims": 36
+  },
+  "twitter": {
+    "counts": {
+      "candidate": 984,
+      "economic": 903,
+      "eligible": 829,
+      "tone_scored": 829,
+      "no_economic_substance": 81,
+      "economic_but_US_no": 22,
+      "economic_but_US_uncertain": 52
+    },
+    "dimensions": {
+      "tone": {
+        "positive": 169,
+        "neutral": 79,
+        "negative": 440,
+        "mixed": 141
+      },
+      "language_style": {
+        "emotional": 590,
+        "mixed": 124,
+        "factual": 115
+      },
+      "price_frame": {
+        "neither": 542,
+        "changes": 200,
+        "levels": 38,
+        "both": 49
+      },
+      "scope_frame": {
+        "both": 79,
+        "national": 549,
+        "neither": 79,
+        "household": 122
+      },
+      "time_frame": {
+        "current": 470,
+        "future": 163,
+        "neither": 37,
+        "both": 159
+      },
+      "factual_calibration": {
+        "no_numeric_claim": 619,
+        "not_checkable": 210
+      },
+      "political_attribution": {
+        "none": 292,
+        "blame": 342,
+        "both": 69,
+        "credit": 126
+      }
+    },
+    "pooled_item_shares": {
+      "price_levels_share": 0.10494571773220748,
+      "political_blame_share": 0.4957780458383595,
+      "emotional_share": 0.8612786489746683,
+      "household_share": 0.24246079613992763,
+      "prices_topic_share": 0.376357056694813,
+      "employment_topic_share": 0.28950542822677927
+    },
+    "topics_multilabel": {
+      "employment": 240,
+      "wages": 66,
+      "household_finances": 199,
+      "prices": 312,
+      "other": 239,
+      "growth": 330,
+      "housing": 54
+    },
+    "negative_share": 0.5307599517490953,
+    "numeric_claims": 210
+  }
+}

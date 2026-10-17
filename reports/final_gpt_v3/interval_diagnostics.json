@@ -1,0 +1,77 @@
+{
+  "economy": {
+    "n": 28,
+    "coverage": 0.8571428571428571,
+    "mean_width": 36.767004710706225
+  },
+  "economy_tone": {
+    "n": 28,
+    "coverage": 0.7857142857142857,
+    "mean_width": 34.48413205256911
+  },
+  "memory": {
+    "n": 28,
+    "coverage": 0.8571428571428571,
+    "mean_width": 16.16076170031068
+  },
+  "memory_tone": {
+    "n": 28,
+    "coverage": 0.8928571428571429,
+    "mean_width": 15.024648900062767
+  },
+  "household": {
+    "n": 28,
+    "coverage": 0.9642857142857143,
+    "mean_width": 17.019549439875075
+  },
+  "household_tone": {
+    "n": 28,
+    "coverage": 0.9642857142857143,
+    "mean_width": 16.458070847254678
+  },
+  "method_controls": {
+    "n": 28,
+    "coverage": 0.9285714285714286,
+    "mean_width": 15.117298474610745
+  },
+  "method_controls_tone": {
+    "n": 28,
+    "coverage": 0.9642857142857143,
+    "mean_width": 15.049221029015671
+  },
+  "memory_price_levels_share": {
+    "n": 28,
+    "coverage": 0.8928571428571429,
+    "mean_width": 17.182250481077862
+  },
+  "memory_political_blame_share": {
+    "n": 28,
+    "coverage": 0.8928571428571429,
+    "mean_width": 16.713087005014422
+  },
+  "memory_emotional_share": {
+    "n": 28,
+    "coverage": 0.8214285714285714,
+    "mean_width": 16.365992931287945
+  },
+  "memory_household_share": {
+    "n": 28,
+    "coverage": 0.8214285714285714,
+    "mean_width": 16.54475469893302
+  },
+  "memory_prices_topic_share": {
+    "n": 28,
+    "coverage": 0.8928571428571429,
+    "mean_width": 17.63291671556443
+  },
+  "memory_employment_topic_share": {
+    "n": 28,
+    "coverage": 0.8928571428571429,
+    "mean_width": 15.358085691107572
+  },
+  "memory_all_content": {
+    "n": 28,
+    "coverage": 0.8571428571428571,
+    "mean_width": 19.771027187383577
+  }
+}

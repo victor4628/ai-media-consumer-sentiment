@@ -1,0 +1,59 @@
+{
+  "words": 943,
+  "allocated_seconds": 445,
+  "estimated_minutes_at_125_wpm": 7.544,
+  "estimated_minutes_at_135_wpm": 6.985185185185185,
+  "slides": [
+    {
+      "slide": 1,
+      "words": 55,
+      "seconds": 25
+    },
+    {
+      "slide": 2,
+      "words": 80,
+      "seconds": 35
+    },
+    {
+      "slide": 3,
+      "words": 109,
+      "seconds": 55
+    },
+    {
+      "slide": 4,
+      "words": 93,
+      "seconds": 40
+    },
+    {
+      "slide": 5,
+      "words": 105,
+      "seconds": 55
+    },
+    {
+      "slide": 6,
+      "words": 93,
+      "seconds": 40
+    },
+    {
+      "slide": 7,
+      "words": 105,
+      "seconds": 55
+    },
+    {
+      "slide": 8,
+      "words": 116,
+      "seconds": 60
+    },
+    {
+      "slide": 9,
+      "words": 104,
+      "seconds": 50
+    },
+    {
+      "slide": 10,
+      "words": 83,
+      "seconds": 30
+    }
+  ],
+  "scope": "Text-based estimate; actual delivery needs rehearsal. Allocations include pointing and pauses."
+}

@@ -1,0 +1,32 @@
+{
+  "version": "gpt_core_v3",
+  "files": {
+    "reports/gpt_core_v3/analysis.json": "624a53c1b9a3fdb5d058927f27838d730b76556f41e684b7b8ce607686facd04",
+    "reports/gpt_core_v3/ANALYSIS_EXTENSION_LOG.md": "7cc7ce4fd9c8eb44f5e3d71d0c137066f204153aba579d128df978836336d504",
+    "reports/gpt_core_v3/descriptive.json": "2017403fe7912505fe187ef4d861a46060362c00a9dbcf114d7d9d6de5b893b1",
+    "reports/gpt_core_v3/figures/01_content_features.png": "6375c34dd8d11a7b7eb66241331649d80eb8e440c49274ec58025be8efb97185",
+    "reports/gpt_core_v3/figures/01_content_features.svg": "3b3392175c7a81f659dafe01e8a509f242e75ebc31d31fec247cd4d6c69ffe87",
+    "reports/gpt_core_v3/figures/02_sample_filtering.png": "43d8d7f887a5b67d37fe8ead6bf3714da0cb710dd6fa67fc32ea44f3bb648723",
+    "reports/gpt_core_v3/figures/02_sample_filtering.svg": "ce2fa56a62715c412806c52e7d681978ca60a84e497e8bc642ffba973d4ab7ce",
+    "reports/gpt_core_v3/figures/03_prices_and_sentiment.png": "e33a7292817f4fb95e33dab9b72ca132de8f2b41cb23ac9f4d8f5024be1439bb",
+    "reports/gpt_core_v3/figures/03_prices_and_sentiment.svg": "1a58ab0f644947bb06b40c7addeff3dc4bb1bf81c41f816a578d8a5fbef4c38d",
+    "reports/gpt_core_v3/figures/04_macro_fit.png": "6b8745263c5f8696ed70ee170e89ade7a6f8b27fb6b6fc729155e37b97c662c2",
+    "reports/gpt_core_v3/figures/04_macro_fit.svg": "71e2775896e45074615504d45516e91d1a3f36407a46603033cfe966a0b040d4",
+    "reports/gpt_core_v3/figures/05_benchmark_accounting.png": "7d7cfde814bdcf217053f52fdca8dfb00fed0603e1363f7e44ca479383d77626",
+    "reports/gpt_core_v3/figures/05_benchmark_accounting.svg": "f595bd61d728c899611118f1ddb7edc27242aa34cfd24278daca13b2ab14f4a2",
+    "reports/gpt_core_v3/figures/06_forecast_comparison.png": "915896248dec465ae60851a59da68ec9178ef58c17da58264c1d659d4cfc26a2",
+    "reports/gpt_core_v3/figures/06_forecast_comparison.svg": "700393753c0fe164b67686e8d0f793f91130ede30c748c4d8590b88c9975c424",
+    "reports/gpt_core_v3/figures/07_media_increment_intervals.png": "84c2ec7d53708b330a3deeb083273ff0d6638a59bc33ad193cdfad9ec5d64993",
+    "reports/gpt_core_v3/figures/07_media_increment_intervals.svg": "ff2de15c9c8c749df876262d50a023ab35fde886a058c5e44346e1e12c71e46f",
+    "reports/gpt_core_v3/figures/08_coverage_sensitivity.png": "06830f4199a2d0b8111ca33bcc28491736b939af99ce69ad9e9fa240b2ddce06",
+    "reports/gpt_core_v3/figures/08_coverage_sensitivity.svg": "711b13e6954663b6fcce2a92572d586f6df03810f84301fae5a9181d5e809ba1",
+    "reports/gpt_core_v3/NEXT_MODEL_HANDOFF.md": "4dd05eda728c9cf5d3721c91f77bec9e5f2d3b5c7e25c21dc33f827e0900d72a",
+    "reports/gpt_core_v3/session_composition.json": "cc329434ab859cedacf44d6b9e74bba8c3e5d75921f11f7f3344bff7b2facd2c",
+    "reports/gpt_core_v3/stage1_quality.json": "74c5ba5aca58a2565cf52152b56d76cb7c7f0be972640cc1a00ea2f70ab78d00",
+    "reports/gpt_core_v3/STAGES_1_2_FINDINGS.zh-CN.md": "b5367b1c9a02fea677b7d9b608231f9db8957e36a140be94ae9c966362b71b02",
+    "reports/gpt_core_v3/tone_rhetoric_cross_tabs.json": "ccdc0e47a0cf60e1af5772a024f8232b4235784ff23c16236442dec5ee53258b",
+    "reports/gpt_core_v3/validation.json": "d379a69c2f007d278ce2dbdff48e881f6c6ba83002df1be0cc065a398662087f",
+    "reports/gpt_core_v3/verification.json": "f5c610184dfc70b90ed214ea55b7d6691826bf713f713df4c69483a67dfaa18b"
+  },
+  "scope": "Versioned stage 1\u20132 research outputs; report/PPT rewrite remains pending"
+}

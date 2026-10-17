@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+node_modules/
+tmp/
+data/raw/
+data/private/
+data/processed/
+labels/runs/
+*.log
+reproduced/
+.chart-data-*/
+output/submission/
+

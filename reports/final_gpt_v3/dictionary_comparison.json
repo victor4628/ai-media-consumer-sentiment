@@ -1,0 +1,68 @@
+{
+  "scope": "Unvalidated toy word-count comparator, no FinBERT/RoBERTa or accuracy gold standard. Mixed mapped to neutral solely for this three-class comparison.",
+  "positive_words": [
+    "boom",
+    "booming",
+    "gain",
+    "gains",
+    "growing",
+    "growth",
+    "improve",
+    "improving",
+    "optimistic",
+    "recover",
+    "recovery",
+    "rising",
+    "strong",
+    "stronger",
+    "surge"
+  ],
+  "negative_words": [
+    "collapse",
+    "costly",
+    "crash",
+    "crisis",
+    "decline",
+    "declining",
+    "fear",
+    "layoffs",
+    "pessimistic",
+    "poverty",
+    "recession",
+    "struggling",
+    "suffer",
+    "unemployment",
+    "weak",
+    "weaker"
+  ],
+  "by_platform": {
+    "news": {
+      "n": 230,
+      "agree": 84,
+      "pair_neutral_positive": 4,
+      "pair_positive_neutral": 40,
+      "pair_negative_neutral": 90,
+      "pair_neutral_neutral": 66,
+      "pair_positive_positive": 6,
+      "pair_neutral_negative": 3,
+      "pair_negative_negative": 12,
+      "pair_positive_negative": 7,
+      "pair_negative_positive": 2,
+      "agreement": 0.3652173913043478
+    },
+    "twitter": {
+      "n": 829,
+      "agree": 238,
+      "pair_positive_neutral": 128,
+      "pair_neutral_neutral": 163,
+      "pair_negative_neutral": 363,
+      "pair_neutral_negative": 24,
+      "pair_neutral_positive": 33,
+      "pair_negative_negative": 54,
+      "pair_positive_negative": 20,
+      "pair_positive_positive": 21,
+      "pair_negative_positive": 23,
+      "agreement": 0.2870928829915561
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "corpus_items": 1473,
+  "valid_primary_labels": 1473,
+  "input_hashes_verified": 1473,
+  "literal_evidence_verified": 1473,
+  "new_direct_GPT": 1173,
+  "reused_direct_GPT": 300,
+  "correction_records": 5,
+  "sealed_sha256": "93fe7b27fcfbb719155a700422a48b11ea19a479ce8a49577cdffe3a24cacb19",
+  "new_paid_API_calls": 0,
+  "accuracy_limit": "Schema/evidence checks verify traceability, not semantic accuracy. Model agreement is not a gold standard."
+}

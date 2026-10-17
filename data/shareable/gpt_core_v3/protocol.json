@@ -1,0 +1,17 @@
+{
+  "study_id": "gpt_core_v3",
+  "created_at": "2026-10-17T03:26:47.693405+00:00",
+  "corpus_sha256": "4ae35e059529c6b773a2f4fbbf3d15cd77ac9b8afce0b0192b7403200ff655e6",
+  "pending_sha256": "c3bf1ca1beedf7f89eb17d802e2194d3928abe53c54aff433a4ebabb0b406ad1",
+  "prompt_sha256": "d8dc5737a47c2af1b57f3cb74fc43742ef386a1eb7c23946fe80f4a27076e4ac",
+  "primary_coder": "GPT / current Codex assistant; immutable model identifier unavailable",
+  "method": "Direct reading and categorical judgments by assistant. Script only expands explicit codes and validates evidence and schema.",
+  "reused_GPT_items": 300,
+  "new_GPT_items": 1173,
+  "reused_source_sha256": "0b8d5bf46c778d11a6f845abba561319cee59ae22b2c9512e4fde6387f109cd3",
+  "reviewer": "Cached DeepSeek V4 review of original 300-item sample only; never primary coding.",
+  "independence_limit": "Retrospective recoding after aggregate study and review results were seen. Old item-level DeepSeek labels withheld during new coding. Not prospective blind validation.",
+  "adjudication": "Disagreement is reported, not converted into truth. No human validation.",
+  "analysis_rule": "Recompute all media-dependent results after all primary judgments are sealed. Do not tune judgments to outcomes or review agreement.",
+  "incremental_API_requests": 0
+}

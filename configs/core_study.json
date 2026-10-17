@@ -1,0 +1,20 @@
+{
+  "study_id": "core_v1",
+  "media_start": "2019-10",
+  "media_end": "2026-07",
+  "seed": 20261017,
+  "news_slots_per_month": 8,
+  "twitter_slots_per_month": 2,
+  "twitter_query": "(economy OR inflation OR prices OR wages OR unemployment OR recession OR rent OR jobs) (USA OR \"United States\" OR America OR American OR Federal OR Biden OR Trump OR \"U.S.\") lang:en -filter:retweets",
+  "twitter_new_budget_usd": 0.60,
+  "deepseek_new_budget_usd": 1.50,
+  "news_compressed_download_cap_bytes": 7000000000,
+  "news_file_cap_bytes": 20000000,
+  "model_evaluation_start": "2023-01-01",
+  "minimum_training_months": 24,
+  "sampling_scope": "Sparse fixed time-window sample of selected US outlet headlines and keyword-filtered English tweets; no population representativeness claim",
+  "primary_media_rule": "published_at and discovered_at both before forecast cutoff; US relevance yes; nonempty economic topics; news metadata timestamps only",
+  "primary_features": ["news_tone", "twitter_tone"],
+  "prompt_version": "v2",
+  "prompt_status": "Frozen prospectively for new core_v1 audit; original 59-item development set excluded"
+}

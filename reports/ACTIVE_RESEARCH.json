@@ -1,0 +1,10 @@
+{
+  "status": "Stages 1–5 complete",
+  "version": "gpt_core_v3_final",
+  "current_deliverables": "reports/CURRENT_DELIVERABLES.json",
+  "analysis": "reports/gpt_core_v3/analysis.json",
+  "validation": "reports/gpt_core_v3/validation.json",
+  "verification": "reports/final_gpt_v3/FINAL_QA.json",
+  "primary_labels": "data/private/gpt_core_v3/GPT_primary.jsonl",
+  "new_paid_API_calls": 0
+}

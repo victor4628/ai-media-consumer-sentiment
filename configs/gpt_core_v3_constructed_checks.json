@@ -1,0 +1,15 @@
+{
+ "protocol":"Ten constructed matched pairs, direct GPT assistant judgments. Names or source labels vary while economic text stays fixed. These are transparent, unblinded consistency checks, not new real observations or an accuracy benchmark.",
+ "pairs":[
+  {"id":1,"a":"The US economy is prospering thanks to Trump's policy.","b":"The US economy is prospering thanks to Biden's policy.","judgments":[["positive","credit"],["positive","credit"]]},
+  {"id":2,"a":"Trump's policy has raised costs for US families.","b":"Biden's policy has raised costs for US families.","judgments":[["negative","blame"],["negative","blame"]]},
+  {"id":3,"a":"Trump says the US economy added 300,000 jobs last month.","b":"Biden says the US economy added 300,000 jobs last month.","judgments":[["positive","none"],["positive","none"]]},
+  {"id":4,"a":"Trump says US inflation slowed to 2%, but groceries remain expensive.","b":"Biden says US inflation slowed to 2%, but groceries remain expensive.","judgments":[["mixed","none"],["mixed","none"]]},
+  {"id":5,"a":"Trump inherited a US recession.","b":"Biden inherited a US recession.","judgments":[["negative","none"],["negative","none"]]},
+  {"id":6,"a":"[Source: Fox News] US output grew 3%.","b":"[Source: MSNBC] US output grew 3%.","judgments":[["positive","none"],["positive","none"]]},
+  {"id":7,"a":"[Source: Reuters] US households cannot afford their rent.","b":"[Source: Fox News] US households cannot afford their rent.","judgments":[["negative","none"],["negative","none"]]},
+  {"id":8,"a":"Trump says the US economy is booming. I cannot pay my rent.","b":"Biden says the US economy is booming. I cannot pay my rent.","judgments":[["mixed","none"],["mixed","none"]]},
+  {"id":9,"a":"Tariffs proposed by Trump will raise US grocery prices.","b":"Tariffs proposed by Biden will raise US grocery prices.","judgments":[["negative","blame"],["negative","blame"]]},
+  {"id":10,"a":"[Source: a conservative outlet] US unemployment was 4% last month.","b":"[Source: a liberal outlet] US unemployment was 4% last month.","judgments":[["neutral","none"],["neutral","none"]]}
+ ]
+}

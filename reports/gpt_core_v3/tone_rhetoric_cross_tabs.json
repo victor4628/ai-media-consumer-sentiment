@@ -1,0 +1,46 @@
+{
+  "news": {
+    "negative": {
+      "n": 104,
+      "emotional_or_mixed_share": 0.3173076923076923,
+      "political_blame_or_both_share": 0.4519230769230769
+    },
+    "positive": {
+      "n": 53,
+      "emotional_or_mixed_share": 0.11320754716981132,
+      "political_blame_or_both_share": 0.0
+    },
+    "neutral": {
+      "n": 47,
+      "emotional_or_mixed_share": 0.1702127659574468,
+      "political_blame_or_both_share": 0.02127659574468085
+    },
+    "mixed": {
+      "n": 26,
+      "emotional_or_mixed_share": 0.3076923076923077,
+      "political_blame_or_both_share": 0.15384615384615385
+    }
+  },
+  "twitter": {
+    "negative": {
+      "n": 440,
+      "emotional_or_mixed_share": 0.9227272727272727,
+      "political_blame_or_both_share": 0.6931818181818182
+    },
+    "positive": {
+      "n": 169,
+      "emotional_or_mixed_share": 0.7751479289940828,
+      "political_blame_or_both_share": 0.011834319526627219
+    },
+    "neutral": {
+      "n": 79,
+      "emotional_or_mixed_share": 0.6329113924050633,
+      "political_blame_or_both_share": 0.05063291139240506
+    },
+    "mixed": {
+      "n": 141,
+      "emotional_or_mixed_share": 0.900709219858156,
+      "political_blame_or_both_share": 0.7092198581560284
+    }
+  }
+}

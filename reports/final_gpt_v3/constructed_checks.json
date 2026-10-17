@@ -1,0 +1,7 @@
+{
+  "pairs": 10,
+  "scope": "Ten constructed matched pairs, direct GPT assistant judgments. Names or source labels vary while economic text stays fixed. These are transparent, unblinded consistency checks, not new real observations or an accuracy benchmark.",
+  "tone_unchanged": 10,
+  "political_attribution_unchanged": 10,
+  "inference": "Explicit paired coding by the same assistant with visible pairing. Not blinded, not representative, and not a test of repeated independent API behavior."
+}

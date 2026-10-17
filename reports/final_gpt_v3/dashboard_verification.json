@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "forecast_months": 40,
+  "checks": [
+    "model and platform changes",
+    "bands toggle",
+    "single month",
+    "empty range",
+    "invalid range",
+    "reset",
+    "40-row CSV export",
+    "finite SVG geometry",
+    "no external scripts or API requests"
+  ],
+  "boundary": "JavaScript logic and SVG markup verified locally; browser layout and native clicks not inspected."
+}

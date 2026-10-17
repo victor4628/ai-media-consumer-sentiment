@@ -1,0 +1,18 @@
+{
+  "as_of": "2026-10-16",
+  "analysis_start": "2010-01-01",
+  "evaluation_start": "2018-01-01",
+  "min_training_months": 60,
+  "seed": 20261016,
+  "theme": "#254C45",
+  "workbook": "Perceptual_Bias_Data.xlsx",
+  "quarantine": [
+    {"series_id": "gdp_growth", "period": "2026-09-30", "reason": "2026 Q3 advance GDP scheduled after study cutoff (2026-10-29)", "source_url": "https://www.bea.gov/news/schedule"}
+  ],
+  "series": [
+    {"id": "unemployment", "date_column": 1, "value_column": 2, "frequency": "M", "unit": "percent", "fred_id": "UNRATE", "date_header": "Date", "value_header": "Unemployment"},
+    {"id": "sentiment", "date_column": 4, "value_column": 5, "frequency": "M", "unit": "index", "fred_id": "UMCSENT", "date_header": "Date", "value_header": "Consumer Sentiment"},
+    {"id": "pce_yoy", "date_column": 8, "value_column": 9, "frequency": "M", "unit": "percent_yoy", "fred_id": "PCEPI", "date_header": "Date", "value_header": "PCE YoY"},
+    {"id": "gdp_growth", "date_column": 11, "value_column": 12, "frequency": "Q", "unit": "percent_qoq_annualized", "fred_id": "A191RL1Q225SBEA", "date_header": "Date", "value_header": "Real GDP QoQ Annualized"}
+  ]
+}

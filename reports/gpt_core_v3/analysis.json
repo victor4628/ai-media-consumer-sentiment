@@ -1,0 +1,1988 @@
+{
+  "version": "gpt_core_v3",
+  "config_sha256": "6c6d989cf4be8dd17c3c4cae2631dc05b30e25cfc489651029fc519b6788e66c",
+  "labels_sha256": "93fe7b27fcfbb719155a700422a48b11ea19a479ce8a49577cdffe3a24cacb19",
+  "media_months": 82,
+  "common_eligible_months": 73,
+  "test_n": 40,
+  "test_start": "2023-01-01",
+  "test_end": "2026-08-01",
+  "models": {
+    "economy": [
+      "unemployment",
+      "pce_yoy",
+      "gdp_growth"
+    ],
+    "economy_tone": [
+      "unemployment",
+      "pce_yoy",
+      "gdp_growth",
+      "news_tone",
+      "twitter_tone"
+    ],
+    "memory": [
+      "unemployment",
+      "pce_yoy",
+      "gdp_growth",
+      "sentiment_available"
+    ],
+    "memory_tone": [
+      "unemployment",
+      "pce_yoy",
+      "gdp_growth",
+      "sentiment_available",
+      "news_tone",
+      "twitter_tone"
+    ],
+    "household": [
+      "unemployment",
+      "pce_yoy",
+      "gdp_growth",
+      "sentiment_available",
+      "income_yoy",
+      "cumulative_prices"
+    ],
+    "household_tone": [
+      "unemployment",
+      "pce_yoy",
+      "gdp_growth",
+      "sentiment_available",
+      "income_yoy",
+      "cumulative_prices",
+      "news_tone",
+      "twitter_tone"
+    ],
+    "method_controls": [
+      "unemployment",
+      "pce_yoy",
+      "gdp_growth",
+      "sentiment_available",
+      "season_sin",
+      "season_cos",
+      "web_phase"
+    ],
+    "method_controls_tone": [
+      "unemployment",
+      "pce_yoy",
+      "gdp_growth",
+      "sentiment_available",
+      "season_sin",
+      "season_cos",
+      "web_phase",
+      "news_tone",
+      "twitter_tone"
+    ],
+    "memory_price_levels_share": [
+      "unemployment",
+      "pce_yoy",
+      "gdp_growth",
+      "sentiment_available",
+      "news_price_levels_share",
+      "twitter_price_levels_share"
+    ],
+    "memory_political_blame_share": [
+      "unemployment",
+      "pce_yoy",
+      "gdp_growth",
+      "sentiment_available",
+      "news_political_blame_share",
+      "twitter_political_blame_share"
+    ],
+    "memory_emotional_share": [
+      "unemployment",
+      "pce_yoy",
+      "gdp_growth",
+      "sentiment_available",
+      "news_emotional_share",
+      "twitter_emotional_share"
+    ],
+    "memory_household_share": [
+      "unemployment",
+      "pce_yoy",
+      "gdp_growth",
+      "sentiment_available",
+      "news_household_share",
+      "twitter_household_share"
+    ],
+    "memory_prices_topic_share": [
+      "unemployment",
+      "pce_yoy",
+      "gdp_growth",
+      "sentiment_available",
+      "news_prices_topic_share",
+      "twitter_prices_topic_share"
+    ],
+    "memory_employment_topic_share": [
+      "unemployment",
+      "pce_yoy",
+      "gdp_growth",
+      "sentiment_available",
+      "news_employment_topic_share",
+      "twitter_employment_topic_share"
+    ],
+    "memory_all_content": [
+      "unemployment",
+      "pce_yoy",
+      "gdp_growth",
+      "sentiment_available",
+      "news_tone",
+      "twitter_tone",
+      "news_price_levels_share",
+      "news_political_blame_share",
+      "news_emotional_share",
+      "news_household_share",
+      "news_prices_topic_share",
+      "news_employment_topic_share",
+      "twitter_price_levels_share",
+      "twitter_political_blame_share",
+      "twitter_emotional_share",
+      "twitter_household_share",
+      "twitter_prices_topic_share",
+      "twitter_employment_topic_share"
+    ]
+  },
+  "metrics": {
+    "persistence": {
+      "n": 40,
+      "MAE": 3.7250000000000005,
+      "RMSE": 4.509656306194521,
+      "mean_error": 0.15500000000000008
+    },
+    "economy": {
+      "n": 40,
+      "MAE": 11.789721124997588,
+      "RMSE": 13.595510286571473,
+      "mean_error": 11.789721124997588
+    },
+    "economy_tone": {
+      "n": 40,
+      "MAE": 11.250819108376561,
+      "RMSE": 12.846368334177562,
+      "mean_error": 11.250819108376561
+    },
+    "memory": {
+      "n": 40,
+      "MAE": 4.198673963678333,
+      "RMSE": 4.863381174255548,
+      "mean_error": 1.9764275496753125
+    },
+    "memory_tone": {
+      "n": 40,
+      "MAE": 4.198092465374244,
+      "RMSE": 4.748542495899367,
+      "mean_error": 2.0463683622818314
+    },
+    "household": {
+      "n": 40,
+      "MAE": 4.030138080663624,
+      "RMSE": 4.779404997621209,
+      "mean_error": 1.1059755492751755
+    },
+    "household_tone": {
+      "n": 40,
+      "MAE": 4.004332755846321,
+      "RMSE": 4.660794710016135,
+      "mean_error": 0.9634762492728063
+    },
+    "method_controls": {
+      "n": 40,
+      "MAE": 3.857192215672756,
+      "RMSE": 4.474949744056575,
+      "mean_error": 0.6631461301743455
+    },
+    "method_controls_tone": {
+      "n": 40,
+      "MAE": 3.5269214621082896,
+      "RMSE": 4.230014840397871,
+      "mean_error": 0.6094501665385021
+    },
+    "memory_price_levels_share": {
+      "n": 40,
+      "MAE": 4.124091949406517,
+      "RMSE": 4.905965405199451,
+      "mean_error": 1.704119947525923
+    },
+    "memory_political_blame_share": {
+      "n": 40,
+      "MAE": 4.2463491760826795,
+      "RMSE": 4.971570021655074,
+      "mean_error": 1.9593899032549011
+    },
+    "memory_emotional_share": {
+      "n": 40,
+      "MAE": 4.08003534235019,
+      "RMSE": 4.949796829946481,
+      "mean_error": 1.872305853036638
+    },
+    "memory_household_share": {
+      "n": 40,
+      "MAE": 4.132101469920769,
+      "RMSE": 4.889957108940558,
+      "mean_error": 1.3484119184861014
+    },
+    "memory_prices_topic_share": {
+      "n": 40,
+      "MAE": 4.497848232229808,
+      "RMSE": 5.160834819918954,
+      "mean_error": 2.18172117310514
+    },
+    "memory_employment_topic_share": {
+      "n": 40,
+      "MAE": 4.107287265020891,
+      "RMSE": 4.825157081955971,
+      "mean_error": 1.9150661303818566
+    },
+    "memory_all_content": {
+      "n": 40,
+      "MAE": 4.7366051849853426,
+      "RMSE": 5.927337184518555,
+      "mean_error": 1.163535625805763
+    },
+    "training_mean": {
+      "n": 40,
+      "MAE": 10.621849664260036,
+      "RMSE": 12.444378352453208,
+      "mean_error": 9.509057664148596
+    }
+  },
+  "increments": {
+    "economy_tone_vs_economy": {
+      "n": 40,
+      "difference": -0.5389020166210268,
+      "interval": [
+        -1.1642765597104787,
+        0.1363216637165889
+      ],
+      "block_months": 3,
+      "segments": [
+        1,
+        3,
+        1,
+        22,
+        13
+      ],
+      "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+    },
+    "memory_tone_vs_memory": {
+      "n": 40,
+      "difference": -0.0005814983040888678,
+      "interval": [
+        -0.25246342140267486,
+        0.2740031691517709
+      ],
+      "block_months": 3,
+      "segments": [
+        1,
+        3,
+        1,
+        22,
+        13
+      ],
+      "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+    },
+    "household_tone_vs_household": {
+      "n": 40,
+      "difference": -0.025805324817302557,
+      "interval": [
+        -0.33782312345290616,
+        0.2864846358720126
+      ],
+      "block_months": 3,
+      "segments": [
+        1,
+        3,
+        1,
+        22,
+        13
+      ],
+      "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+    },
+    "method_controls_tone_vs_method_controls": {
+      "n": 40,
+      "difference": -0.3302707535644663,
+      "interval": [
+        -0.5853182495489366,
+        -0.07190755804732048
+      ],
+      "block_months": 3,
+      "segments": [
+        1,
+        3,
+        1,
+        22,
+        13
+      ],
+      "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+    },
+    "memory_price_levels_share_vs_memory": {
+      "n": 40,
+      "difference": -0.0745820142718161,
+      "interval": [
+        -0.5737002521012972,
+        0.4724672821408519
+      ],
+      "block_months": 3,
+      "segments": [
+        1,
+        3,
+        1,
+        22,
+        13
+      ],
+      "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+    },
+    "memory_political_blame_share_vs_memory": {
+      "n": 40,
+      "difference": 0.04767521240434558,
+      "interval": [
+        -0.14234769312387766,
+        0.23602081059741323
+      ],
+      "block_months": 3,
+      "segments": [
+        1,
+        3,
+        1,
+        22,
+        13
+      ],
+      "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+    },
+    "memory_emotional_share_vs_memory": {
+      "n": 40,
+      "difference": -0.11863862132814393,
+      "interval": [
+        -0.3973823770202343,
+        0.16179790460716664
+      ],
+      "block_months": 3,
+      "segments": [
+        1,
+        3,
+        1,
+        22,
+        13
+      ],
+      "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+    },
+    "memory_household_share_vs_memory": {
+      "n": 40,
+      "difference": -0.06657249375756358,
+      "interval": [
+        -0.8222123240823891,
+        0.6268287348269633
+      ],
+      "block_months": 3,
+      "segments": [
+        1,
+        3,
+        1,
+        22,
+        13
+      ],
+      "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+    },
+    "memory_prices_topic_share_vs_memory": {
+      "n": 40,
+      "difference": 0.29917426855147455,
+      "interval": [
+        -0.07950311820919592,
+        0.6702650980863647
+      ],
+      "block_months": 3,
+      "segments": [
+        1,
+        3,
+        1,
+        22,
+        13
+      ],
+      "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+    },
+    "memory_employment_topic_share_vs_memory": {
+      "n": 40,
+      "difference": -0.09138669865744245,
+      "interval": [
+        -0.28128751517311534,
+        0.13593712094465774
+      ],
+      "block_months": 3,
+      "segments": [
+        1,
+        3,
+        1,
+        22,
+        13
+      ],
+      "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+    },
+    "memory_all_content_vs_memory": {
+      "n": 40,
+      "difference": 0.5379312213070095,
+      "interval": [
+        -0.5324617438006122,
+        1.5425732071265852
+      ],
+      "block_months": 3,
+      "segments": [
+        1,
+        3,
+        1,
+        22,
+        13
+      ],
+      "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+    },
+    "method_controls_tone_vs_persistence": {
+      "n": 40,
+      "difference": -0.1980785378917112,
+      "interval": [
+        -0.7908309233675781,
+        0.3767470525255366
+      ],
+      "block_months": 3,
+      "segments": [
+        1,
+        3,
+        1,
+        22,
+        13
+      ],
+      "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+    },
+    "memory_vs_persistence": {
+      "n": 40,
+      "difference": 0.4736739636783325,
+      "interval": [
+        -0.11395160016144813,
+        1.1221268106763613
+      ],
+      "block_months": 3,
+      "segments": [
+        1,
+        3,
+        1,
+        22,
+        13
+      ],
+      "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+    },
+    "household_vs_memory": {
+      "n": 40,
+      "difference": -0.16853588301470931,
+      "interval": [
+        -0.4620195770653298,
+        0.17099916174677965
+      ],
+      "block_months": 3,
+      "segments": [
+        1,
+        3,
+        1,
+        22,
+        13
+      ],
+      "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+    }
+  },
+  "year_metrics": {
+    "2023": {
+      "persistence": {
+        "n": 9,
+        "MAE": 4.466666666666669,
+        "RMSE": 4.967673276069773,
+        "mean_error": -0.5111111111111105
+      },
+      "economy": {
+        "n": 9,
+        "MAE": 7.682973706147568,
+        "RMSE": 9.060197689774121,
+        "mean_error": 7.682973706147568
+      },
+      "economy_tone": {
+        "n": 9,
+        "MAE": 7.625867887257347,
+        "RMSE": 8.429003387131669,
+        "mean_error": 7.625867887257347
+      },
+      "memory": {
+        "n": 9,
+        "MAE": 4.465064589771855,
+        "RMSE": 4.7364607654931286,
+        "mean_error": 0.6893721824832042
+      },
+      "memory_tone": {
+        "n": 9,
+        "MAE": 4.664186689456598,
+        "RMSE": 4.913392902320869,
+        "mean_error": 1.2386672958167781
+      },
+      "household": {
+        "n": 9,
+        "MAE": 4.641753745443719,
+        "RMSE": 5.080516146325155,
+        "mean_error": -0.39360931320180254
+      },
+      "household_tone": {
+        "n": 9,
+        "MAE": 4.493688281967464,
+        "RMSE": 5.246622512593526,
+        "mean_error": -0.4587582981237269
+      },
+      "method_controls": {
+        "n": 9,
+        "MAE": 4.5682153231381495,
+        "RMSE": 4.946267224688595,
+        "mean_error": 0.6220782554841944
+      },
+      "method_controls_tone": {
+        "n": 9,
+        "MAE": 4.5631051048655324,
+        "RMSE": 5.149280137999052,
+        "mean_error": 1.0837675455876559
+      },
+      "memory_all_content": {
+        "n": 9,
+        "MAE": 6.0545902258947955,
+        "RMSE": 6.525194165727348,
+        "mean_error": -2.458975061913764
+      }
+    },
+    "2024": {
+      "persistence": {
+        "n": 12,
+        "MAE": 3.125,
+        "RMSE": 4.347125487031632,
+        "mean_error": -0.9583333333333334
+      },
+      "economy": {
+        "n": 12,
+        "MAE": 6.378518325230051,
+        "RMSE": 7.410786774743132,
+        "mean_error": 6.378518325230051
+      },
+      "economy_tone": {
+        "n": 12,
+        "MAE": 6.577789134503706,
+        "RMSE": 8.199053564038985,
+        "mean_error": 6.577789134503706
+      },
+      "memory": {
+        "n": 12,
+        "MAE": 3.093311055174174,
+        "RMSE": 4.076535906477242,
+        "mean_error": 0.7130093930909993
+      },
+      "memory_tone": {
+        "n": 12,
+        "MAE": 3.3956400175846064,
+        "RMSE": 4.005228395544263,
+        "mean_error": 0.8641357685525293
+      },
+      "household": {
+        "n": 12,
+        "MAE": 3.1139195196480998,
+        "RMSE": 4.307606414124106,
+        "mean_error": -0.3473918250732358
+      },
+      "household_tone": {
+        "n": 12,
+        "MAE": 3.6167020321376016,
+        "RMSE": 4.268761572214723,
+        "mean_error": -0.4045138697927643
+      },
+      "method_controls": {
+        "n": 12,
+        "MAE": 2.8088607576395006,
+        "RMSE": 3.519463524743691,
+        "mean_error": -1.3973201637319335
+      },
+      "method_controls_tone": {
+        "n": 12,
+        "MAE": 2.363723621108948,
+        "RMSE": 2.9825558113756476,
+        "mean_error": -1.5237868727293222
+      },
+      "memory_all_content": {
+        "n": 12,
+        "MAE": 3.753099899742613,
+        "RMSE": 4.740313481640434,
+        "mean_error": 1.0636925252027822
+      }
+    },
+    "2025": {
+      "persistence": {
+        "n": 11,
+        "MAE": 3.809090909090909,
+        "RMSE": 4.645134306699078,
+        "mean_error": 1.9181818181818182
+      },
+      "economy": {
+        "n": 11,
+        "MAE": 17.68172200822828,
+        "RMSE": 18.402668916623625,
+        "mean_error": 17.68172200822828
+      },
+      "economy_tone": {
+        "n": 11,
+        "MAE": 16.63457155723073,
+        "RMSE": 17.30665247709174,
+        "mean_error": 16.63457155723073
+      },
+      "memory": {
+        "n": 11,
+        "MAE": 5.357352158865553,
+        "RMSE": 5.975624243214717,
+        "mean_error": 4.5055018588182065
+      },
+      "memory_tone": {
+        "n": 11,
+        "MAE": 5.130715722543325,
+        "RMSE": 5.697715308805684,
+        "mean_error": 4.305160054886627
+      },
+      "household": {
+        "n": 11,
+        "MAE": 4.843358642941731,
+        "RMSE": 5.475256111172237,
+        "mean_error": 4.075326066289466
+      },
+      "household_tone": {
+        "n": 11,
+        "MAE": 4.5819118474651575,
+        "RMSE": 5.136053333417751,
+        "mean_error": 3.8744547714558264
+      },
+      "method_controls": {
+        "n": 11,
+        "MAE": 4.782237159938706,
+        "RMSE": 5.320070542408923,
+        "mean_error": 3.4105518486248987
+      },
+      "method_controls_tone": {
+        "n": 11,
+        "MAE": 4.42695360278948,
+        "RMSE": 5.002009936713678,
+        "mean_error": 3.108684313777601
+      },
+      "memory_all_content": {
+        "n": 11,
+        "MAE": 4.889650665732971,
+        "RMSE": 6.432552105662634,
+        "mean_error": 2.8299770554096138
+      }
+    },
+    "2026": {
+      "persistence": {
+        "n": 8,
+        "MAE": 3.6750000000000016,
+        "RMSE": 3.988420740092501,
+        "mean_error": 0.14999999999999947
+      },
+      "economy": {
+        "n": 8,
+        "MAE": 16.425114956412962,
+        "RMSE": 16.846564097905556,
+        "mean_error": 16.425114956412962
+      },
+      "economy_tone": {
+        "n": 8,
+        "MAE": 14.935774575770473,
+        "RMSE": 15.24925457378597,
+        "mean_error": 14.935774575770473
+      },
+      "memory": {
+        "n": 8,
+        "MAE": 3.9638463536969315,
+        "RMSE": 4.358695856818875,
+        "mean_error": 1.8420148975714241
+      },
+      "memory_tone": {
+        "n": 8,
+        "MAE": 3.595058156358567,
+        "RMSE": 4.1089468534135944,
+        "mean_error": 1.6225423753173764
+      },
+      "household": {
+        "n": 8,
+        "MAE": 3.5982200261769055,
+        "RMSE": 4.015209924362182,
+        "mean_error": 0.8902026201897435
+      },
+      "household_tone": {
+        "n": 8,
+        "MAE": 3.241082623547215,
+        "RMSE": 3.7473236523528337,
+        "mean_error": 0.6128798256906096
+      },
+      "method_controls": {
+        "n": 8,
+        "MAE": 3.3578516084583887,
+        "RMSE": 3.886560738441002,
+        "mean_error": 0.022364067190673076
+      },
+      "method_controls_tone": {
+        "n": 8,
+        "MAE": 2.8684674320687664,
+        "RMSE": 3.4481234217083823,
+        "mean_error": -0.1607482784438199
+      },
+      "memory_all_content": {
+        "n": 8,
+        "MAE": 4.5186924057983155,
+        "RMSE": 6.096389899888464,
+        "mean_error": 3.097267834689408
+      }
+    }
+  },
+  "period_metrics": {
+    "before_2025": {
+      "persistence": {
+        "n": 21,
+        "MAE": 3.7000000000000006,
+        "RMSE": 4.6232847527231025,
+        "mean_error": -0.7666666666666664
+      },
+      "economy": {
+        "n": 21,
+        "MAE": 6.937570631337557,
+        "RMSE": 8.158611480394685,
+        "mean_error": 6.937570631337557
+      },
+      "economy_tone": {
+        "n": 21,
+        "MAE": 7.026965742826695,
+        "RMSE": 8.298383764192991,
+        "mean_error": 7.026965742826695
+      },
+      "memory": {
+        "n": 21,
+        "MAE": 3.6812054271446084,
+        "RMSE": 4.371576403089788,
+        "mean_error": 0.7028791599733728
+      },
+      "memory_tone": {
+        "n": 21,
+        "MAE": 3.939302876958317,
+        "RMSE": 4.417363587345277,
+        "mean_error": 1.0246492802372074
+      },
+      "method_controls": {
+        "n": 21,
+        "MAE": 3.5628698571389217,
+        "RMSE": 4.190860334143659,
+        "mean_error": -0.5318636983535929
+      },
+      "method_controls_tone": {
+        "n": 21,
+        "MAE": 3.306315685576056,
+        "RMSE": 4.05546922581376,
+        "mean_error": -0.4062635505934746
+      },
+      "memory_all_content": {
+        "n": 21,
+        "MAE": 4.739452896664977,
+        "RMSE": 5.575671187248797,
+        "mean_error": -0.44602215499002335
+      }
+    },
+    "from_2025": {
+      "persistence": {
+        "n": 19,
+        "MAE": 3.752631578947369,
+        "RMSE": 4.380639222761903,
+        "mean_error": 1.1736842105263157
+      },
+      "economy": {
+        "n": 19,
+        "MAE": 17.152624302200778,
+        "RMSE": 17.76408889488513,
+        "mean_error": 17.152624302200778
+      },
+      "economy_tone": {
+        "n": 19,
+        "MAE": 15.919288617668519,
+        "RMSE": 16.471731031072824,
+        "mean_error": 15.919288617668519
+      },
+      "memory": {
+        "n": 19,
+        "MAE": 4.7706128724787655,
+        "RMSE": 5.354657454448074,
+        "mean_error": 3.384033664609035
+      },
+      "memory_tone": {
+        "n": 19,
+        "MAE": 4.484123063097111,
+        "RMSE": 5.089571955404734,
+        "mean_error": 3.1756368213837844
+      },
+      "method_controls": {
+        "n": 19,
+        "MAE": 4.182495875104888,
+        "RMSE": 4.769295939030521,
+        "mean_error": 1.9839464669683828
+      },
+      "method_controls_tone": {
+        "n": 19,
+        "MAE": 3.770748899328127,
+        "RMSE": 4.414912400200732,
+        "mean_error": 1.732081117052792
+      },
+      "memory_all_content": {
+        "n": 19,
+        "MAE": 4.733457714181537,
+        "RMSE": 6.29319913208072,
+        "mean_error": 2.9425205414221587
+      }
+    }
+  },
+  "coverage": {
+    "news": {
+      "candidate": 489,
+      "eligible": 230,
+      "scored": 230,
+      "median_scored_per_month": 2.0,
+      "months_zero_scored": 9
+    },
+    "twitter": {
+      "candidate": 984,
+      "eligible": 829,
+      "scored": 829,
+      "median_scored_per_month": 10.0,
+      "months_zero_scored": 0
+    }
+  },
+  "scope": "All extensions exploratory and fixed before reading new analysis outputs; no winner selection. Retrospective coding, sparse keyword/time windows, headline-only news. No causal or consumer psychology effects identified.",
+  "sensitivity": {
+    "minimum_2_news_5_tweets": {
+      "eligible_n": 51,
+      "test_n": 25,
+      "metrics": {
+        "persistence": {
+          "n": 25,
+          "MAE": 3.7280000000000006,
+          "RMSE": 4.4717781698112,
+          "mean_error": 0.9280000000000007
+        },
+        "economy": {
+          "n": 25,
+          "MAE": 13.319083213331318,
+          "RMSE": 14.891266418903323,
+          "mean_error": 13.319083213331318
+        },
+        "economy_tone": {
+          "n": 25,
+          "MAE": 12.379342120433607,
+          "RMSE": 13.697567029237554,
+          "mean_error": 12.264926621011368
+        },
+        "memory": {
+          "n": 25,
+          "MAE": 4.324330349412952,
+          "RMSE": 4.850013136605054,
+          "mean_error": 2.3283843057661713
+        },
+        "memory_tone": {
+          "n": 25,
+          "MAE": 4.366060145566734,
+          "RMSE": 4.877303445335259,
+          "mean_error": 2.4727983529849307
+        },
+        "household": {
+          "n": 25,
+          "MAE": 4.15945813352137,
+          "RMSE": 4.691600089309692,
+          "mean_error": 1.295127899186695
+        },
+        "household_tone": {
+          "n": 25,
+          "MAE": 4.169548825904757,
+          "RMSE": 4.688635725137409,
+          "mean_error": 1.3861103490749975
+        },
+        "method_controls": {
+          "n": 25,
+          "MAE": 4.251420331525183,
+          "RMSE": 5.0129698988733775,
+          "mean_error": 1.0737504203292156
+        },
+        "method_controls_tone": {
+          "n": 25,
+          "MAE": 4.058196794835262,
+          "RMSE": 4.852955310526729,
+          "mean_error": 1.1984801733347132
+        }
+      },
+      "increments": {
+        "economy_tone_vs_economy": {
+          "n": 25,
+          "difference": -0.939741092897712,
+          "interval": [
+            -1.8977237730242373,
+            0.02420577904394427
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            1,
+            1,
+            2,
+            1,
+            2,
+            1,
+            4,
+            2,
+            1,
+            2,
+            5,
+            2
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        },
+        "memory_tone_vs_memory": {
+          "n": 25,
+          "difference": 0.041729796153781536,
+          "interval": [
+            -0.11605723934952962,
+            0.2001809691598427
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            1,
+            1,
+            2,
+            1,
+            2,
+            1,
+            4,
+            2,
+            1,
+            2,
+            5,
+            2
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        },
+        "household_tone_vs_household": {
+          "n": 25,
+          "difference": 0.010090692383387249,
+          "interval": [
+            -0.15751688965873797,
+            0.18135289076337302
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            1,
+            1,
+            2,
+            1,
+            2,
+            1,
+            4,
+            2,
+            1,
+            2,
+            5,
+            2
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        },
+        "method_controls_tone_vs_method_controls": {
+          "n": 25,
+          "difference": -0.19322353668992037,
+          "interval": [
+            -0.35537973899098996,
+            -0.028041802847063067
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            1,
+            1,
+            2,
+            1,
+            2,
+            1,
+            4,
+            2,
+            1,
+            2,
+            5,
+            2
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        }
+      }
+    },
+    "minimum_3_news_5_tweets": {
+      "eligible_n": 37,
+      "test_n": 13,
+      "metrics": {
+        "persistence": {
+          "n": 13,
+          "MAE": 3.400000000000001,
+          "RMSE": 4.321680584786789,
+          "mean_error": 1.1846153846153844
+        },
+        "economy": {
+          "n": 13,
+          "MAE": 12.993554328378963,
+          "RMSE": 13.98843655835917,
+          "mean_error": 12.993554328378963
+        },
+        "economy_tone": {
+          "n": 13,
+          "MAE": 11.522924503857489,
+          "RMSE": 12.644334135592842,
+          "mean_error": 11.4920436303121
+        },
+        "memory": {
+          "n": 13,
+          "MAE": 4.394023949030717,
+          "RMSE": 4.983524075442298,
+          "mean_error": 3.0994128638608816
+        },
+        "memory_tone": {
+          "n": 13,
+          "MAE": 4.85472373810014,
+          "RMSE": 5.495106913559973,
+          "mean_error": 3.360735004272107
+        },
+        "household": {
+          "n": 13,
+          "MAE": 3.940437820367012,
+          "RMSE": 4.524261596656294,
+          "mean_error": 2.291248537350926
+        },
+        "household_tone": {
+          "n": 13,
+          "MAE": 4.527683658747225,
+          "RMSE": 5.064491214983248,
+          "mean_error": 2.360341169548334
+        },
+        "method_controls": {
+          "n": 13,
+          "MAE": 3.860249822827813,
+          "RMSE": 4.891481534936002,
+          "mean_error": 2.462930610555795
+        },
+        "method_controls_tone": {
+          "n": 13,
+          "MAE": 4.15910943096985,
+          "RMSE": 5.243754918787496,
+          "mean_error": 2.6437154324570953
+        }
+      },
+      "increments": {
+        "economy_tone_vs_economy": {
+          "n": 13,
+          "difference": -1.470629824521474,
+          "interval": [
+            -2.2871860909326367,
+            -0.6635295244409017
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            1,
+            1,
+            2,
+            2,
+            1,
+            2,
+            2,
+            1
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        },
+        "memory_tone_vs_memory": {
+          "n": 13,
+          "difference": 0.46069978906942255,
+          "interval": [
+            0.05701347965142608,
+            0.864386098487419
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            1,
+            1,
+            2,
+            2,
+            1,
+            2,
+            2,
+            1
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        },
+        "household_tone_vs_household": {
+          "n": 13,
+          "difference": 0.5872458383802137,
+          "interval": [
+            0.16537900036109165,
+            1.0091126763993357
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            1,
+            1,
+            2,
+            2,
+            1,
+            2,
+            2,
+            1
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        },
+        "method_controls_tone_vs_method_controls": {
+          "n": 13,
+          "difference": 0.29885960814203716,
+          "interval": [
+            -0.128470041175428,
+            0.7261892574595024
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            1,
+            1,
+            2,
+            2,
+            1,
+            2,
+            2,
+            1
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        }
+      }
+    },
+    "url_normalized_duplicates": {
+      "removed": 1,
+      "test_n": 40,
+      "same_primary_test_months": 40,
+      "metrics": {
+        "persistence": {
+          "n": 40,
+          "MAE": 3.7250000000000005,
+          "RMSE": 4.509656306194521,
+          "mean_error": 0.15500000000000008
+        },
+        "economy": {
+          "n": 40,
+          "MAE": 11.789721124997588,
+          "RMSE": 13.595510286571473,
+          "mean_error": 11.789721124997588
+        },
+        "economy_tone": {
+          "n": 40,
+          "MAE": 11.237326543971504,
+          "RMSE": 12.837882187236556,
+          "mean_error": 11.237326543971504
+        },
+        "memory": {
+          "n": 40,
+          "MAE": 4.198673963678333,
+          "RMSE": 4.863381174255548,
+          "mean_error": 1.9764275496753125
+        },
+        "memory_tone": {
+          "n": 40,
+          "MAE": 4.201851389719832,
+          "RMSE": 4.752122645093997,
+          "mean_error": 2.045850074462288
+        },
+        "household": {
+          "n": 40,
+          "MAE": 4.030138080663624,
+          "RMSE": 4.779404997621209,
+          "mean_error": 1.1059755492751755
+        },
+        "household_tone": {
+          "n": 40,
+          "MAE": 4.010446653879423,
+          "RMSE": 4.667631165170529,
+          "mean_error": 0.9637452722232858
+        },
+        "method_controls": {
+          "n": 40,
+          "MAE": 3.857192215672756,
+          "RMSE": 4.474949744056575,
+          "mean_error": 0.6631461301743455
+        },
+        "method_controls_tone": {
+          "n": 40,
+          "MAE": 3.5338886159379954,
+          "RMSE": 4.239321454365192,
+          "mean_error": 0.6102797540916793
+        }
+      },
+      "increments": {
+        "economy_tone_vs_economy": {
+          "n": 40,
+          "difference": -0.5523945810260832,
+          "interval": [
+            -1.1756837506150912,
+            0.12173137460543015
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            3,
+            1,
+            22,
+            13
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        },
+        "memory_tone_vs_memory": {
+          "n": 40,
+          "difference": 0.003177426041498599,
+          "interval": [
+            -0.24782535423921756,
+            0.27604372740883987
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            3,
+            1,
+            22,
+            13
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        },
+        "household_tone_vs_household": {
+          "n": 40,
+          "difference": -0.019691426784200772,
+          "interval": [
+            -0.32996210944940213,
+            0.29134809654008115
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            3,
+            1,
+            22,
+            13
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        },
+        "method_controls_tone_vs_method_controls": {
+          "n": 40,
+          "difference": -0.3233035997347608,
+          "interval": [
+            -0.5783617306797302,
+            -0.06657698381968098
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            3,
+            1,
+            22,
+            13
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        }
+      }
+    },
+    "all_geographies_economic_texts": {
+      "scope": "Geography sensitivity only, includes known foreign economies; cannot be substituted for US consumer exposure.",
+      "test_n": 43,
+      "same_primary_test_months": 40,
+      "metrics_on_primary_months": {
+        "persistence": {
+          "n": 40,
+          "MAE": 3.7250000000000005,
+          "RMSE": 4.509656306194521,
+          "mean_error": 0.15500000000000008
+        },
+        "economy": {
+          "n": 40,
+          "MAE": 11.603863579951145,
+          "RMSE": 13.50250594408577,
+          "mean_error": 11.592062862610764
+        },
+        "economy_tone": {
+          "n": 40,
+          "MAE": 11.347149378621443,
+          "RMSE": 12.986860813654324,
+          "mean_error": 11.277662256418811
+        },
+        "memory": {
+          "n": 40,
+          "MAE": 4.29493953574228,
+          "RMSE": 4.9773288759835355,
+          "mean_error": 2.3265739114902773
+        },
+        "memory_tone": {
+          "n": 40,
+          "MAE": 4.225076752827932,
+          "RMSE": 4.8871777473918145,
+          "mean_error": 2.5123572692251264
+        },
+        "household": {
+          "n": 40,
+          "MAE": 4.0182271657190824,
+          "RMSE": 4.751402627854882,
+          "mean_error": 1.3809368303007752
+        },
+        "household_tone": {
+          "n": 40,
+          "MAE": 3.8890071384308795,
+          "RMSE": 4.586145863445757,
+          "mean_error": 1.395739001994523
+        },
+        "method_controls": {
+          "n": 40,
+          "MAE": 3.8259725847244384,
+          "RMSE": 4.379431543263729,
+          "mean_error": 0.7963077024853644
+        },
+        "method_controls_tone": {
+          "n": 40,
+          "MAE": 3.5239404915504364,
+          "RMSE": 4.145416761145547,
+          "mean_error": 0.87557222599515
+        }
+      },
+      "increments_on_primary_months": {
+        "economy_tone_vs_economy": {
+          "n": 40,
+          "difference": -0.25671420132970263,
+          "interval": [
+            -0.9705173539129668,
+            0.5043610658216496
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            3,
+            1,
+            22,
+            13
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        },
+        "memory_tone_vs_memory": {
+          "n": 40,
+          "difference": -0.06986278291434811,
+          "interval": [
+            -0.32138331043324797,
+            0.21681302012435816
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            3,
+            1,
+            22,
+            13
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        },
+        "household_tone_vs_household": {
+          "n": 40,
+          "difference": -0.12922002728820328,
+          "interval": [
+            -0.38745723679071015,
+            0.12386882321933929
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            3,
+            1,
+            22,
+            13
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        },
+        "method_controls_tone_vs_method_controls": {
+          "n": 40,
+          "difference": -0.3020320931740018,
+          "interval": [
+            -0.5328086194641207,
+            -0.0923398812465567
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            3,
+            1,
+            22,
+            13
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        }
+      }
+    },
+    "ridge_penalty_0.1": {
+      "metrics": {
+        "persistence": {
+          "n": 40,
+          "MAE": 3.7250000000000005,
+          "RMSE": 4.509656306194521,
+          "mean_error": 0.15500000000000008
+        },
+        "economy": {
+          "n": 40,
+          "MAE": 11.90653730051473,
+          "RMSE": 13.675388852427021,
+          "mean_error": 11.901922854359146
+        },
+        "economy_tone": {
+          "n": 40,
+          "MAE": 11.365801772965312,
+          "RMSE": 12.917147596316628,
+          "mean_error": 11.365801772965312
+        },
+        "memory": {
+          "n": 40,
+          "MAE": 4.135446659777495,
+          "RMSE": 4.810125168004053,
+          "mean_error": 1.7207669088432962
+        },
+        "memory_tone": {
+          "n": 40,
+          "MAE": 4.180338144358987,
+          "RMSE": 4.74292818851267,
+          "mean_error": 1.7708849603703165
+        },
+        "household": {
+          "n": 40,
+          "MAE": 4.065958223275065,
+          "RMSE": 4.828980156256774,
+          "mean_error": 1.2545120889202537
+        },
+        "household_tone": {
+          "n": 40,
+          "MAE": 4.140452735680304,
+          "RMSE": 4.786732636398243,
+          "mean_error": 1.0822853129314383
+        },
+        "method_controls": {
+          "n": 40,
+          "MAE": 3.866047076448356,
+          "RMSE": 4.513808062177436,
+          "mean_error": 0.45312642374766854
+        },
+        "method_controls_tone": {
+          "n": 40,
+          "MAE": 3.5790338634380197,
+          "RMSE": 4.333407790275599,
+          "mean_error": 0.369741536351729
+        }
+      },
+      "increments": {
+        "economy_tone_vs_economy": {
+          "n": 40,
+          "difference": -0.5407355275494152,
+          "interval": [
+            -1.1572687568430422,
+            0.133007385479104
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            3,
+            1,
+            22,
+            13
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        },
+        "memory_tone_vs_memory": {
+          "n": 40,
+          "difference": 0.04489148458149206,
+          "interval": [
+            -0.2101756928524369,
+            0.31106017413003234
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            3,
+            1,
+            22,
+            13
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        },
+        "household_tone_vs_household": {
+          "n": 40,
+          "difference": 0.0744945124052391,
+          "interval": [
+            -0.22015676236497536,
+            0.385800180080556
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            3,
+            1,
+            22,
+            13
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        },
+        "method_controls_tone_vs_method_controls": {
+          "n": 40,
+          "difference": -0.2870132130103359,
+          "interval": [
+            -0.5674396635093306,
+            -0.011439427925958768
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            3,
+            1,
+            22,
+            13
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        }
+      }
+    },
+    "ridge_penalty_10.0": {
+      "metrics": {
+        "persistence": {
+          "n": 40,
+          "MAE": 3.7250000000000005,
+          "RMSE": 4.509656306194521,
+          "mean_error": 0.15500000000000008
+        },
+        "economy": {
+          "n": 40,
+          "MAE": 11.19458700609278,
+          "RMSE": 13.100150301436027,
+          "mean_error": 11.050256412571164
+        },
+        "economy_tone": {
+          "n": 40,
+          "MAE": 10.832578468099118,
+          "RMSE": 12.460878183886404,
+          "mean_error": 10.586827408885998
+        },
+        "memory": {
+          "n": 40,
+          "MAE": 4.733073780929081,
+          "RMSE": 5.583134392364503,
+          "mean_error": 3.4390273411476313
+        },
+        "memory_tone": {
+          "n": 40,
+          "MAE": 4.521639123395178,
+          "RMSE": 5.382336188494391,
+          "mean_error": 3.544601371234549
+        },
+        "household": {
+          "n": 40,
+          "MAE": 4.089170009399696,
+          "RMSE": 4.976619375584762,
+          "mean_error": 1.2487065778777473
+        },
+        "household_tone": {
+          "n": 40,
+          "MAE": 3.886474981390973,
+          "RMSE": 4.660418982823315,
+          "mean_error": 1.2332975354926514
+        },
+        "method_controls": {
+          "n": 40,
+          "MAE": 3.9606709346297206,
+          "RMSE": 4.68301260263678,
+          "mean_error": 1.924462060426611
+        },
+        "method_controls_tone": {
+          "n": 40,
+          "MAE": 3.6098356943086514,
+          "RMSE": 4.324250943817074,
+          "mean_error": 1.9409527017819088
+        }
+      },
+      "increments": {
+        "economy_tone_vs_economy": {
+          "n": 40,
+          "difference": -0.3620085379936636,
+          "interval": [
+            -0.947090821359377,
+            0.2745530836164574
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            3,
+            1,
+            22,
+            13
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        },
+        "memory_tone_vs_memory": {
+          "n": 40,
+          "difference": -0.21143465753390256,
+          "interval": [
+            -0.5125773505163848,
+            0.12374190383307888
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            3,
+            1,
+            22,
+            13
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        },
+        "household_tone_vs_household": {
+          "n": 40,
+          "difference": -0.20269502800872347,
+          "interval": [
+            -0.5041964611871824,
+            0.09854813719006517
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            3,
+            1,
+            22,
+            13
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        },
+        "method_controls_tone_vs_method_controls": {
+          "n": 40,
+          "difference": -0.35083524032106916,
+          "interval": [
+            -0.5535476876646509,
+            -0.14419265325608852
+          ],
+          "block_months": 3,
+          "segments": [
+            1,
+            3,
+            1,
+            22,
+            13
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        }
+      }
+    }
+  },
+  "all_macro_forecasts": {
+    "n": 44,
+    "start": "2023-01-01",
+    "end": "2026-08-01",
+    "metrics": {
+      "persistence": {
+        "n": 44,
+        "MAE": 3.6181818181818177,
+        "RMSE": 4.390899680020031,
+        "mean_error": 0.009090909090908898
+      },
+      "training_mean": {
+        "n": 44,
+        "MAE": 17.857759375694396,
+        "RMSE": 19.57470830334355,
+        "mean_error": 17.857759375694396
+      },
+      "economy": {
+        "n": 44,
+        "MAE": 17.108402652712673,
+        "RMSE": 18.683378479477096,
+        "mean_error": 17.108402652712673
+      },
+      "memory": {
+        "n": 44,
+        "MAE": 4.323574430111362,
+        "RMSE": 4.997608126090911,
+        "mean_error": 2.563192179895043
+      },
+      "economy_price_level": {
+        "n": 44,
+        "MAE": 8.711921220507826,
+        "RMSE": 9.972914884913003,
+        "mean_error": 8.582898545273716
+      },
+      "economy_linear_time": {
+        "n": 44,
+        "MAE": 14.148041446609078,
+        "RMSE": 15.240243812855432,
+        "mean_error": 14.148041446609078
+      },
+      "memory_price_level": {
+        "n": 44,
+        "MAE": 3.99513799500929,
+        "RMSE": 4.701804723856246,
+        "mean_error": 2.0568021943183266
+      }
+    },
+    "interpretation": "Same test months within this comparison, full expanding macro history. Different training sample from media-restricted models; do not compare levels directly across the two experiments.",
+    "increments": {
+      "economy_price_level_vs_economy": {
+        "n": 44,
+        "difference": -8.39648143220485,
+        "interval": [
+          -11.035311372777823,
+          -5.745450865443421
+        ],
+        "block_months": 3,
+        "segments": [
+          44
+        ],
+        "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+      },
+      "economy_linear_time_vs_economy": {
+        "n": 44,
+        "difference": -2.960361206103599,
+        "interval": [
+          -4.5507249747597776,
+          -1.3952831754027426
+        ],
+        "block_months": 3,
+        "segments": [
+          44
+        ],
+        "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+      },
+      "memory_price_level_vs_memory": {
+        "n": 44,
+        "difference": -0.32843643510207277,
+        "interval": [
+          -0.5321802757970516,
+          -0.12965760991754308
+        ],
+        "block_months": 3,
+        "segments": [
+          44
+        ],
+        "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+      },
+      "memory_price_level_vs_persistence": {
+        "n": 44,
+        "difference": 0.3769561768274718,
+        "interval": [
+          -0.2906753234369511,
+          1.0205980018058738
+        ],
+        "block_months": 3,
+        "segments": [
+          44
+        ],
+        "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+      }
+    }
+  },
+  "macro_accounting": {
+    "three_macro": {
+      "n": 200,
+      "features": [
+        "unemployment",
+        "pce_yoy",
+        "gdp_growth"
+      ],
+      "in_sample_R2": 0.5015196619902651,
+      "coefficients": {
+        "intercept": 108.61543390464811,
+        "unemployment": -2.43431559554749,
+        "pce_yoy": -7.563976657605686,
+        "gdp_growth": 0.03239337825102128
+      },
+      "references": {
+        "2017_2019": {
+          "reference_sentiment": 97.03888888888889,
+          "latest_sentiment": 52.13333333333333,
+          "observed_change": -44.90555555555556,
+          "model_associated_change": -16.65554598646526,
+          "residual_change": -28.2500095690903,
+          "accounting_share": 0.3709016797678766,
+          "components_points": {
+            "unemployment": -0.5544829967635974,
+            "pce_yoy": -16.071299672662725,
+            "gdp_growth": -0.029763317038935654
+          }
+        },
+        "2015_2019": {
+          "reference_sentiment": 95.18,
+          "latest_sentiment": 52.13333333333333,
+          "observed_change": -43.046666666666674,
+          "model_associated_change": -18.621070916931743,
+          "residual_change": -24.42559574973493,
+          "accounting_share": 0.4325786956078304,
+          "components_points": {
+            "unemployment": 0.5396066236796937,
+            "pce_yoy": -19.142566810462238,
+            "gdp_growth": -0.018110730149196955
+          }
+        }
+      }
+    },
+    "plus_price_level": {
+      "n": 200,
+      "features": [
+        "unemployment",
+        "pce_yoy",
+        "gdp_growth",
+        "cumulative_prices_2008"
+      ],
+      "in_sample_R2": 0.7679636809443804,
+      "coefficients": {
+        "intercept": 131.651554464987,
+        "unemployment": -4.791592225296026,
+        "pce_yoy": -4.674866205788173,
+        "gdp_growth": -0.11288941214901951,
+        "cumulative_prices_2008": -0.8041201787087323
+      },
+      "references": {
+        "2017_2019": {
+          "reference_sentiment": 97.03888888888889,
+          "latest_sentiment": 52.13333333333333,
+          "observed_change": -44.90555555555556,
+          "model_associated_change": -37.827069335531164,
+          "residual_change": -7.078486220024395,
+          "accounting_share": 0.842369476728394,
+          "components_points": {
+            "unemployment": -1.0914182290952106,
+            "pce_yoy": -9.932761445962427,
+            "gdp_growth": 0.10372377150951864,
+            "cumulative_prices_2008": -26.906613431983043
+          }
+        },
+        "2015_2019": {
+          "reference_sentiment": 95.18,
+          "latest_sentiment": 52.13333333333333,
+          "observed_change": -43.046666666666674,
+          "model_associated_change": -39.12313402826147,
+          "residual_change": -3.923532638405206,
+          "accounting_share": 0.9088539730895492,
+          "components_points": {
+            "unemployment": 1.0621362766072857,
+            "pce_yoy": -11.830937974179207,
+            "gdp_growth": 0.06311504975767418,
+            "cumulative_prices_2008": -28.41744738044722
+          }
+        }
+      }
+    },
+    "plus_linear_time": {
+      "n": 200,
+      "features": [
+        "unemployment",
+        "pce_yoy",
+        "gdp_growth",
+        "linear_time"
+      ],
+      "in_sample_R2": 0.6320337577683378,
+      "coefficients": {
+        "intercept": 131.48124496865998,
+        "unemployment": -4.601139830213994,
+        "pce_yoy": -5.975239111065693,
+        "gdp_growth": -0.09636425461247404,
+        "linear_time": -1.6494503024263416
+      },
+      "references": {
+        "2017_2019": {
+          "reference_sentiment": 97.03888888888889,
+          "latest_sentiment": 52.13333333333333,
+          "observed_change": -44.90555555555556,
+          "model_associated_change": -26.919510732212647,
+          "residual_change": -17.98604482334291,
+          "accounting_share": 0.5994694954593933,
+          "components_points": {
+            "unemployment": -1.0480374057709698,
+            "pce_yoy": -12.69568412446014,
+            "gdp_growth": 0.08854031336362263,
+            "linear_time": -13.26432951534516
+          }
+        },
+        "2015_2019": {
+          "reference_sentiment": 95.18,
+          "latest_sentiment": 52.13333333333333,
+          "observed_change": -43.046666666666674,
+          "model_associated_change": -28.96184680416657,
+          "residual_change": -14.084819862500105,
+          "accounting_share": 0.6728011492372595,
+          "components_points": {
+            "unemployment": 1.0199193290307689,
+            "pce_yoy": -15.121862357553669,
+            "gdp_growth": 0.05387604212783836,
+            "linear_time": -14.913779817771507
+          }
+        }
+      }
+    },
+    "plus_income_and_price": {
+      "n": 200,
+      "features": [
+        "unemployment",
+        "pce_yoy",
+        "gdp_growth",
+        "income_yoy",
+        "cumulative_prices_2008"
+      ],
+      "in_sample_R2": 0.7884976564772889,
+      "coefficients": {
+        "intercept": 130.19983576163514,
+        "unemployment": -4.98061231901051,
+        "pce_yoy": -3.4890359020812944,
+        "gdp_growth": -0.09412202642697218,
+        "income_yoy": 0.7153927364434789,
+        "cumulative_prices_2008": -0.8790027246284798
+      },
+      "references": {
+        "2017_2019": {
+          "reference_sentiment": 97.03888888888889,
+          "latest_sentiment": 52.13333333333333,
+          "observed_change": -44.90555555555556,
+          "model_associated_change": -39.695502562631724,
+          "residual_change": -5.210052992923835,
+          "accounting_share": 0.8839775406747136,
+          "components_points": {
+            "unemployment": -1.1344728059968432,
+            "pce_yoy": -7.413209227006942,
+            "gdp_growth": 0.08648013464926994,
+            "income_yoy": -1.8220471933875233,
+            "cumulative_prices_2008": -29.412253470889684
+          }
+        },
+        "2015_2019": {
+          "reference_sentiment": 95.18,
+          "latest_sentiment": 52.13333333333333,
+          "observed_change": -43.046666666666674,
+          "model_associated_change": -40.7913229178861,
+          "residual_change": -2.255343748780575,
+          "accounting_share": 0.9476070059908492,
+          "components_points": {
+            "unemployment": 1.1040357307139965,
+            "pce_yoy": -8.829892777701154,
+            "gdp_growth": 0.05262244056501687,
+            "income_yoy": -2.054306633318257,
+            "cumulative_prices_2008": -31.063781678145702
+          }
+        }
+      }
+    },
+    "scope": "Descriptive full-sample OLS, not a forecast or causal decomposition. Price-level cumulative trend depends on reference/window; no media attribution of residual."
+  },
+  "latest_proxies": {
+    "target_month": "2026-08-01",
+    "pce_yoy": 3.668052673520439,
+    "cumulative_prices": 27.93643684092657,
+    "income_yoy": 0.5233241102098329,
+    "sentiment_available": 55.2
+  },
+  "actual_sentiment_latest": 51.7
+}

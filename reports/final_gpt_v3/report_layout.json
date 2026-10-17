@@ -1,0 +1,77 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "bottom_y": 313.6,
+      "paragraphs": 8,
+      "figure": null
+    },
+    {
+      "page": 2,
+      "bottom_y": 265.4,
+      "paragraphs": 4,
+      "figure": "ics_components"
+    },
+    {
+      "page": 3,
+      "bottom_y": 260.3,
+      "paragraphs": 4,
+      "figure": "content"
+    },
+    {
+      "page": 4,
+      "bottom_y": 261.8,
+      "paragraphs": 4,
+      "figure": "forecast_gap"
+    },
+    {
+      "page": 5,
+      "bottom_y": 248.7,
+      "paragraphs": 4,
+      "figure": "macro_trend"
+    },
+    {
+      "page": 6,
+      "bottom_y": 264.2,
+      "paragraphs": 4,
+      "figure": "price_pressure"
+    },
+    {
+      "page": 7,
+      "bottom_y": 382.0,
+      "paragraphs": 6,
+      "figure": null
+    },
+    {
+      "page": 8,
+      "bottom_y": 257.7,
+      "paragraphs": 4,
+      "figure": "forecast_benchmarks"
+    },
+    {
+      "page": 9,
+      "bottom_y": 219.8,
+      "paragraphs": 5,
+      "figure": "coverage_robustness"
+    },
+    {
+      "page": 10,
+      "bottom_y": 118.4,
+      "paragraphs": 6,
+      "figure": "coverage_counts"
+    },
+    {
+      "page": 11,
+      "bottom_y": 329.6,
+      "paragraphs": 6,
+      "figure": null
+    },
+    {
+      "page": 12,
+      "bottom_y": 243.0,
+      "paragraphs": 7,
+      "figure": null
+    }
+  ],
+  "path": "C:\\Users\\Admin\\Documents\\GitHub\\ai-media-consumer-sentiment\\output\\report\\Consumer_Sentiment_Research_GPT_v3.pdf"
+}

@@ -1,0 +1,14 @@
+{
+  "file": "output/presentation/Consumer_Sentiment_Findings_GPT_v3_Reviewed.pptx",
+  "slides": 10,
+  "native_chart_slides": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "render_folder": "tmp/gpt_v3_deck"
+}

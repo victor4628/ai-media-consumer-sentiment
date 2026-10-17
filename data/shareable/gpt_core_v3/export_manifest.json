@@ -1,0 +1,5 @@
+{
+  "private_annotation_payload_sha256": "93fe7b27fcfbb719155a700422a48b11ea19a479ce8a49577cdffe3a24cacb19",
+  "shareable_file_sha256": "869bcf27af77f5bb486db138825f0298780d1c65e6bbdb34619a5e288c0d2a44",
+  "note": "Private seal covers full annotation records including evidence/rationales. Shareable rows intentionally remove text excerpts and rationales; their file hash is separate. input_sha256 refers to original full input, not a minimized replacement."
+}

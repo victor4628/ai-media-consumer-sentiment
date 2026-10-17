@@ -1,0 +1,66 @@
+{
+  "title": "Media Bias and Consumer Sentiment Speaker Script",
+  "style_reference": "Reinforcement_Learning_Speaker_Script_Refined.docx supplied by the user on 2026-10-16",
+  "style_status": "Revised after a slide-by-slide content and adjacent-transition review; rehearsal timing remains unverified",
+  "intro": "Nine main slides and one optional methods appendix. Allow about 7 to 7.5 minutes for the main talk. Square brackets contain delivery cues and are not spoken. The shopping example is hypothetical. Read each transition before advancing, then continue directly with the next slide.",
+  "delivery_notes": [
+    "Advance at each [Advance to slide N.] cue after speaking the transition. Do not repeat the next slide title as a new question.",
+    "Follow the visual order: emotional language before political blame on slide 3; the main chart before the separate economic comparison on slide 7.",
+    "Explain the calculation rather than reading every formula symbol. Spoken numbers are rounded; the slides retain precise values. Forecast errors are in index points, not percentages.",
+    "Finish the main presentation on slide 9. Stay there for questions. Open slide 10 only if asked about the measurement review.",
+    "PowerPoint notes separate the spoken English script from reference sources. Do not read reference material aloud."
+  ],
+  "slides": [
+    {
+      "slide": 1,
+      "seconds": 40,
+      "en": "Imagine you read that inflation is slowing. Good news. Then you go shopping, look at the receipt, and wonder what happened to the good news.\n\n[Brief pause.]\n\nPrices can still be high when they rise more slowly. Could the news we read also shape how we feel?\n\nOur six questions examine that gap ahead of the U.S. midterm elections. To study it, we first need to know what the Michigan index is asking people.\n\n[Advance to slide 2.]"
+    },
+    {
+      "slide": 2,
+      "seconds": 50,
+      "en": "It combines five survey answers about household finances, buying conditions, and the national outlook.\n\n[Point to the two columns.]\n\nTwo questions describe current conditions. Three describe expectations, including the national outlook over one year and five years.\n\nEach answer produces a relative score: the favorable percentage minus the unfavorable percentage, plus one hundred. The calculation below combines the five scores into the index. A reading of sixty is therefore an index value, not sixty percent of people feeling confident.\n\nThat gives us the outcome. We also need to describe the information people might encounter.\n\n[Advance to slide 3.]"
+    },
+    {
+      "slide": 3,
+      "seconds": 50,
+      "en": "The four dimensions at the bottom separate tone, topic attention, framing, and factual calibration.\n\n[Point to emotional language, then political blame. Gold is Twitter; green is news.]\n\nIn our selected sample, emotional or mixed language appears in about seventy percent of posts and seven percent of headlines. Political blame appears in about forty-seven percent and eleven percent, respectively.\n\nBut sources and formats differ, and negative events can justify negative coverage. Establishing bias needs a comparison of the same facts and events.\n\nThose differences describe the content. Connecting it to a change in consumer confidence requires another step.\n\n[Advance to slide 4.]"
+    },
+    {
+      "slide": 4,
+      "seconds": 50,
+      "en": "The missing piece is who saw what, and whether the coverage changed their views.\n\n[Move down the table.]\n\nWe have monthly text measures and sentiment data, but no individual exposure records. Rising costs could make both consumers and journalists more negative. News can also respond to anxiety.\n\nOur media ends in July 2026 and evaluated sentiment in August, before the final election weeks.\n\nThe proposed experiment below would randomly assign different framing of identical facts. We have not run it.\n\nWhile that causal question remains open, we can quantify the association with economic indicators.\n\n[Advance to slide 5.]"
+    },
+    {
+      "slide": 5,
+      "seconds": 55,
+      "en": "Start with the two averages at the top: about ninety-seven in 2017 to 2019, and fifty-two in June through August 2026. That is a decline of almost forty-five points.\n\n[Move through the two table rows.]\n\nChanges in unemployment, headline PCE inflation, and real GDP growth correspond to about seventeen points in our descriptive model. About twenty-eight points remain outside that account. We cannot assign those to media.\n\nThe share below is thirty-seven percent. Changing the reference to 2015 through 2019 raises it to forty-three percent. These are model-based associations, not causal shares.\n\nThat leaves other explanations to investigate, including how people interpret information.\n\n[Advance to slide 6.]"
+    },
+    {
+      "slide": 6,
+      "seconds": 55,
+      "en": "The table separates observable clues from the individual responses we would need to measure.\n\n[Follow the rows from top to bottom.]\n\nNegative tone is observable. Negativity bias would mean a stronger response to bad news than to equally informative good news. We do not observe that response.\n\nTopic attention suggests availability, but we need exposure and recall. Political blame suggests a confirmation channel, but we need prior beliefs and belief updating.\n\nPrice framing and cumulative increases relate to anchoring. Yet our shopping bill might simply be unaffordable. We need individual reference prices to separate those explanations.\n\nWe can still test whether the content measures help predict the next reading.\n\n[Advance to slide 7.]"
+    },
+    {
+      "slide": 7,
+      "seconds": 60,
+      "en": "Here we compare errors over the same thirty-nine test months. Lower means predictions came closer to the actual index.\n\n[Follow the chart from top to bottom.]\n\nEconomics plus the latest sentiment gives an average error of four point one one. Adding media raises it to four point three zero. Adding income leaves it around four point two nine.\n\nPersistence simply reuses the latest available reading. Its error is three point six nine, the lowest here.\n\n[Point to the separate comparison below the chart.]\n\nWithout sentiment history, adding media improves a weak economic model from eleven point nine to eleven point four. Both media-change intervals include zero, so the gain is not stable.\n\nBut a forecasting test cannot settle every version of the media explanation.\n\n[Advance to slide 8.]"
+    },
+    {
+      "slide": 8,
+      "seconds": 50,
+      "en": "For example, the second row concerns false economic numbers. Testing that claim needs representative fact checks. Our five checked claims matched their original releases, but that small sample cannot establish general accuracy. Accurate facts can still receive selective emphasis.\n\n[Move to the third and fourth rows.]\n\nReal affordability pressure or measurement differences could challenge a mainly psychological explanation. A precise exposure experiment showing little meaningful effect would challenge a causal claim. We have not run that experiment.\n\nSo the first row is where our evidence is strongest: it weakens the forecasting claim. It does not prove there is no causal effect.\n\nThose distinctions guide how we should use the study.\n\n[Advance to slide 9.]"
+    },
+    {
+      "slide": 9,
+      "seconds": 40,
+      "en": "The three national indicators give us a useful starting point, while household pressures can still be missing.\n\n[Move through the three statements.]\n\nMedia content suggests channels worth investigating, but it does not establish people's biases or an election effect. The dashboard helps us examine new evidence. It is not a validated trading signal.\n\n[Brief pause.]\n\nWe started with a shopping receipt. Before blaming the headline, we still need to understand the bill.\n\nThank you.\n\n[End of main presentation. Stay here for questions. Open slide 10 only for measurement-review questions.]"
+    },
+    {
+      "slide": 10,
+      "seconds": 0,
+      "en": "This appendix explains the measurement review behind the content indicators.\n\n[Follow the table from top to bottom.]\n\nThe sample contains one hundred and fifty headlines and one hundred and fifty posts. Of three hundred attempted comparisons, two hundred and ninety-three produced valid pairs.\n\nThe held-out portion has one hundred and ninety-six valid pairs from two hundred attempted. Tone agreement is sixty-three point eight percent. Kappa, which adjusts for chance agreement, is about zero point five two two. Neither statistic establishes accuracy.\n\nThe review compares independent cached DeepSeek V4 Pro judgments with direct GPT judgments. There was no human annotation. GPT judgments were sealed before item-level comparison, although this conversation had already seen aggregate findings. It was not a fully isolated prospective blind test. The forecasting corpus retains its original frozen Flash coding."
+    }
+  ],
+  "language": "en"
+}

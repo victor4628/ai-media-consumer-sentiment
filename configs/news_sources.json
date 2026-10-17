@@ -1,0 +1,12 @@
+{
+  "scope": "Current RSS access pilot; public-media sources only at this stage, not a balanced historical corpus",
+  "sources": [
+    {"id": "npr_economy", "outlet": "npr", "level": "national", "page": "https://www.npr.org/sections/economy/", "feed": "https://feeds.npr.org/1017/rss.xml"},
+    {"id": "pbs", "level": "national", "page": "https://www.pbs.org/newshour/about/pbs-news-rss-feeds", "feed": "https://www.pbs.org/newshour/feeds/rss/headlines"},
+    {"id": "wunc", "level": "local_NC", "page": "https://www.wunc.org/business-economy"},
+    {"id": "wunc_economy", "outlet": "wunc", "level": "local_NC", "page": "https://www.wunc.org/economy"},
+    {"id": "wbur", "level": "local_MA", "page": "https://www.wbur.org/topic/economy"},
+    {"id": "kuow", "level": "local_WA", "page": "https://www.kuow.org/"}
+  ],
+  "keywords": ["econom", "inflation", "price", "wage", "hiring", "layoff", "job", "recession", "rent", "mortgage", "housing", "unemployment", "consumer", "cost", "afford", "tariff"]
+}

@@ -1,0 +1,79 @@
+{
+  "status": "complete",
+  "renames": [
+    {
+      "old": "output/report/Consumer_Sentiment_Research_GPT_v3_Victor_Chen.pdf",
+      "new": "output/report.pdf",
+      "sha256_before_content_reference_updates": "c5ba4ff61228144acf34609d0f3b625220e3767c93d9fadcf44ef5928f56af07"
+    },
+    {
+      "old": "output/presentation/Consumer_Sentiment_Findings_GPT_v3_Victor_Chen.pptx",
+      "new": "output/slides.pptx",
+      "sha256_before_content_reference_updates": "00d13d3e9d3dd76f6364d4162904cd35c7129b6e63521b4573d5e6e55479e71c"
+    },
+    {
+      "old": "reports/final_gpt_v3/SPEAKER_SCRIPT.en.md",
+      "new": "output/speaker_notes.md",
+      "sha256_before_content_reference_updates": "f9ed50bb4ee95bb5fa434511496b8b505d6505e7b0c69b535f7e39db41984d3c"
+    },
+    {
+      "old": "reports/dashboard.html",
+      "new": "output/dashboard.html",
+      "sha256_before_content_reference_updates": "cf5dca8538b61c7e98a5795414ad05f48ace0e8989f4015793a8d295a55d5068"
+    },
+    {
+      "old": "reports/final_gpt_v3/RESEARCH_REPORT.en.md",
+      "new": "reports/report.md",
+      "sha256_before_content_reference_updates": "80ba4826ac18fa89512431b4d9cd55d6ec75b4a9a4e9a2177eefcfb0c9db2dc3"
+    },
+    {
+      "old": "scripts/build_gpt_v3_deck.mjs",
+      "new": "scripts/build_slides.mjs",
+      "sha256_before_content_reference_updates": "fed6cfff2760e3e80267a2c94251b7dbd90f1a7bdd9eb1b15e608aed64bcc5f7"
+    },
+    {
+      "old": "scripts/build_gpt_v3_report.py",
+      "new": "scripts/build_report.py",
+      "sha256_before_content_reference_updates": "996ee8a263429f8be08914021ba0a9a41466497f10785a444e171fceb4077ad7"
+    },
+    {
+      "old": "scripts/prepare_final_gpt_v3.py",
+      "new": "scripts/prepare_deliverables.py",
+      "sha256_before_content_reference_updates": "ac98fd23e4a20b7f81836a48673ae90e4334051211ecf3c17b64685b54092754"
+    },
+    {
+      "old": "scripts/check_final_gpt_v3.py",
+      "new": "scripts/check_deliverables.py",
+      "sha256_before_content_reference_updates": "7f9eedfdd00904a4b714401baa74368e313cc8219edfd9c0ea4d08cc3f476971"
+    },
+    {
+      "old": "scripts/package_gpt_v3.py",
+      "new": "scripts/package_project.py",
+      "sha256_before_content_reference_updates": "86affb610e737cbbc7295da6f385a31280d3f3bbcf88749d797748c6f932632f"
+    },
+    {
+      "old": "scripts/build_gpt_v3_dashboard.py",
+      "new": "scripts/build_dashboard_snapshot.py",
+      "sha256_before_content_reference_updates": "4dba71b1a78a56bf3e11e1feeb332b1f423a9e1f0aaf519e32658bd65fa66358"
+    },
+    {
+      "old": "scripts/check_gpt_v3_dashboard.mjs",
+      "new": "scripts/check_dashboard_logic.mjs",
+      "sha256_before_content_reference_updates": "165d2bafae39e388c6f96f1bc7c4307f43a50422fcb423aa90cb1b83e8dece7e"
+    },
+    {
+      "old": "scripts/finalize_gpt_v3_metadata.py",
+      "new": "scripts/update_project_metadata.py",
+      "sha256_before_content_reference_updates": "f7ae3b056fb9d3c84d87f7123e01299fecb86409eb396a664273325d31c1dff3"
+    },
+    {
+      "old": "SUBMISSION_GUIDE.zh-CN.md",
+      "new": "SUBMISSION_GUIDE.md",
+      "sha256_before_content_reference_updates": "c9de913642a8ae42d0b8bde19c21414b828606f548cee070fe3948f6cfc39b1a"
+    }
+  ],
+  "locked_historical_files_left_local": [
+    "output\\presentation\\Consumer_Sentiment_Findings_GPT_v3_Page9_Fixed.pptx"
+  ],
+  "note": "PDF/PPT bytes preserved. Frozen annotation/analysis versions and receipts retain their original identities."
+}

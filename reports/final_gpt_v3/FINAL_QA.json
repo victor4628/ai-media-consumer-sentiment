@@ -16,9 +16,9 @@
     "Public reproduction excludes private extraction and AI inference"
   ],
   "hashes": {
-    "output/report/Consumer_Sentiment_Research_GPT_v3.pdf": "b6e2f8c909ce71d86a9fc170470cde332d880fc495c51fc9fb411633266bd417",
-    "output/presentation/Consumer_Sentiment_Findings_GPT_v3_Page9_Fixed.pptx": "4d346e60feffa9514586207487c17d1ec6441b2d08fa9632542fac0bcc44b8ca",
-    "reports/final_gpt_v3/SPEAKER_SCRIPT.en.md": "f9ed50bb4ee95bb5fa434511496b8b505d6505e7b0c69b535f7e39db41984d3c",
-    "reports/dashboard.html": "cf5dca8538b61c7e98a5795414ad05f48ace0e8989f4015793a8d295a55d5068"
+    "output/report.pdf": "c5ba4ff61228144acf34609d0f3b625220e3767c93d9fadcf44ef5928f56af07",
+    "output/slides.pptx": "00d13d3e9d3dd76f6364d4162904cd35c7129b6e63521b4573d5e6e55479e71c",
+    "output/speaker_notes.md": "f9ed50bb4ee95bb5fa434511496b8b505d6505e7b0c69b535f7e39db41984d3c",
+    "output/dashboard.html": "cf5dca8538b61c7e98a5795414ad05f48ace0e8989f4015793a8d295a55d5068"
   }
 }

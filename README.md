@@ -1,18 +1,30 @@
 # Media narratives and consumer sentiment
 
-当前版本 **gpt_core_v3_final，五个阶段已完成**。唯一当前文件清单为 `reports/CURRENT_DELIVERABLES.json`。旧 Flash 报告、PPT、讲稿和旧 ZIP 保留为历史文件，不用于本次提交。
+Victor Chen · FRE-GY 7871 · Instructor: Dr. Daniel Rodriguez
 
-- 报告：`output/report/Consumer_Sentiment_Research_GPT_v3.pdf`，12 页，按六个研究问题组织。
-- PPT：`output/presentation/Consumer_Sentiment_Findings_GPT_v3_Page9_Fixed.pptx`，10 页主讲，末页 Key Takeaways，无附录。
-- 纯英文讲稿：`reports/final_gpt_v3/SPEAKER_SCRIPT.en.md`，943 词；同一文本已写入逐页备注。
-- 离线仪表盘：`reports/dashboard.html`，模型、日期和平台筛选，本地 SVG 图表及 CSV 导出。
-- 当前分享包：`output/submission/Consumer_Sentiment_GPT_v3_Submission.zip`。
+研究讨论媒体内容、累计价格压力与美国消费者情绪，围绕六个研究问题展开。姓名、课程、老师和项目 GitHub 链接仅显示在报告与 PPT 的第一页。
 
-主语料共 1,473 条直接 GPT 判断，符合美国经济分析条件的新闻 230 条、X 829 条。DeepSeek V4 只作既有 300 条样本复核（150 新闻 / 150 X），293 对有效；不是人工验证，不是准确率。精确不可变 GPT 版本未保留。研究截止 2026-10-16；媒体至 7 月，情绪评价至 8 月。
+## 当前文件
 
-核心发现：X 的情绪化语言较多；累计价格压力将描述性残差从 28.25 缩至 7.08 点；有历史情绪的基线加入媒体后几乎不变，加入季节/调查方式控制后有改善，但严格覆盖检查反转。不能识别媒体因果效应或个体心理机制。
+所有主要交付物都在 `output/`：
 
-## Offline reproduction
+| 文件 | 内容 |
+|---|---|
+| [report.pdf](output/report.pdf) | 12 页正式报告 |
+| [slides.pptx](output/slides.pptx) | 10 页演示文稿，已保留第 9 页修复 |
+| [speaker_notes.md](output/speaker_notes.md) | 纯英文讲稿，与 PPT 备注一致，约 7 分半 |
+| [dashboard.html](output/dashboard.html) | 下载后用浏览器打开，离线筛选和导出 |
+| [submission.zip](output/submission.zip) | 完整交付和离线复现包 |
+
+报告的 Markdown 源文档为 [reports/report.md](reports/report.md)。详细交付说明见 [SUBMISSION_GUIDE.md](SUBMISSION_GUIDE.md)。当前路径清单为 `reports/CURRENT_DELIVERABLES.json`。旧版文件留在本地归档，不再作为 GitHub 当前交付入口。
+
+## 研究发现
+
+主语料共 1,473 条直接 GPT 判断，其中 230 条新闻和 829 条 X 内容符合主分析条件。DeepSeek V4 仅作既有样本复核；没有人工金标准。精确不可变 GPT 版本未保留。研究截止 2026-10-16，媒体至 7 月，情绪评价至 8 月。
+
+X 的情绪化表达更多。累计价格压力将描述性残差从 28.25 缩至 7.08 点。媒体的预测增益取决于基线和覆盖规则，严格覆盖检查会反转结果。未识别媒体因果效应或个体心理机制。研究版本号保留在数据和审计记录中，以维护可追溯性。
+
+## 离线复现
 
 ```powershell
 python -m pip install -r requirements.txt
@@ -21,8 +33,15 @@ python -m unittest discover -s tests
 python scripts/build_dashboard.py
 ```
 
-从 1,005 份公共宏观快照和最小化标签重算 15 个模型、6 组稳健性检查；不需要密钥或网络。复现不包含私人文本提取、AI 推理或新的独立复核。重复项排除使用冻结 ID。完整说明见 `SUBMISSION_GUIDE.zh-CN.md`。
+从 1,005 份公共宏观快照和最小化标签重算统计结果，不需要密钥或网络，不重新执行私人文本提取或 AI 推理。解压 `submission.zip` 后，在 `submission` 目录运行相同命令。
 
-可选报告重建使用 `python scripts/build_gpt_v3_report.py` 和 `requirements-artifacts.txt`。PPT 源码 `scripts/build_gpt_v3_deck.mjs` 依赖 Codex 的 Artifact Tool 与演示技能运行时；这不是公共统计复现的依赖。图表为可编辑原生 PowerPoint 图表，底层展示值保留六位小数，统计 CSV 保留完整精度。
+## 构建与检查
 
-报告、PPT 已逐页渲染检查；未在原生 PowerPoint 实机打开。仪表盘验证为本地 JavaScript/DOM 逻辑与 SVG 输出检查，不宣称浏览器实机布局检查。演讲预计约 7 分半，实际语速需排练。本次修订无新增付费 API 请求。主题色 #254C45。
+- 报告：`python scripts/build_report.py`，可选依赖在 `requirements-artifacts.txt`。
+- PPT：`scripts/build_slides.mjs`，使用 Codex 内置 Artifact Tool；已有输出须以新文件名验证再替换，避免覆盖原稿。
+- 检查交付：`python scripts/check_deliverables.py`。
+- 检查仪表盘逻辑：`node scripts/check_dashboard.mjs`。
+- 打包：`python scripts/package_submission.py`。
+- 干净解压复验：`python scripts/verify_submission_package.py`。
+
+PPT 保留 8 个可编辑图表及内嵌数据表。报告和 PPT 已渲染检查；未做原生 PowerPoint 实机核验。仪表盘验证为本地逻辑检查。讲稿时长为估计。密钥和私有原文不进入分享包。报告主题色为 #254C45。

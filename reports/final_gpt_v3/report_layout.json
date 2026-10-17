@@ -2,7 +2,7 @@
   "pages": [
     {
       "page": 1,
-      "bottom_y": 313.6,
+      "bottom_y": 243.6,
       "paragraphs": 8,
       "figure": null
     },
@@ -73,5 +73,11 @@
       "figure": null
     }
   ],
-  "path": "C:\\Users\\Admin\\Documents\\GitHub\\ai-media-consumer-sentiment\\output\\report\\Consumer_Sentiment_Research_GPT_v3.pdf"
+  "path": "C:\\Users\\Admin\\Documents\\GitHub\\ai-media-consumer-sentiment\\output\\report.pdf",
+  "cover_identity": {
+    "author": "Victor Chen",
+    "instructor": "Dr. Daniel Rodriguez",
+    "course": "FRE-GY 7871",
+    "github": "https://github.com/victor4628/ai-media-consumer-sentiment"
+  }
 }

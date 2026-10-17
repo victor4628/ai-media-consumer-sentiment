@@ -1,5 +1,13 @@
 # Consumer sentiment, prices and media
 
+Victor Chen
+
+FRE-GY 7871
+
+Instructor: Dr. Daniel Rodriguez
+
+GitHub: [github.com/victor4628/ai-media-consumer-sentiment](https://github.com/victor4628/ai-media-consumer-sentiment)
+
 ## 1. Consumer sentiment, prices and media
 
 Six research questions | Research cutoff: 16 October 2026
@@ -24,7 +32,7 @@ Study base. 1,473 candidate items were coded directly by GPT; 230 US-relevant ec
 
 Five survey questions combine views of personal finances and the wider economy.
 
-![Monthly published sentiment and component series, January 2010–August 2026. Descriptive current-vintage series; not used as unreleased origin-time inputs.](figures/ics_components.png)
+![Monthly published sentiment and component series, January 2010–August 2026. Descriptive current-vintage series; not used as unreleased origin-time inputs.](final_gpt_v3/figures/ics_components.png)
 
 The University of Michigan Index of Consumer Sentiment (ICS) uses five questions: personal finances compared with a year ago; expected personal finances a year ahead; expected business conditions over the next year; expected business conditions over the next five years; and whether now is a good time to buy major household goods. Favorable and unfavorable response categories are defined separately for each question. [1]
 
@@ -38,7 +46,7 @@ Sampling and survey mode also matter. Michigan phased from telephone to web inte
 
 The strongest platform contrast is emotional language, rather than negative tone alone.
 
-![Pooled eligible-item shares. Emotional includes mixed style; political blame and price levels each include their “both” category. Topics may overlap.](figures/content.png)
+![Pooled eligible-item shares. Emotional includes mixed style; political blame and price levels each include their “both” category. Topics may overlap.](final_gpt_v3/figures/content.png)
 
 GPT assigned categorical judgments for economic relevance and US scope, economic tone, language style, topics, household/national framing, price levels versus price changes, current/future focus, and political blame or credit. Negative economic news can be expressed factually; a positive economic claim can still use emotional or partisan language. We measure these separately.
 
@@ -52,7 +60,7 @@ These shares describe the retrieved items. The news and X selections are not mat
 
 A lower forecast gap is evidence of association; the causal quantity is not identified.
 
-![Forty matched forecast months. Lines connect available test observations; four calendar months are absent. The gray band belongs only to the method-controls-plus-tone forecast.](figures/forecast_gap.png)
+![Forty matched forecast months. Lines connect available test observations; four calendar months are absent. The gray band belongs only to the method-controls-plus-tone forecast.](final_gpt_v3/figures/forecast_gap.png)
 
 We compare actual sentiment with forecasts based on information released before each target month. In August 2026, observed ICS is 51.7, the three-indicator forecast is 66.13, and the same model with prior-month news and X tone gives 60.83. Carrying forward the most recently available ICS gives 55.2. The economy-only benchmark therefore leaves a much larger gap than a simple memory benchmark.
 
@@ -66,7 +74,7 @@ For memory plus method controls plus tone, 28 months have bands; empirical cover
 
 Unemployment, annual inflation and real GDP growth leave a large descriptive residual.
 
-![Monthly observed ICS and full-sample fitted values. The price-level regressor uses December 2008 as its fixed base so it is available across the 200-month estimation window.](figures/macro_trend.png)
+![Monthly observed ICS and full-sample fitted values. The price-level regressor uses December 2008 as its fixed base so it is available across the 200-month estimation window.](final_gpt_v3/figures/macro_trend.png)
 
 The accounting exercise is ordinary least squares with an intercept, fitted to 200 monthly observations from January 2010 to August 2026. Regressors are unemployment, PCE inflation over the prior year and the latest released annualized quarterly real GDP growth rate. The target is the cutoff-vintage ICS. Origin-available macro releases are used, but fitting the entire window makes this a descriptive exercise rather than an out-of-sample forecast.
 
@@ -80,7 +88,7 @@ Reference choice matters. Using 2015–2019 instead of 2017–2019 changes the t
 
 The accumulated shopping bill remains an important competing explanation.
 
-![All 82 media-linked forecast origins. The presentation uses selected readings for a simple visual; the analysis and report plot use the full monthly series. Fixed December 2018 base for this display.](figures/price_pressure.png)
+![All 82 media-linked forecast origins. The presentation uses selected readings for a simple visual; the analysis and report plot use the full monthly series. Fixed December 2018 base for this display.](final_gpt_v3/figures/price_pressure.png)
 
 The last pre-August 2026 information set shows PCE prices 27.94% above December 2018, annual PCE inflation of 3.67%, and annual real disposable income growth of 0.52%. The first quantity is a cumulative increase; the second is the current pace of increase. A slower pace does not undo earlier increases. These are the latest available releases at that forecast origin, not claims that all three describe August itself.
 
@@ -110,7 +118,7 @@ Next measurement step. Collect reference prices and current budgets alongside me
 
 The result depends on whether the benchmark includes memory and survey controls.
 
-![Memory means economy plus prior available sentiment. Household and survey-method controls are separate alternatives. Dashed line: prior-sentiment persistence baseline. MAE units are ICS points.](figures/forecast_benchmarks.png)
+![Memory means economy plus prior available sentiment. Household and survey-method controls are separate alternatives. Dashed line: prior-sentiment persistence baseline. MAE units are ICS points.](final_gpt_v3/figures/forecast_benchmarks.png)
 
 All comparisons on this page use the same 40 eligible out-of-sample months. Forecasts use expanding-window ridge regression with fixed penalty 1, an intercept, and means/scales estimated only within each training window. At least 24 eligible training months are required. Target values are drawn from releases available at each forecast origin. Media features refer to the preceding month; no future labels or later target revisions enter training.
 
@@ -124,7 +132,7 @@ Adding all tone and framing features together worsens MAE to 4.737. The six indi
 
 Stricter coverage changes the sign of the strongest media result.
 
-![Bars in the presentation show the same changes; this figure adds nominal 95% block-bootstrap intervals. Negative changes favor adding media tone.](figures/coverage_robustness.png)
+![Bars in the presentation show the same changes; this figure adds nominal 95% block-bootstrap intervals. Negative changes favor adding media tone.](final_gpt_v3/figures/coverage_robustness.png)
 
 Requiring at least one eligible news headline and three X posts gives 40 test months and a −0.330 MAE change after adding tone to the method-controls model. Requiring two news and five X leaves 25 months and −0.193 [−0.355, −0.028]. Requiring three news and five X leaves only 13 months and +0.299 [−0.128, +0.726]: the point estimate reverses.
 
@@ -140,7 +148,7 @@ The paired uncertainty calculation uses contiguous calendar segments and three-m
 
 The principal uncertainty is measurement and coverage, not just forecast standard errors.
 
-![Eligible monthly counts across 82 media months. All 73 complete monthly rows qualify under the minimum 1-news/3-X rule before the expanding training/test split.](figures/coverage_counts.png)
+![Eligible monthly counts across 82 media months. All 73 complete monthly rows qualify under the minimum 1-news/3-X rule before the expanding training/test split.](final_gpt_v3/figures/coverage_counts.png)
 
 Sampling uses economy-keyword filters and small historical windows: eight news archive slots on two selected days per month, and two one-hour X search windows. Coding retains at most twelve items per platform per month. The result is a sparse convenience archive, not the universe of US economic reporting. News text is headline-level. Metadata timestamps constrain availability; retrospective collection does not replicate a live historic news feed.
 

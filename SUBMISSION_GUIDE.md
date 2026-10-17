@@ -1,6 +1,6 @@
 # 当前提交说明 — GPT core v3
 
-请使用 `reports/CURRENT_DELIVERABLES.json` 中的路径。文件名包含 GPT_v3；旧 Six_Research_Questions 文件和旧 Consumer_Sentiment_Submission.zip 均是历史版。
+当前报告、PPT、讲稿、仪表盘和提交包分别为 `output/report.pdf`、`output/slides.pptx`、`output/speaker_notes.md`、`output/dashboard.html` 和 `output/submission.zip`。旧版留在本地归档；研究版本号只保留在数据和审计记录中。
 
 ## 内容对应
 
@@ -10,7 +10,7 @@ PPT 1 页引入；2 页指数；3 页 RQ1；4 页 RQ2；5–6 页 RQ3；7 页 RQ
 
 ## 解压后复现
 
-在解压的 Consumer_Sentiment_GPT_v3_Submission 目录运行 README 中的三条验证/重建命令。复现脚本先核对 SHA256SUMS.json，再重算 82 月媒体聚合、200 月宏观起点信息、40 月媒体模型、44 月全宏观预测、15 个模型规格、6 组敏感性及样本一致性。输出 `reproduced/verification.json`。
+在解压的 submission 目录运行 README 中的三条验证/重建命令。复现脚本先核对 SHA256SUMS.json，再重算 82 月媒体聚合、200 月宏观起点信息、40 月媒体模型、44 月全宏观预测、15 个模型规格、6 组敏感性及样本一致性。输出 `reproduced/verification.json`。
 
 只复现既有标签的统计计算。原文、引句、理由、API 响应、密钥、`.env.local` 不分享。公开输入元数据与评分记录的原始哈希可互相核对，但没有原文就不能独立重算那个原始哈希。原始封存与最小化导出分别有哈希，不能混用。一次重复项排除是冻结结果，不是公开重提取。
 

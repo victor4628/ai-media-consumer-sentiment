@@ -15,3 +15,15 @@ reproduced/
 .chart-data-*/
 output/submission/
 
+
+# Historical local artifacts and regenerated submission archives
+archive/
+scripts/history/
+reports/history/
+~$*
+output/report/
+output/presentation/
+output/pdf/
+output/*.zip
+output/*.sha256
+output/checks/

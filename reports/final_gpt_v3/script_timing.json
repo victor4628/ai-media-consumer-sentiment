@@ -1,59 +1,59 @@
 {
-  "words": 943,
-  "allocated_seconds": 445,
-  "estimated_minutes_at_125_wpm": 7.544,
-  "estimated_minutes_at_135_wpm": 6.985185185185185,
+  "words": 873,
+  "allocated_seconds": 450,
+  "estimated_minutes_at_125_wpm": 6.984,
+  "estimated_minutes_at_135_wpm": 6.466666666666667,
   "slides": [
     {
       "slide": 1,
-      "words": 55,
+      "words": 42,
       "seconds": 25
     },
     {
       "slide": 2,
-      "words": 80,
-      "seconds": 35
+      "words": 82,
+      "seconds": 40
     },
     {
       "slide": 3,
-      "words": 109,
-      "seconds": 55
+      "words": 78,
+      "seconds": 49
     },
     {
       "slide": 4,
-      "words": 93,
+      "words": 80,
       "seconds": 40
     },
     {
       "slide": 5,
-      "words": 105,
-      "seconds": 55
+      "words": 76,
+      "seconds": 38
     },
     {
       "slide": 6,
-      "words": 93,
-      "seconds": 40
+      "words": 78,
+      "seconds": 42
     },
     {
       "slide": 7,
-      "words": 105,
-      "seconds": 55
+      "words": 113,
+      "seconds": 56
     },
     {
       "slide": 8,
-      "words": 116,
-      "seconds": 60
+      "words": 125,
+      "seconds": 62
     },
     {
       "slide": 9,
-      "words": 104,
-      "seconds": 50
+      "words": 124,
+      "seconds": 60
     },
     {
       "slide": 10,
-      "words": 83,
-      "seconds": 30
+      "words": 75,
+      "seconds": 38
     }
   ],
-  "scope": "Text-based estimate; actual delivery needs rehearsal. Allocations include pointing and pauses."
+  "scope": "Text-based estimate. Suggested delivery includes pauses; actual timing requires rehearsal."
 }

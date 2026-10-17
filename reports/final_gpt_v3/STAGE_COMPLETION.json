@@ -20,8 +20,8 @@
     "appendix_slides": 0,
     "script": "output/speaker_notes.md",
     "script_configuration": "configs/presentation_gpt_core_v3.json",
-    "main_script_words": 943,
-    "suggested_script_seconds": 445,
+    "main_script_words": 873,
+    "suggested_script_seconds": 450,
     "script_language": "English only",
     "timing_boundary": "Estimated, not a live rehearsal",
     "dashboard": "output/dashboard.html",
@@ -39,7 +39,9 @@
       "course": "FRE-GY 7871",
       "github": "https://github.com/victor4628/ai-media-consumer-sentiment"
     },
-    "identity_placement": "First page only"
+    "identity_placement": "First page only",
+    "script_style_status": "Plain spoken English, synchronized to the latest user-saved PPT notes; all user deletions preserved",
+    "script_style_boundary": "Wording revised in speaker notes only; all slide XML, embedded workbooks and slide renders preserved."
   },
   "research_limitations_preserved": true,
   "data_collection_or_spending_this_revision": false

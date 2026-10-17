@@ -5,7 +5,7 @@
   "native_editable_charts": 8,
   "embedded_chart_workbooks": 8,
   "speaker_notes_exact_script_parity": true,
-  "script_words": 943,
+  "script_words": 873,
   "unit_tests_observed": 44,
   "new_paid_API_calls": 0,
   "visual_review": "All 12 PDF pages and 10 PPT imported-render pages inspected; overlapping report-chart legend and slide-9 footer corrected.",
@@ -16,9 +16,9 @@
     "Public reproduction excludes private extraction and AI inference"
   ],
   "hashes": {
-    "output/report.pdf": "c5ba4ff61228144acf34609d0f3b625220e3767c93d9fadcf44ef5928f56af07",
-    "output/slides.pptx": "00d13d3e9d3dd76f6364d4162904cd35c7129b6e63521b4573d5e6e55479e71c",
-    "output/speaker_notes.md": "f9ed50bb4ee95bb5fa434511496b8b505d6505e7b0c69b535f7e39db41984d3c",
-    "output/dashboard.html": "cf5dca8538b61c7e98a5795414ad05f48ace0e8989f4015793a8d295a55d5068"
+    "output/report.pdf": "69eb7c4ee2dfbbfa14eacb9d4b96350525ec9435fec4f13436529f1496cce203",
+    "output/slides.pptx": "da79ce42e96e25f04af7468796fc50b9a902761c195a6ce973c6d48a9041f473",
+    "output/speaker_notes.md": "c14e1cbb3d122d1d04c0e39f5ac65003c5e0170732a9bf6cb8c985fd843352ee",
+    "output/dashboard.html": "1aefd7c3afc1a6b9a8e4f83f07b7ad2b9dfe4f9bbc743ccf98eabbde03d84d01"
   }
 }

@@ -10,6 +10,6 @@
     8,
     9
   ],
-  "render_folder": "tmp/gpt_v3_cover_identity",
-  "revision": "Author, instructor, course and clickable repository link on cover only; slide 9 fix preserved"
+  "render_folder": "tmp/script_revision",
+  "revision": "Plain-English speaker notes based on the user-saved file; deletions retained; slides unchanged"
 }

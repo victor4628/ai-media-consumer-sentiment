@@ -17,7 +17,7 @@ const inventory=[];
 function text(s,value,x,y,w,h,size=28,bold=false,color=K){const sh=s.shapes.add({geometry:'textbox',name:value.slice(0,70),position:{left:x,top:y,width:w,height:h},fill:'none',line:{fill:'none',width:0}});sh.text=value;sh.text.style={typeface:'Arial',fontSize:size,bold,color};return sh;}
 function slide(n,answer){const s=deck.slides.add();s.background.fill='#FFFFFF';text(s,script.slides[n-1].title,56,36,1165,108,38,true,G);if(answer)text(s,answer,60,154,1155,62,29,true);text(s,String(n).padStart(2,'0'),1170,678,50,22,17,false,M);return s;}
 function foot(s,value){text(s,value,60,643,1140,48,18,false,M);}
-function note(s,n,sources){s.speakerNotes.text=script.slides[n-1].en+'\n\nSources\n'+sources.join('\n');inventory.push({slide:n,title:script.slides[n-1].title,script:script.slides[n-1].en,sources});}
+function note(s,n,sources){const citations=script.slides[n-1].source_notes??sources.join('\n');s.speakerNotes.text=script.slides[n-1].en+'\n\nSources\n'+citations;inventory.push({slide:n,title:script.slides[n-1].title,script:script.slides[n-1].en,sources:citations.split('\n')});}
 function chart(s,type,options){
  // Six decimals preserve more than the displayed precision and fit Excel's numeric limit.
  options.series=options.series.map(v=>({...v,values:v.values.map(x=>x===null?null:Number(x.toFixed(6)))}));

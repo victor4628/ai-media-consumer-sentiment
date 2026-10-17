@@ -1,0 +1,35 @@
+{
+  "status": "pass",
+  "based_on_user_saved_sha256": "6608840c78322fefb300b08606627371ee895aa89badd15ea93ab8eb0c577653",
+  "final_sha256": "1f7e2b061113c3f80a8730c2f14657eff2c74491edd30dfcb1706f9c1cc42d07",
+  "words": 911,
+  "allocated_seconds": 450,
+  "user_saved_edits_detected_on_slides": [
+    4,
+    5,
+    6,
+    10
+  ],
+  "all_ten_slide_renders_pixel_identical": true,
+  "all_slide_xml_and_embedded_workbooks_byte_identical": true,
+  "original_source_notes_preserved": true,
+  "removed_user_material_not_reintroduced": true,
+  "page_6_approved_replacement_preserved_verbatim": true,
+  "page_10_user_sentence_preserved_verbatim": true,
+  "chart_cache_refresh": "Only equivalent decimal spellings; all numeric IEEE-754 values unchanged",
+  "native_PowerPoint_check": false,
+  "installed_presentation": "output/slides.pptx",
+  "script": "output/speaker_notes.md",
+  "latest_user_saved_notes": {
+    "pptx_sha256": "da79ce42e96e25f04af7468796fc50b9a902761c195a6ce973c6d48a9041f473",
+    "words": 873,
+    "additional_user_edits_on_slides": [
+      1,
+      3,
+      5,
+      6
+    ],
+    "pptx_modified_by_sync": false,
+    "user_deletions_retained": true
+  }
+}

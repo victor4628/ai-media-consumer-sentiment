@@ -16,7 +16,7 @@ Victor Chen · FRE-GY 7871 · Instructor: Dr. Daniel Rodriguez
 | [dashboard.html](output/dashboard.html) | 下载后用浏览器打开，离线筛选和导出 |
 | [submission.zip](output/submission.zip) | 完整交付和离线复现包 |
 
-报告的 Markdown 源文档为 [reports/report.md](reports/report.md)。详细交付说明见 [SUBMISSION_GUIDE.md](SUBMISSION_GUIDE.md)。当前路径清单为 `reports/CURRENT_DELIVERABLES.json`。旧版文件留在本地归档，不再作为 GitHub 当前交付入口。
+报告的 Markdown 源文档为 [reports/report.md](reports/report.md)。当前路径清单为 `reports/CURRENT_DELIVERABLES.json`。旧版文件留在本地归档，不再作为 GitHub 当前交付入口。
 
 ## 研究发现
 

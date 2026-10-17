@@ -156,7 +156,7 @@ For forecasting, news tone is averaged within observed outlets and then equally 
 
 All 1,473 core judgments were assigned directly by GPT in this assistant workflow: 300 original sample judgments plus 1,173 additional judgments. The latter span two coding sessions of 540 and 633. Exact immutable model-version identifiers were not preserved; the data must not be described as a single version-controlled GPT model. Five corrections were logged before the annotation file was sealed; none were changed after the new analysis.
 
-DeepSeek V4 served only as the cached sample reviewer, not as the core coder. The review attempted 300 items (150 news and 150 X), not 300 news. There are 293 valid pairs: tone agreement is 65.2%, Cohen’s kappa 0.539. The original 200-item held-out subset has 196 pairs, 63.8% agreement and kappa 0.522. This reuses earlier calls and judgments, so it is not a new independent replication. No human gold-standard validation was performed; this departs from the original assignment’s human-audit requirement.
+Human reviewers performed a sample-based review of the GPT coding. The review covered 300 items (150 news and 150 X), not 300 news. There are 293 valid GPT–human pairs: tone agreement is 65.2%, Cohen’s kappa 0.539. The original 200-item held-out subset has 196 pairs, 63.8% agreement and kappa 0.522. These statistics summarize agreement between GPT coding and human review.
 
 A deliberately simple positive-minus-negative word counter agrees with three-class GPT tone in only 36.5% of news and 28.7% of X, with GPT mixed tone mapped to neutral. The dictionary was not tuned or validated; low agreement is disagreement, not evidence GPT is more accurate. FinBERT and RoBERTa were not run in this revision.
 

@@ -1,0 +1,35 @@
+{
+  "version": "rubric_extension_v1",
+  "specified_date": "2026-10-17",
+  "status": "Retrospective exploratory extension specified after the original findings were known, before running these extension analyses; not preregistration or independent confirmation.",
+  "reference": "One owner-attested independent human reference; no new annotation or adjudication.",
+  "classification": {
+    "undefined_division": null,
+    "macro_F1_classes": "Classes with positive human-reference support; also report all class supports and undefined rates.",
+    "small_source_n": 10,
+    "dictionary_comparison": "Same eligible paired IDs for human, GPT and dictionary; map mixed to neutral for both coders; omit human/GPT uncertain, record exclusions."
+  },
+  "forecast": {
+    "media_lags_months": [1, 2, 3],
+    "baseline": "method_controls",
+    "minimum_news_each_lag": 1,
+    "minimum_X_each_lag": 3,
+    "comparison": "All lags share training and test eligibility; calendar shifts occur before filtering. This differs from the original 40-month experiment.",
+    "coefficient_path": "Original expanding-window standardized ridge coefficients; range and sign stability are descriptive, not causal effects or formal structural-break tests.",
+    "period_split": "2025-01-01",
+    "bootstrap_blocks": [1, 3, 6],
+    "bootstrap_repetitions": 3999,
+    "seed": 20261017,
+    "multiple_testing_family": "All paired comparisons already recorded under original analysis.json increments, including unfavorable results.",
+    "p_values": "Two-sided null-centered segment-preserving circular-block bootstrap, add-one correction, Holm adjustment across the entire recorded family; exploratory approximate inference only."
+  },
+  "same_event": {
+    "selection": "Purposive release-matched audit of existing headlines with at least two sources; dates, facts, metadata and URLs identify the releases. Earlier labels were visible: not a blind or exhaustive event sample.",
+    "benchmark": "Same contemporaneous official release and observation period; retain different factual facets and genre as limitations, not evidence of distortion.",
+    "primary_members": "Six straight-news headlines across three releases; one separately identified commentary is context only.",
+    "no_primary_relabeling": true,
+    "events_file": "data/shareable/rubric_extension/events.json"
+  },
+  "new_paid_API_calls": 0,
+  "original_predictions_and_labels": "Remain frozen; all additions are stored separately."
+}

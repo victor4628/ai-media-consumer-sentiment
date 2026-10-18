@@ -14,7 +14,7 @@
     },
     {
       "page": 3,
-      "bottom_y": 260.3,
+      "bottom_y": 148.1,
       "paragraphs": 4,
       "figure": "content"
     },
@@ -44,40 +44,34 @@
     },
     {
       "page": 8,
-      "bottom_y": 257.7,
+      "bottom_y": 244.6,
       "paragraphs": 4,
       "figure": "forecast_benchmarks"
     },
     {
       "page": 9,
-      "bottom_y": 219.8,
-      "paragraphs": 5,
+      "bottom_y": 169.3,
+      "paragraphs": 4,
       "figure": "coverage_robustness"
     },
     {
       "page": 10,
-      "bottom_y": 118.4,
-      "paragraphs": 6,
-      "figure": "coverage_counts"
+      "bottom_y": 134.6,
+      "paragraphs": 4,
+      "figure": "validation_confusion"
     },
     {
       "page": 11,
-      "bottom_y": 329.6,
+      "bottom_y": 303.4,
       "paragraphs": 6,
       "figure": null
     },
     {
       "page": 12,
-      "bottom_y": 243.0,
+      "bottom_y": 151.3,
       "paragraphs": 7,
       "figure": null
     }
   ],
-  "path": "C:\\Users\\Admin\\Documents\\GitHub\\ai-media-consumer-sentiment\\output\\report.pdf",
-  "cover_identity": {
-    "author": "Victor Chen",
-    "instructor": "Dr. Daniel Rodriguez",
-    "course": "FRE-GY 7871",
-    "github": "https://github.com/victor4628/ai-media-consumer-sentiment"
-  }
+  "path": "output/report.pdf"
 }

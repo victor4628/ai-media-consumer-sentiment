@@ -21,11 +21,11 @@
     },
     {
       "slide": 3,
-      "seconds": 49,
+      "seconds": 65,
       "title": "RQ1. How can we measure bias in news and social media?",
-      "en": "We measure tone, topic salience, framing and political blame separately. \n\nWe found that X uses much more emotional or mixed language in our sample: eighty-six percent, compared with twenty-four percent in news headlines. Political blame is also more common on X.\n\nThe gap in negative economic tone is smaller: fifty-three percent on X and forty-five percent in news. \n\nOur sample includes two hundred and thirty headlines and eight hundred and twenty-nine posts, from October 2019 to July 2026.",
-      "source_notes": "Report page 3\nreports/gpt_core_v3/descriptive.json\nPolitical blame includes texts assigning both credit and blame. Sample content differences do not establish a platform causal effect.",
-      "words": 78
+      "en": "We measure tone, topic salience, framing and political blame separately. \n\nWe found that X uses much more emotional or mixed language in our sample: eighty-six percent, compared with twenty-four percent in news headlines. Political blame is also more common on X.\n\nThe gap in negative economic tone is smaller: fifty-three percent on X and forty-five percent in news. \n\nOne human annotator provides the reference labels. The comparison shows that the coding still makes mistakes.\n\nWe also compared headlines about the same economic releases. In May 2023, payrolls grew while unemployment also rose. One headline emphasized job growth, while another mentioned both. Different emphasis alone does not establish bias.",
+      "source_notes": "Report page 3\nreports/gpt_core_v3/descriptive.json\nPolitical blame includes texts assigning both credit and blame. Sample content differences do not establish a platform causal effect.\nReport page 10\nreports/rubric_extension/measurement.json\nreports/rubric_extension/same_event_comparison.json\nhttps://www.bls.gov/news.release/archives/empsit_06022023.htm\nTone macro-F1 0.602 is the five-class held-out comparison: 196 valid pairs from 200 held-out reference items. One independent human annotator, not a consensus reference.",
+      "words": 108
     },
     {
       "slide": 4,
@@ -40,16 +40,16 @@
       "seconds": 38,
       "title": "RQ3. How much can unemployment, inflation and GDP growth explain?",
       "en": "Before the pandemic, sentiment averaged about ninety-seven. In the latest three months, it was about fifty-two. That is a fall of almost forty-five points.\n\nOur descriptive model links unemployment, inflation and GDP growth to about seventeen points of that decline. Inflation accounts for most of those points.\n\nWhen we added accumulated price increases, the unexplained gap fell from about twenty-eight points to seven.\n\nSo higher prices give us another explanation for the gap, beyond media coverage.",
-      "source_notes": "Report page 5\nreports/gpt_core_v3/analysis.json: macro_accounting\nMonthly series averaged by calendar year solely for display. Decomposition compares 2017–2019 with June–August 2026.",
+      "source_notes": "Report page 5\nreports/gpt_core_v3/analysis.json: macro_accounting\nMonthly series averaged by calendar year solely for display. Decomposition compares 2017\u20132019 with June\u2013August 2026.",
       "words": 76
     },
     {
       "slide": 6,
-      "seconds": 42,
+      "seconds": 40,
       "title": "RQ3. Why can slower inflation still leave consumers squeezed?",
-      "en": "The top chart shows the accumulated price increase. By our latest forecast date, prices were almost twenty-eight percent above December 2018.\n\nThe bottom chart shows inflation. It was about three point seven percent. Prices are still rising from an already higher level. Real disposable income was growing by only about half a percent.\n\nAdding accumulated price increases made our economic forecasts more accurate. This suggests that the higher cost of living helps explain why consumer sentiment remains low.",
+      "en": "The top chart shows the accumulated price increase. By our latest forecast date, prices were almost twenty-eight percent above December 2018.\n\nThe bottom chart shows inflation. It was about three point seven percent. Prices are still rising from an already higher level. Real disposable income was growing by only about half a percent.\n\nAdding accumulated prices reduced errors in the economy-only forecasts. This suggests that the higher cost of living helps explain why consumer sentiment remains low.",
       "source_notes": "Report page 6\ndata/processed/gpt_core_v3/model_panel.csv\nPCEPI reference December 2018, numerator and denominator from the same origin vintage. DSPIC96 income growth is aggregate real disposable income, not household microdata.",
-      "words": 78
+      "words": 77
     },
     {
       "slide": 7,
@@ -63,28 +63,27 @@
       "slide": 8,
       "seconds": 62,
       "title": "RQ5. Does media improve predictions beyond economic indicators alone?",
-      "en": "These bars show forecasting errors for the same forty months. A lower number means a more accurate forecast.\n\nOnce the model includes the economy and prior sentiment, adding media tone barely changes the error. Both values round to four point two. Adding income and price levels gives much the same result.\n\nWith seasonality and survey-mode controls, adding media tone lowers the error from three point eight six to three point five three. The survey-mode control reflects Michigan's switch to web surveys in 2024.\n\nThe improvement reverses under the strictest coverage rule. We also cannot clearly say this model beats carrying forward prior sentiment. Adding all the content features raises the error to four point seven four. More features do not always give a better forecast.",
-      "source_notes": "Report page 8\nreports/gpt_core_v3/analysis.json\nhttps://www.sca.isr.umich.edu/files/methodtransitionannouncement2024.pdf\nMethod controls contain the economy and prior sentiment plus annual sine/cosine and a transition ramp. They do not also contain household controls. The nominal paired media-gain interval excludes zero, but multiplicity and coding uncertainty are not included.",
-      "words": 125
+      "en": "These bars show forecasting errors for the same forty months. A lower number means a more accurate forecast.\n\nOnce the model includes the economy and prior sentiment, adding media tone barely changes the error. Both values round to four point two. Adding income and price levels gives much the same result.\n\nWith seasonality and survey-mode controls, adding media tone lowers the error from three point eight six to three point five three. But after correcting for multiple model comparisons, the evidence is too weak to call the gain statistically significant.\n\nThe model also does not clearly beat carrying forward prior sentiment. Adding all the content features raises the error to four point seven four. More features do not always give a better forecast.",
+      "source_notes": "Report page 8\nreports/gpt_core_v3/analysis.json\nreports/rubric_extension/statistical_stability.json\nhttps://www.sca.isr.umich.edu/files/methodtransitionannouncement2024.pdf\nMethod controls contain the economy and prior sentiment plus annual sine/cosine and a transition ramp. They do not also contain household controls. Original MAEs and nominal paired intervals are unchanged. Separate retrospective exploratory Holm correction across 14 original comparisons: raw p=0.0105, adjusted p=0.147 for the method-controls media gain. Null-centered 3-month block bootstrap, 3,999 replications. Coding uncertainty is not propagated.",
+      "words": 123
     },
     {
       "slide": 9,
       "seconds": 60,
       "title": "RQ6. What evidence challenges a media-bias explanation?",
-      "en": "We found two reasons to question a strong media explanation. Adding price levels greatly reduces the economic model's unexplained gap. And the forecasting benefit from media changes with the coverage rule.\n\nIn this chart, negative values mean that media improves the forecast. With at least three news headlines and five X posts per month, the error goes up instead. Only thirteen months remain under that rule, so the conclusion depends on which months we can use.\n\nTo study this further, we should compare coverage of the same economic releases and link actual media exposure to survey responses. We should also collect household budgets and the past prices people use as a reference. This would help separate media framing from the pressure of higher prices.",
-      "source_notes": "Report page 9\nreports/gpt_core_v3/analysis.json: sensitivity\nThe 13-month change interval crosses zero. A coverage sensitivity is not an isolated measurement-precision experiment.",
-      "words": 124
+      "en": "We found two reasons to question a strong media explanation. Adding price levels greatly reduces the economic model's unexplained gap. And the forecasting benefit from media changes with the coverage rule.\n\nIn this chart, negative values mean that media improves the forecast. With at least three news headlines and five X posts per month, the error goes up instead. Only thirteen months remain under that rule, so the conclusion depends on which months we can use.\n\nWe have now compared headlines about the same economic releases. Differences in emphasis do not by themselves establish bias. Longer-lag forecasting gains also remain uncertain. A stronger causal study would link actual media exposure to later survey responses while accounting for household financial conditions.",
+      "source_notes": "Report pages 3 and 9\nreports/gpt_core_v3/analysis.json: sensitivity\nreports/rubric_extension/statistical_stability.json\nreports/rubric_extension/same_event_comparison.json\nThe original coverage chart compares 40, 25 and 13 test months; the 13-month change interval crosses zero. Coverage filtering changes training and test month composition. The additional longer-lag experiment uses a separate common sample of 30 test months. Same-event examples are descriptive headline comparisons, not causal identification.",
+      "words": 120
     },
     {
       "slide": 10,
-      "seconds": 38,
+      "seconds": 49,
       "title": "Key Takeaways",
-      "en": "X contains more emotional language and political blame in our sample.\n\nOur clearest economic finding is that accumulated price pressure reduces the unexplained sentiment gap.\n\nMedia improves forecasts in some models, but the improvement depends on the controls and coverage rule.\n\nFor forecasting, we should pay attention to purchasing power and the latest sentiment reading before adding more text features. The shopping bill turned out to be an important part of the research.\n\nThank you.",
-      "source_notes": "Report pages 1, 5–9\nreports/gpt_core_v3/analysis.json\nFinal main slide. No methods appendix follows.",
-      "words": 75
+      "en": "X shows more emotional language and political blame in our sample.\n\nAccumulated price pressure reduces the unexplained sentiment gap.\n\nMedia sometimes lowers forecast errors, but the gain remains uncertain after the additional checks.\n\nFor financial risk monitoring, the August example shows why the benchmark matters. The gap is about fourteen points against the economy-only forecast, but three and a half against prior sentiment.\n\nBefore treating that gap as new risk information, examine purchasing power and recent sentiment. Media signals need to show additional forecasting value.\n\nThank you.",
+      "source_notes": "Report pages 1, 4\u20139\ndata/processed/gpt_core_v3/predictions.csv\nreports/gpt_core_v3/analysis.json\nreports/rubric_extension/statistical_stability.json\nAugust 2026 observed-minus-predicted sentiment gaps: 51.7-66.1298 approximately -14.4, and 51.7-55.2=-3.5. Rounded illustration from existing forecasts, not an estimated asset-return or risk model. Final main slide. No methods appendix follows.",
+      "words": 87
     }
   ],
-  "style": "Plain spoken English; concrete findings, short sentences, slide terminology retained; user deletions preserved.",
-  "based_on_saved_pptx_sha256": "6608840c78322fefb300b08606627371ee895aa89badd15ea93ab8eb0c577653",
-  "latest_user_saved_pptx_sha256": "da79ce42e96e25f04af7468796fc50b9a902761c195a6ce973c6d48a9041f473"
+  "style": "Plain spoken English; research findings, measurement validation and implications for financial risk monitoring.",
+  "presentation_revision": "presentation_rubric_revision_v1"
 }

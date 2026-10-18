@@ -1,8 +1,8 @@
 {
-  "words": 873,
-  "allocated_seconds": 450,
-  "estimated_minutes_at_125_wpm": 6.984,
-  "estimated_minutes_at_135_wpm": 6.466666666666667,
+  "words": 908,
+  "allocated_seconds": 475,
+  "estimated_minutes_at_125_wpm": 7.264,
+  "estimated_minutes_at_135_wpm": 6.725925925925926,
   "slides": [
     {
       "slide": 1,
@@ -16,8 +16,8 @@
     },
     {
       "slide": 3,
-      "words": 78,
-      "seconds": 49
+      "words": 108,
+      "seconds": 65
     },
     {
       "slide": 4,
@@ -31,8 +31,8 @@
     },
     {
       "slide": 6,
-      "words": 78,
-      "seconds": 42
+      "words": 77,
+      "seconds": 40
     },
     {
       "slide": 7,
@@ -41,18 +41,18 @@
     },
     {
       "slide": 8,
-      "words": 125,
+      "words": 123,
       "seconds": 62
     },
     {
       "slide": 9,
-      "words": 124,
+      "words": 120,
       "seconds": 60
     },
     {
       "slide": 10,
-      "words": 75,
-      "seconds": 38
+      "words": 87,
+      "seconds": 49
     }
   ],
   "scope": "Text-based estimate. Suggested delivery includes pauses; actual timing requires rehearsal."

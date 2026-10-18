@@ -1,6 +1,6 @@
 # Media narratives and the consumer sentiment gap
 
-Ten slides. Suggested duration: 7 minutes 30 seconds. English only.
+Ten slides. Suggested duration: 7 minutes 55 seconds. English only. Timing is estimated.
 
 ## Slide 1. Media narratives and the consumer sentiment gap
 
@@ -23,7 +23,9 @@ We found that X uses much more emotional or mixed language in our sample: eighty
 
 The gap in negative economic tone is smaller: fifty-three percent on X and forty-five percent in news. 
 
-Our sample includes two hundred and thirty headlines and eight hundred and twenty-nine posts, from October 2019 to July 2026.
+One human annotator provides the reference labels. The comparison shows that the coding still makes mistakes.
+
+We also compared headlines about the same economic releases. In May 2023, payrolls grew while unemployment also rose. One headline emphasized job growth, while another mentioned both. Different emphasis alone does not establish bias.
 
 ## Slide 4. RQ2. Did media depress U.S. sentiment before the 2026 midterms?
 
@@ -47,7 +49,7 @@ The top chart shows the accumulated price increase. By our latest forecast date,
 
 The bottom chart shows inflation. It was about three point seven percent. Prices are still rising from an already higher level. Real disposable income was growing by only about half a percent.
 
-Adding accumulated price increases made our economic forecasts more accurate. This suggests that the higher cost of living helps explain why consumer sentiment remains low.
+Adding accumulated prices reduced errors in the economy-only forecasts. This suggests that the higher cost of living helps explain why consumer sentiment remains low.
 
 ## Slide 7. RQ4. Which perceptual mechanisms can our data actually measure?
 
@@ -67,9 +69,9 @@ These bars show forecasting errors for the same forty months. A lower number mea
 
 Once the model includes the economy and prior sentiment, adding media tone barely changes the error. Both values round to four point two. Adding income and price levels gives much the same result.
 
-With seasonality and survey-mode controls, adding media tone lowers the error from three point eight six to three point five three. The survey-mode control reflects Michigan's switch to web surveys in 2024.
+With seasonality and survey-mode controls, adding media tone lowers the error from three point eight six to three point five three. But after correcting for multiple model comparisons, the evidence is too weak to call the gain statistically significant.
 
-The improvement reverses under the strictest coverage rule. We also cannot clearly say this model beats carrying forward prior sentiment. Adding all the content features raises the error to four point seven four. More features do not always give a better forecast.
+The model also does not clearly beat carrying forward prior sentiment. Adding all the content features raises the error to four point seven four. More features do not always give a better forecast.
 
 ## Slide 9. RQ6. What evidence challenges a media-bias explanation?
 
@@ -77,17 +79,18 @@ We found two reasons to question a strong media explanation. Adding price levels
 
 In this chart, negative values mean that media improves the forecast. With at least three news headlines and five X posts per month, the error goes up instead. Only thirteen months remain under that rule, so the conclusion depends on which months we can use.
 
-To study this further, we should compare coverage of the same economic releases and link actual media exposure to survey responses. We should also collect household budgets and the past prices people use as a reference. This would help separate media framing from the pressure of higher prices.
+We have now compared headlines about the same economic releases. Differences in emphasis do not by themselves establish bias. Longer-lag forecasting gains also remain uncertain. A stronger causal study would link actual media exposure to later survey responses while accounting for household financial conditions.
 
 ## Slide 10. Key Takeaways
 
-X contains more emotional language and political blame in our sample.
+X shows more emotional language and political blame in our sample.
 
-Our clearest economic finding is that accumulated price pressure reduces the unexplained sentiment gap.
+Accumulated price pressure reduces the unexplained sentiment gap.
 
-Media improves forecasts in some models, but the improvement depends on the controls and coverage rule.
+Media sometimes lowers forecast errors, but the gain remains uncertain after the additional checks.
 
-For forecasting, we should pay attention to purchasing power and the latest sentiment reading before adding more text features. The shopping bill turned out to be an important part of the research.
+For financial risk monitoring, the August example shows why the benchmark matters. The gap is about fourteen points against the economy-only forecast, but three and a half against prior sentiment.
+
+Before treating that gap as new risk information, examine purchasing power and recent sentiment. Media signals need to show additional forecasting value.
 
 Thank you.
-

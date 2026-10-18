@@ -1,6 +1,7 @@
 """Verify the delivered ZIP in a fresh workspace-local extraction, without keys."""
 import hashlib
 import json
+import re
 import subprocess
 import sys
 import uuid
@@ -19,11 +20,15 @@ with zipfile.ZipFile(target) as z:
  z.extractall(base)
 work=base/'submission'
 assert not (work/'.env.local').exists()
-for cmd in [[sys.executable,'scripts/reproduce_submission.py'],[sys.executable,'-m','unittest','discover','-s','tests'],[sys.executable,'scripts/build_dashboard.py']]:
+unit_tests=0
+for cmd in [[sys.executable,'scripts/reproduce_submission.py'],[sys.executable,'-m','unittest','discover','-s','tests'],[sys.executable,'scripts/build_dashboard.py'],[sys.executable,'scripts/check_release.py'],[sys.executable,'scripts/check_deliverables.py']]:
  result=subprocess.run(cmd,cwd=work,text=True,capture_output=True)
  if result.returncode:raise RuntimeError(result.stdout+'\n'+result.stderr)
+ match=re.search(r'Ran (\d+) tests',result.stdout+'\n'+result.stderr)
+ if match:unit_tests=int(match.group(1))
  print(result.stdout.strip() or result.stderr.strip())
 receipt=json.loads((work/'reproduced/verification.json').read_text())
 assert receipt['manifest_files']==len(json.loads((work/'SHA256SUMS.json').read_text()))
-print(json.dumps({'status':'pass','zip_sha256':expected,'clean_extraction':str(work),'manifest_files':receipt['manifest_files'],'unit_tests':44,'offline_network_requests':0,'dashboard_rebuilt':True},indent=2))
-(ROOT/'output/checks/verification.json').write_text(json.dumps({'status':'pass','zip_sha256':expected,'manifest_files':receipt['manifest_files'],'unit_tests':44,'offline_network_requests':0,'dashboard_rebuilt':True,'boundary':'No raw text extraction, AI inference or native browser/PowerPoint execution'},indent=2),encoding='utf-8')
+assert unit_tests>0
+print(json.dumps({'status':'pass','zip_sha256':expected,'clean_extraction':str(work),'manifest_files':receipt['manifest_files'],'unit_tests':unit_tests,'offline_network_requests':0,'dashboard_rebuilt':True,'rubric_extension_verified':receipt['rubric_extension']['status']=='pass'},indent=2))
+(ROOT/'output/checks/verification.json').write_text(json.dumps({'status':'pass','zip_sha256':expected,'manifest_files':receipt['manifest_files'],'unit_tests':unit_tests,'offline_network_requests':0,'dashboard_rebuilt':True,'rubric_extension_verified':receipt['rubric_extension']['status']=='pass','boundary':'No raw text extraction, AI inference or native PowerPoint execution. Browser layout not inspected: browser tool policy blocked file URLs; offline dashboard logic checked separately.'},indent=2),encoding='utf-8')

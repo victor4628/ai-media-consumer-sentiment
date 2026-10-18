@@ -1,4 +1,4 @@
-"""Offline research from sealed, directly assigned GPT labels; legacy outputs untouched."""
+"""Research from sealed, directly assigned GPT labels."""
 import functools
 import json
 import re
@@ -15,7 +15,7 @@ from sentiment_project.ai_validation import ENUMS, validate_label
 from sentiment_project.common import digest, read_json, read_jsonl, write_json, write_jsonl
 from sentiment_project.media_models import TONE, monthly_media, paired_block_interval, rolling_comparison
 from sentiment_project.vintages import parse_snapshot
-from core_validation import compare_group
+from sentiment_project.reference_validation import reference_validation
 
 OUT = ROOT/'reports/gpt_core_v3'
 DATA = ROOT/'data/processed/gpt_core_v3'
@@ -174,28 +174,21 @@ def run():
     for item in corpus:
         r=byid[item['id']];assert r['input_sha256']==digest(item);validate_label(r['label'],item)
     # All comparisons are only loaded now that the primary file is sealed.
-    audit_items=read_jsonl(ROOT/'data/private/core_v1/audit_all_300.jsonl')
-    review=read_jsonl(ROOT/f'labels/runs/core_v1/{digest(audit_items)[:12]}_B.jsonl')
-    v4={r['id']:r for r in review}
-    for i in audit_items:assert v4[i['id']]['input_sha256']==digest(i)
-    validation={'role':'GPT primary, cached DeepSeek V4 sample review only; no human accuracy gold standard.',
-        'all_300':compare_group(audit_items,v4,byid),
-        'original_development_100':compare_group(read_jsonl(ROOT/'data/private/core_v1/development_100.jsonl'),v4,byid),
-        'original_held_out_200':compare_group(read_jsonl(ROOT/'data/private/core_v1/audit_200.jsonl'),v4,byid),
-        'by_platform':{p:compare_group([i for i in audit_items if i['platform']==p],v4,byid) for p in ['news','twitter']},
-        'independence':'Reuses original GPT 300 judgments and original V4 calls; no new agreement replication. Sample was not drawn after seeing new core results. Multiple direct-coding sessions, model versions not recoverable.'}
+    review=read_jsonl(ROOT/'data/shareable/human_reference/labels_300.jsonl')
+    reference={r['id']:r for r in review}
+    validation=reference_validation(corpus,read_json(ROOT/'data/shareable/audit_splits.json'),reference,byid)
     write_json(OUT/'validation.json',validation)
     share=ROOT/'data/shareable/gpt_core_v3';share.mkdir(parents=True,exist_ok=True)
     write_jsonl(share/'GPT_primary_labels.jsonl',[{k:r[k] for k in ['id','input_sha256','source','platform','role','model'] if k in r}|{'label':{k:v for k,v in r['label'].items() if k not in ['evidence','rationale']}} for r in records])
-    for name in ['protocol.json','sealed.json','provenance_addendum.json']:
+    for name in ['sealed.json','provenance_addendum.json']:
         write_json(share/name,read_json(ROOT/'data/private/gpt_core_v3'/name))
     write_json(share/'export_manifest.json',{'private_annotation_payload_sha256':seal['sha256'],
         'shareable_file_sha256':digest((share/'GPT_primary_labels.jsonl').read_bytes()),
         'note':'Private seal covers full annotation records including evidence/rationales. Shareable rows intentionally remove text excerpts and rationales; their file hash is separate. input_sha256 refers to original full input, not a minimized replacement.'})
-    write_json(OUT/'stage1_quality.json',{'corpus_items':len(corpus),'valid_primary_labels':len(records),'input_hashes_verified':len(corpus),
+    write_json(OUT/'label_quality.json',{'corpus_items':len(corpus),'valid_primary_labels':len(records),'input_hashes_verified':len(corpus),
         'literal_evidence_verified':len(corpus),'new_direct_GPT':1173,'reused_direct_GPT':300,'correction_records':5,
         'sealed_sha256':seal['sha256'],'new_paid_API_calls':0,
-        'accuracy_limit':'Schema/evidence checks verify traceability, not semantic accuracy. Model agreement is not a gold standard.'})
+        'accuracy_limit':'Schema/evidence checks verify traceability, not semantic accuracy. Single-reference agreement is not consensus truth accuracy.'})
     media=enrich(corpus,records);macro,panel=build_panel(media)
     media.to_csv(DATA/'monthly_media.csv',index=False);panel.to_csv(DATA/'model_panel.csv',index=False)
     desc=descriptions(corpus,records);write_json(OUT/'descriptive.json',desc)
@@ -311,15 +304,8 @@ def run():
                 'emotional_or_mixed_share':float(np.mean([l['language_style'] in ['emotional','mixed'] for l in labs]))}
     write_json(OUT/'session_composition.json',{'counts':dict(sessions),'descriptive_by_session_and_platform':cohort_features,
         'limitation':'Session cohorts differ in dates and platforms; differences cannot isolate model effects. No prospective randomly assigned identical-model comparison.'})
-    manifest={'status':'Stages 1 and 2 complete; presentation/report rewrite pending',
-        'primary_labels':CFG['primary_labels'],'config':'configs/gpt_core_v3_analysis.json',
-        'analysis':'reports/gpt_core_v3/analysis.json','validation':'reports/gpt_core_v3/validation.json',
-        'findings':'reports/gpt_core_v3/STAGES_1_2_FINDINGS.zh-CN.md',
-        'handoff':'reports/gpt_core_v3/NEXT_MODEL_HANDOFF.md',
-        'verification':'reports/gpt_core_v3/verification.json',
-        'old_deliverables':'Historical Flash-based artifacts remain unchanged and are not the new research deliverables.',
-        'incremental_paid_API_calls':0}
+    manifest={'status':'Research release','version':'gpt_core_v3_final','current_deliverables':'reports/CURRENT_DELIVERABLES.json','analysis':'reports/gpt_core_v3/analysis.json','validation':'reports/gpt_core_v3/validation.json','primary_labels':'data/shareable/gpt_core_v3/GPT_primary_labels.jsonl','reference_labels':'data/shareable/human_reference/labels_300.jsonl'}
     write_json(ROOT/'reports/ACTIVE_RESEARCH.json',manifest)
-    print(json.dumps({'stage1':1473,'test_n':len(f),'metrics':report['metrics'],'increments':report['increments'],'coverage':report['coverage']},ensure_ascii=False,indent=2))
+    print(json.dumps({'primary_items':1473,'test_n':len(f),'metrics':report['metrics'],'increments':report['increments'],'coverage':report['coverage']},ensure_ascii=False,indent=2))
 
 if __name__=='__main__':run()

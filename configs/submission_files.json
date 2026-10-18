@@ -1,0 +1,36 @@
+{
+  "files": [
+    ".env.example", ".gitattributes", ".gitignore", "README.md", "SUBMISSION_GUIDE.md",
+    "requirements.txt", "requirements-artifacts.txt",
+    "configs/core_study.json", "configs/deepseek.json", "configs/twitter_pilot.json",
+    "configs/gpt_core_v3_analysis.json", "configs/rubric_extension.json", "configs/gpt_core_v3_constructed_checks.json",
+    "configs/presentation_gpt_core_v3.json", "configs/submission_identity.json", "configs/submission_files.json",
+    "labels/CODEBOOK.md", "labels/HUMAN_LABELING_GUIDE.md", "labels/annotation_template.csv",
+    "data/shareable/audit_splits.json", "data/processed/vintage_feature_panel.csv", "data/processed/sentiment_subindices_descriptive.csv",
+    "data/raw/alfred_vintages/manifest.json",
+    "reports/report.md", "reports/CURRENT_DELIVERABLES.json", "reports/ACTIVE_RESEARCH.json",
+    "reports/QUALITY_ASSURANCE.md", "reports/dashboard_rubric.template.html", "reports/final_fact_checks.json",
+    "reports/gpt_core_v3/analysis.json", "reports/gpt_core_v3/descriptive.json", "reports/gpt_core_v3/validation.json",
+    "reports/gpt_core_v3/session_composition.json", "reports/gpt_core_v3/label_quality.json", "reports/gpt_core_v3/tone_rhetoric_cross_tabs.json",
+    "reports/gpt_core_v3/EXPLORATORY_METHODS.md",
+    "reports/final_gpt_v3/FINAL_QA.json", "reports/final_gpt_v3/authoring_data.json", "reports/final_gpt_v3/constructed_checks.json",
+    "reports/final_gpt_v3/dashboard_verification.json", "reports/final_gpt_v3/dictionary_comparison.json", "reports/final_gpt_v3/interval_diagnostics.json",
+    "reports/final_gpt_v3/report_layout.json", "reports/final_gpt_v3/script_timing.json", "reports/final_gpt_v3/presentation_rubric_revision.json",
+    "reports/rubric_extension/baseline_receipt.json", "reports/rubric_extension/measurement.json",
+    "reports/rubric_extension/same_event_comparison.json", "reports/rubric_extension/statistical_stability.json",
+    "reports/rubric_extension/verification.json", "reports/rubric_extension/RESULTS.md", "reports/rubric_extension/UPDATE_GUIDE.md",
+    "output/report.pdf", "output/slides.pptx", "output/speaker_notes.md", "output/dashboard.html",
+    "scripts/analyze_gpt_core_v3.py", "scripts/prepare_core_corpus.py", "scripts/reproduce_submission.py",
+    "scripts/build_report.py", "scripts/report_rubric_extension.py", "scripts/run_rubric_extension.py", "scripts/write_rubric_results.py",
+    "scripts/build_dashboard.py", "scripts/build_dashboard_snapshot.py", "scripts/build_slides.mjs",
+    "scripts/check_dashboard.mjs", "scripts/check_dashboard_logic.mjs", "scripts/check_deliverables.py",
+    "scripts/release_files.py", "scripts/check_release.py", "scripts/verify_artifact_baseline.py",
+    "scripts/package_project.py", "scripts/package_submission.py", "scripts/verify_submission_package.py"
+  ],
+  "patterns": [
+    "src/sentiment_project/*.py", "tests/*.py", "prompts/*.txt",
+    "data/shareable/gpt_core_v3/*", "data/shareable/human_reference/*", "data/shareable/rubric_extension/*",
+    "data/processed/gpt_core_v3/*.csv", "data/processed/rubric_extension/*.csv",
+    "reports/final_gpt_v3/figures/*.png", "reports/final_gpt_v3/figures/*.svg"
+  ]
+}

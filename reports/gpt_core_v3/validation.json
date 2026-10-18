@@ -1,12 +1,19 @@
 {
-  "role": "GPT primary, cached DeepSeek V4 sample review only; no human accuracy gold standard.",
+  "role": "GPT primary coding compared with one independent human annotator.",
+  "reviewers": {
+    "A": "human_01: one human annotator",
+    "B": "ChatGPT primary coding"
+  },
+  "human_annotators": 1,
+  "source_attribution": "Project owner corrected reference-label provenance; see data/shareable/human_reference/protocol.json.",
+  "independence": "Human annotation is independent according to the project owner. Existing reference labels and original GPT sample judgments are reused; this is not a new annotation exercise. Original split identities are retained, not a prospectively isolated new validation. GPT spans multiple sessions with version uncertainty.",
   "all_300": {
     "attempted": 300,
     "valid_A": 293,
     "valid_B": 300,
     "valid_pairs": 293,
     "agreement": {
-      "scope": "AI agreement, not truth accuracy",
+      "scope": "Single-human-reference versus ChatGPT agreement, not consensus truth accuracy",
       "paired_items": 293,
       "dimensions": {
         "tone": {
@@ -3746,7 +3753,7 @@
     "valid_B": 100,
     "valid_pairs": 97,
     "agreement": {
-      "scope": "AI agreement, not truth accuracy",
+      "scope": "Single-human-reference versus ChatGPT agreement, not consensus truth accuracy",
       "paired_items": 97,
       "dimensions": {
         "tone": {
@@ -5500,7 +5507,7 @@
     "valid_B": 200,
     "valid_pairs": 196,
     "agreement": {
-      "scope": "AI agreement, not truth accuracy",
+      "scope": "Single-human-reference versus ChatGPT agreement, not consensus truth accuracy",
       "paired_items": 196,
       "dimensions": {
         "tone": {
@@ -8350,7 +8357,7 @@
       "valid_B": 150,
       "valid_pairs": 148,
       "agreement": {
-        "scope": "AI agreement, not truth accuracy",
+        "scope": "Single-human-reference versus ChatGPT agreement, not consensus truth accuracy",
         "paired_items": 148,
         "dimensions": {
           "tone": {
@@ -10727,7 +10734,7 @@
       "valid_B": 150,
       "valid_pairs": 145,
       "agreement": {
-        "scope": "AI agreement, not truth accuracy",
+        "scope": "Single-human-reference versus ChatGPT agreement, not consensus truth accuracy",
         "paired_items": 145,
         "dimensions": {
           "tone": {
@@ -12633,6 +12640,5 @@
         }
       }
     }
-  },
-  "independence": "Reuses original GPT 300 judgments and original V4 calls; no new agreement replication. Sample was not drawn after seeing new core results. Multiple direct-coding sessions, model versions not recoverable."
+  }
 }

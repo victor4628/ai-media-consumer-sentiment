@@ -8,9 +8,16 @@
     "empty range",
     "invalid range",
     "reset",
-    "40-row CSV export",
+    "40-row CSV export including fixed economic gap",
+    "gap invariant to selected forecast model",
+    "reference subset and platform changes",
+    "class and confusion tables",
+    "factual-calibration and curated release panels",
+    "same-event cases",
+    "separate common-lag diagnostics",
+    "Holm-adjusted comparison display",
     "finite SVG geometry",
     "no external scripts or API requests"
   ],
-  "boundary": "JavaScript logic and SVG markup verified locally; browser layout and native clicks not inspected."
+  "boundary": "JavaScript logic and SVG markup verified locally. Browser tool policy blocked the local file protocol; browser layout and native clicks were not inspected."
 }

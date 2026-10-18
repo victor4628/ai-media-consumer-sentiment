@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "version": "rubric_extension_v1",
+  "human_reference_pairs": 293,
+  "matched_events": 3,
+  "straight_news_items": 6,
+  "common_lag_test_months": 30,
+  "primary_frozen_hashes_verified": 5,
+  "approved_presentation_artifacts_verified": 2,
+  "new_paid_API_calls": 0,
+  "network_requests_for_reproduction": 0,
+  "verification_boundary": "Recalculates supplied labels, event membership and archived vintages; does not independently authenticate the owner-attested reference source or repeat private-text event matching."
+}

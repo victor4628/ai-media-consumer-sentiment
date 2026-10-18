@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-17",
+  "scope": "Frozen primary artifacts before running the four rubric extensions",
+  "files": {
+    "data/shareable/gpt_core_v3/GPT_primary_labels.jsonl": "869bcf27af77f5bb486db138825f0298780d1c65e6bbdb34619a5e288c0d2a44",
+    "data/shareable/human_reference/labels_300.jsonl": "65e24ffe6b7f32f031719878545bd839d790ec4a734e1c7e0c742c1b8c90ec5f",
+    "reports/gpt_core_v3/analysis.json": "624a53c1b9a3fdb5d058927f27838d730b76556f41e684b7b8ce607686facd04",
+    "data/processed/gpt_core_v3/predictions.csv": "ca104a163cbc38e5dda722beaec3fb280c4bee1010aac06c95d699926e87544c",
+    "output/slides.pptx": "da79ce42e96e25f04af7468796fc50b9a902761c195a6ce973c6d48a9041f473",
+    "output/speaker_notes.md": "c14e1cbb3d122d1d04c0e39f5ac65003c5e0170732a9bf6cb8c985fd843352ee",
+    "configs/rubric_extension.json": "9492e8779cb2861ed4f9b8a78094120055d81d4ac24ec9d044ad5703acebc492"
+  }
+}

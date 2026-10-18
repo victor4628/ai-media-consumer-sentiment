@@ -7,7 +7,7 @@ ROOT=Path(__file__).resolve().parents[1];sys.path[:0]=[str(ROOT/'src'),str(ROOT/
 import analyze_gpt_core_v3 as a
 from sentiment_project.common import read_json,read_jsonl,write_json
 from sentiment_project.vintages import annual_change,latest_value,quarterly_annualized
-from core_validation import compare_group
+from sentiment_project.reference_validation import reference_validation
 def close(x,y):
  if isinstance(x,dict):
   assert set(x)==set(y),set(x)^set(y)
@@ -74,12 +74,18 @@ def main():
  mm={k:models[k] for k in ['economy','memory']};mm.update({'economy_price_level':a.BASE+['cumulative_prices_2008'],'economy_linear_time':a.BASE+['linear_time'],'memory_price_level':a.BASE+['sentiment_available','cumulative_prices_2008']});af,_,_=a.forecast(full,mm);af['training_mean']=a.training_mean(full,af);frame(af,'gpt_core_v3/all_macro_predictions.csv');close(a.metrics(af,['persistence','training_mean']+list(mm)),expected['all_macro_forecasts']['metrics'])
  for key,value in expected['all_macro_forecasts']['increments'].items():l,r=key.split('_vs_');close(a.comparison(af,l,r),value)
  close(a.descriptions(items,labels),read_json(ROOT/'reports/gpt_core_v3/descriptive.json'))
- splits=read_json(ROOT/'data/shareable/audit_splits.json');v4={r['id']:r for r in read_jsonl(ROOT/'data/shareable/cross_family_v2/V4_300.jsonl')};audit=read_json(ROOT/'reports/gpt_core_v3/validation.json');idx={i['id']:i for i in items}
- for key,split in [('all_300','all_300'),('original_development_100','development_100'),('original_held_out_200','held_out_200')]:close(compare_group([idx[i] for i in splits[split]],v4,mapping),audit[key])
- for p in ['news','twitter']:close(compare_group([idx[i] for i in splits['all_300'] if idx[i]['platform']==p],v4,mapping),audit['by_platform'][p])
+ splits=read_json(ROOT/'data/shareable/audit_splits.json');reference={r['id']:r for r in read_jsonl(ROOT/'data/shareable/human_reference/labels_300.jsonl')};audit=read_json(ROOT/'reports/gpt_core_v3/validation.json')
+ reference_protocol=read_json(ROOT/'data/shareable/human_reference/protocol.json')
+ assert reference_protocol['human_annotators']==1 and all(r['annotator_id']=='human_01' and 'model' not in r for r in reference.values())
+ assert hashlib.sha256((ROOT/'data/shareable/human_reference/labels_300.jsonl').read_bytes()).hexdigest()==reference_protocol['current_labels_sha256']
+ close(reference_validation(items,splits,reference,mapping),audit)
  dictionary=read_jsonl(meta/'dictionary_scores.jsonl');diag=read_json(ROOT/'reports/final_gpt_v3/dictionary_comparison.json')
  for p in ['news','twitter']:
   rows=[r for r in dictionary if r['platform']==p];close(sum(r['dictionary_tone']==r['GPT_tone_mixed_as_neutral'] for r in rows)/len(rows),diag['by_platform'][p]['agreement'])
  checks.update({'status':'pass','primary_items':1473,'eligible_news':230,'eligible_X':829,'media_months':len(media),'macro_months':len(macro),'matched_forecast_months':len(f),'model_specifications':len(models),'sensitivity_specifications':6,'macro_forecast_months':len(af),'source_snapshots':len(source['records']),'valid_review_pairs':audit['all_300']['valid_pairs'],'network_requests':0,'private_text_required':False,'boundary':'Replays public labels and fixed duplicate exclusion. Does not rerun semantic coding, private-input hashes, text extraction or an independent review.'})
+ import subprocess
+ extension=subprocess.run([sys.executable,str(ROOT/'scripts/run_rubric_extension.py'),'--verify'],cwd=ROOT,text=True,capture_output=True)
+ if extension.returncode:raise RuntimeError(extension.stdout+'\n'+extension.stderr)
+ checks['rubric_extension']=read_json(ROOT/'reports/rubric_extension/verification.json')
  write_json(out/'verification.json',checks);print(json.dumps(checks,indent=2))
 if __name__=='__main__':main()

@@ -1,0 +1,75 @@
+{
+  "scope": "Curated event membership and paraphrases, not raw headlines; no new semantic labels.",
+  "items": [
+    {
+      "item_id": "gdelt:ec1eb677a5ce5709c34f43e0",
+      "comparison_role": "straight_news",
+      "summary": "ABC emphasizes solid quarterly growth of 6.5%.",
+      "event_id": "gdp_2021q2_advance",
+      "source": "abcnews.go.com",
+      "url": "https://abcnews.go.com/US/wireStory/us-economy-accelerated-solid-65-rate-quarter-79139521",
+      "published_at": "2021-07-29T12:40:00+00:00",
+      "original_input_sha256": "648442bacf56abd22c8483f934675fc513f959f66f2e35488707862feafa51bc"
+    },
+    {
+      "item_id": "gdelt:4dfb529eeffcf8a5a9c9eeb9",
+      "comparison_role": "straight_news",
+      "summary": "Reuters emphasizes solid growth alongside falling weekly jobless claims.",
+      "event_id": "gdp_2021q2_advance",
+      "source": "reuters.com",
+      "url": "https://www.reuters.com/world/us/us-economy-grows-solidly-second-quarter-weekly-jobless-claims-fall-2021-07-29/",
+      "published_at": "2021-07-29T12:46:00+00:00",
+      "original_input_sha256": "d454cdaea7ebed54a7ddddbedabef6341a22e14b6bca7122afa82cb9d60eaa32"
+    },
+    {
+      "item_id": "gdelt:8664d52ce157995fb999c2d7",
+      "comparison_role": "commentary_context_only",
+      "summary": "Reuters commentary emphasizes supply constraints alongside solid growth.",
+      "event_id": "gdp_2021q2_advance",
+      "source": "reuters.com",
+      "url": "https://www.reuters.com/article/us-global-finance-breakingviews/supply-chain-woes-trip-solid-us-economic-growth-idUSKBN2EZ22F",
+      "published_at": "2021-07-29T14:44:00+00:00",
+      "original_input_sha256": "c9bb7eb99cdd93bd9fcec6e3f81b2d0d15d061cc99ba8558b57eb0b4474a7f60"
+    },
+    {
+      "item_id": "gdelt:c5957e7a89c997e0a76c4ac8",
+      "comparison_role": "straight_news",
+      "summary": "ABC emphasizes robust payroll growth despite rate increases.",
+      "event_id": "jobs_2023may",
+      "source": "abcnews.go.com",
+      "url": "https://abcnews.go.com/Business/wireStory/us-employers-added-robust-339000-jobs-sign-healthy-99786886",
+      "published_at": "2023-06-02T12:32:00+00:00",
+      "original_input_sha256": "948719edc1a5914aaefce83df816394996b7dba4f27d21efa918b181ff59a926"
+    },
+    {
+      "item_id": "gdelt:0b81d8cca52bd08ad798c530",
+      "comparison_role": "straight_news",
+      "summary": "Bloomberg combines payroll growth with rising unemployment.",
+      "event_id": "jobs_2023may",
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2023-06-02/us-payrolls-surge-while-jobless-rate-rises-wages-decelerate",
+      "published_at": "2023-06-02T12:33:00+00:00",
+      "original_input_sha256": "e4cec97de588d1e6bd387a2b8046f098a8c59fdf237792ff5f453c09f82e5cb7"
+    },
+    {
+      "item_id": "gdelt:543d85531ccd617c3fefddd0",
+      "comparison_role": "straight_news",
+      "summary": "Bloomberg emphasizes the pace of the core inflation measure.",
+      "event_id": "pce_2024march",
+      "source": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2024-04-26/fed-s-preferred-core-inflation-gauge-rose-at-brisk-pace-in-march",
+      "published_at": "2024-04-26T12:33:00+00:00",
+      "original_input_sha256": "01700f3d32906040b2f8da30722e811fa075e56edcadc7337528fd5831164456"
+    },
+    {
+      "item_id": "gdelt:46ac01c09bac1644af1f37b1",
+      "comparison_role": "straight_news",
+      "summary": "CNN emphasizes deterioration in the preferred inflation gauge.",
+      "event_id": "pce_2024march",
+      "source": "cnn.com",
+      "url": "https://www.cnn.com/2024/04/26/economy/pce-inflation-spending-march/",
+      "published_at": "2024-04-26T12:36:00+00:00",
+      "original_input_sha256": "1d238530caf2de6190bc36ea129f16d8f88c18893e09d474a84955e7e153324e"
+    }
+  ]
+}

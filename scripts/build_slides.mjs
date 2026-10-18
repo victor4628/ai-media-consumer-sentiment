@@ -62,7 +62,7 @@ bar(s,['Political blame','Emotional or mixed language','Negative economic tone']
  {name:'News',values:[100*d.news.pooled_item_shares.political_blame_share,100*d.news.pooled_item_shares.emotional_share,100*d.news.negative_share],fill:G},
  {name:'X',values:[100*d.twitter.pooled_item_shares.political_blame_share,100*d.twitter.pooled_item_shares.emotional_share,100*d.twitter.negative_share],fill:A}
 ],{left:58,top:239,width:1150,height:351});
-foot(s,'230 eligible headlines + 829 X posts from 1,473 coded texts. October 2019–July 2026. Selected sample.');
+foot(s,'Corpus: 230 headlines + 829 X posts, October 2019–July 2026.\nOne human reference. Held-out tone macro-F1: 0.602 (196 valid pairs).');
 note(s,3,['Report page 3','reports/gpt_core_v3/descriptive.json','Political blame includes texts assigning both credit and blame. Sample content differences do not establish a platform causal effect.']);
 
 s=slide(4,'The estimated gap changes with the economic benchmark');
@@ -105,14 +105,14 @@ bar(s,['Anchoring to past prices\nPrice-level framing','Confirmation bias\nPolit
 foot(s,'Measuring consumer mechanisms also requires exposure, recall, prior beliefs, responses and individual reference prices.');
 note(s,7,['Report page 7','reports/gpt_core_v3/descriptive.json','Mechanism names identify candidate explanations, not diagnoses. Topic salience means the share of eligible texts mentioning prices.']);
 
-s=slide(8,'Media helps in one controlled specification, with limited stability');
+s=slide(8,'Media gains remain uncertain after robustness checks');
 const m=data.analysis.metrics;
 bar(s,['Memory + seasonality + survey mode','Memory + income + price levels','Economy + prior sentiment'],[
  {name:'Without media tone',values:[m.method_controls.MAE,m.household.MAE,m.memory.MAE],fill:M},
  {name:'With media tone',values:[m.method_controls_tone.MAE,m.household_tone.MAE,m.memory_tone.MAE],fill:G}
 ],{left:55,top:239,width:1155,height:333},5.2,'0.000','Mean absolute error (lower is better)');
 text(s,'Carry forward prior sentiment: 3.725     All content features together: 4.737',64,589,1135,45,26,true,G);
-foot(s,'Same 40 test months, January 2023–August 2026. Expanding ridge regression. Method control: 2024 web transition.');
+foot(s,'Same 40 test months, January 2023–August 2026.\nHolm-adjusted p = 0.147 across 14 original comparisons.');
 note(s,8,['Report page 8','reports/gpt_core_v3/analysis.json','https://www.sca.isr.umich.edu/files/methodtransitionannouncement2024.pdf','Method controls contain the economy and prior sentiment plus annual sine/cosine and a transition ramp. They do not also contain household controls. The nominal paired media-gain interval excludes zero, but multiplicity and coding uncertainty are not included.']);
 
 s=slide(9,'The media gain reverses under the strictest coverage rule');
@@ -123,14 +123,14 @@ chart(s,'bar',{position:{left:60,top:232,width:1130,height:315},categories:['At 
  yAxis:{min:-.5,max:.5,majorUnit:.25,tickLabelPosition:'low',title:'Change in MAE (negative = improvement)',numberFormatCode:'0.00',textStyle:{...axisText,fontSize:22},majorGridlines:{fill:LIGHT,width:1}},
  dataLabels:{showValue:true,position:'outEnd',numberFormatCode:'+0.000;-0.000;0.000',textStyle:{fontSize:28,bold:true,fill:G}}});
 text(s,'Price levels shrink the residual gap.\nStricter coverage reverses the media gain.',60,575,1135,68,27,true,G);
-text(s,'Minimum items per month. Seasonality/survey-mode controls. Filters change training and test months.',60,655,1095,30,17,false,M);
+text(s,'Coverage filters change training and test months. Seasonality/survey-mode controls.\nLonger-lag checks use a separate 30-month sample.',60,648,1095,50,17,false,M);
 note(s,9,['Report page 9','reports/gpt_core_v3/analysis.json: sensitivity','The 13-month change interval crosses zero. A coverage sensitivity is not an isolated measurement-precision experiment.']);
 
-s=slide(10,'Prices and benchmark choice change the interpretation');
+s=slide(10,'Implications for financial forecasting and risk monitoring');
 text(s,'1',65,257,48,48,34,true,G);text(s,'X shows more emotional language and political blame',131,257,1060,72,34,true);
 text(s,'2',65,372,48,48,34,true,G);text(s,'Accumulated price pressure reduces the unexplained gap',131,372,1060,72,34,true);
-text(s,'3',65,487,48,48,34,true,G);text(s,'Media forecasting gains depend on controls and coverage',131,487,1060,72,34,true);
-foot(s,'Forecasting implication: purchasing power and recent sentiment deserve priority before adding more text features.');
+text(s,'3',65,487,48,48,34,true,G);text(s,'Media gains remain uncertain after additional checks',131,487,1060,72,34,true);
+foot(s,'Check the benchmark before interpreting a sentiment gap as risk information.\nAugust gap: −14.4 versus economy-only; −3.5 versus prior sentiment.');
 note(s,10,['Report pages 1, 5–9','reports/gpt_core_v3/analysis.json','Final main slide. No methods appendix follows.']);
 
 await fs.writeFile(path.join(TMP,'slide_inventory.json'),JSON.stringify(inventory,null,2));

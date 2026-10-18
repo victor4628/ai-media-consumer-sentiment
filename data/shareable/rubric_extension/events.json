@@ -1,0 +1,74 @@
+{
+  "verified_date": "2026-10-17",
+  "scope": "Curated historical release and method-event examples, not a complete release calendar. Official facts checked against primary pages; corpus timestamps remain metadata, not independently authenticated publisher times.",
+  "events": [
+    {
+      "id": "gdp_2021q2_advance",
+      "date": "2021-07-29", "release_utc": "2021-07-29T12:30:00Z", "kind": "economic_release",
+      "title": "BEA: Q2 2021 GDP advance estimate",
+      "official_url": "https://www.bea.gov/news/2021/gross-domestic-product-second-quarter-2021-advance-estimate-and-annual-update",
+      "facts": "Real GDP grew 6.5% quarter over quarter at an annualized rate; an advance estimate, not a year-over-year rate.",
+      "benchmark": {"metric": "real GDP", "period": "2021-Q2", "rate_convention": "QoQ annualized", "value_percent": 6.5},
+      "members": [
+        {"item_id": "gdelt:ec1eb677a5ce5709c34f43e0", "comparison_role": "straight_news", "summary": "ABC emphasizes solid quarterly growth of 6.5%."},
+        {"item_id": "gdelt:4dfb529eeffcf8a5a9c9eeb9", "comparison_role": "straight_news", "summary": "Reuters emphasizes solid growth alongside falling weekly jobless claims."},
+        {"item_id": "gdelt:8664d52ce157995fb999c2d7", "comparison_role": "commentary_context_only", "summary": "Reuters commentary emphasizes supply constraints alongside solid growth."}
+      ],
+      "exclusions": "The same-day historical pandemic-recession revision concerns a different period; commentary is excluded from the straight-news pair."
+    },
+    {
+      "id": "pce_2022july", "date": "2022-08-26", "release_utc": "2022-08-26T12:30:00Z", "kind": "economic_release",
+      "title": "BEA: July 2022 personal income and outlays",
+      "official_url": "https://www.bea.gov/news/2022/personal-income-and-outlays-july-2022",
+      "facts": "Headline PCE prices rose 6.3% year over year and fell 0.1% from the previous month; contemporaneous release values."
+    },
+    {
+      "id": "powell_jackson_hole_2022", "date": "2022-08-26", "kind": "policy_event",
+      "title": "Federal Reserve: Jackson Hole monetary-policy speech",
+      "official_url": "https://www.federalreserve.gov/newsevents/speech/powell20220826a.htm",
+      "facts": "The speech discussed restrictive policy and the costs of restoring price stability. Its coincidence with the PCE release cautions against treating all same-day headlines as one event."
+    },
+    {
+      "id": "jobs_2023may", "date": "2023-06-02", "release_utc": "2023-06-02T12:30:00Z", "kind": "economic_release",
+      "title": "BLS: May 2023 Employment Situation",
+      "official_url": "https://www.bls.gov/news.release/archives/empsit_06022023.htm",
+      "facts": "Payrolls rose 339,000 while unemployment rose 0.3 percentage point to 3.7%; these come from different surveys in the same release.",
+      "benchmark": {"metric": "payroll employment and U-3 unemployment", "period": "2023-05", "payroll_change": 339000, "unemployment_percent": 3.7, "unemployment_change_pp": 0.3},
+      "members": [
+        {"item_id": "gdelt:c5957e7a89c997e0a76c4ac8", "comparison_role": "straight_news", "summary": "ABC emphasizes robust payroll growth despite rate increases."},
+        {"item_id": "gdelt:0b81d8cca52bd08ad798c530", "comparison_role": "straight_news", "summary": "Bloomberg combines payroll growth with rising unemployment."}
+      ],
+      "exclusions": "The truncated CNBC headline is not used to infer its substantive framing."
+    },
+    {
+      "id": "survey_web_start", "date": "2024-04", "date_precision": "month", "kind": "method_event",
+      "title": "Michigan survey begins transition to web collection",
+      "official_url": "https://www.sca.isr.umich.edu/files/methodtransitionannouncement2024.pdf",
+      "facts": "April–July 2024 transition; month precision is intentional. This is a comparability marker, not an estimated treatment effect."
+    },
+    {
+      "id": "pce_2024march", "date": "2024-04-26", "release_utc": "2024-04-26T12:30:00Z", "kind": "economic_release",
+      "title": "BEA: March 2024 personal income and outlays",
+      "official_url": "https://www.bea.gov/news/2024/personal-income-and-outlays-march-2024",
+      "facts": "Headline PCE inflation was 2.7% year over year, up from 2.5%; core inflation was 2.8% year over year and 0.3% month over month.",
+      "benchmark": {"metric": "headline and core PCE inflation", "period": "2024-03", "headline_yoy_percent": 2.7, "previous_headline_yoy_percent": 2.5, "core_yoy_percent": 2.8, "core_mom_percent": 0.3},
+      "members": [
+        {"item_id": "gdelt:543d85531ccd617c3fefddd0", "comparison_role": "straight_news", "summary": "Bloomberg emphasizes the pace of the core inflation measure."},
+        {"item_id": "gdelt:46ac01c09bac1644af1f37b1", "comparison_role": "straight_news", "summary": "CNN emphasizes deterioration in the preferred inflation gauge."}
+      ],
+      "exclusions": "Matching the release does not equate headline and core inflation; different factual facets remain a confounder."
+    },
+    {
+      "id": "survey_web_complete", "date": "2024-07", "date_precision": "month", "kind": "method_event",
+      "title": "Michigan survey completes transition to web collection",
+      "official_url": "https://www.sca.isr.umich.edu/files/methodtransitionannouncement2024.pdf",
+      "facts": "Completion month for the fixed ramp control; not evidence that the transition caused the index decline."
+    },
+    {
+      "id": "gdp_2024q4_advance", "date": "2025-01-30", "release_utc": "2025-01-30T13:30:00Z", "kind": "economic_release",
+      "title": "BEA: Q4 and full-year 2024 GDP advance estimate",
+      "official_url": "https://www.bea.gov/news/2025/gross-domestic-product-4th-quarter-and-year-2024-advance-estimate",
+      "facts": "Real GDP grew 2.3% QoQ annualized in Q4 and 2.8% for the full year; the two rate conventions are distinct."
+    }
+  ]
+}

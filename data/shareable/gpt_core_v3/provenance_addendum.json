@@ -3,19 +3,19 @@
   "sessions": [
     {
       "items": "Original reused 300",
-      "method": "Direct earlier Codex conversation coding",
+      "method": "Direct coding in earlier interactive sessions",
       "exact_model_id": "not recorded; cannot recover reliably"
     },
     {
       "pending_indices": "0-539",
       "items": 540,
-      "method": "Direct assistant coding before user model switch",
+      "method": "Direct coding in the first additional session",
       "exact_model_id": "not recorded; cannot recover reliably"
     },
     {
       "pending_indices": "540-1172",
       "items": 633,
-      "method": "Direct assistant coding in continuation after user model switch",
+      "method": "Direct coding in a subsequent session after a model-configuration change",
       "exact_model_id": "immutable model ID unavailable; developer describes GPT-6 family"
     }
   ],

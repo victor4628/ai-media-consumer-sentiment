@@ -92,19 +92,14 @@ def run_baseline(root=ROOT):
                "empirical_band_coverage": float(((bands.actual >= bands.empirical_low) & (bands.actual <= bands.empirical_high)).mean()) if len(bands) else None,
                "limitations": ["Current revised snapshots, not historical vintages", "Publication lags assumed, not verified", "Empirical bands assume historical error scale is informative; no guaranteed coverage", "No media observations or media-effect estimates"]}
     write_json(root / "reports/baseline_metrics.json", metrics)
-    lines = ["# 经济基线：探索性运行", "", "**当前修订值 + 假设发布滞后；不是真实实时回测，不作为媒体偏见的证据。**", "",
-             f"测试区间：{metrics['evaluation_first']} 至 {metrics['evaluation_last']}，共 {len(predictions)} 个可比较月份。", "",
-             "| 模型 | MAE（指数点） | RMSE（指数点） |", "|---|---:|---:|"]
+    lines = ["# Revised-data economic baseline", "",
+             "Exploratory utility using current revised data and assumed publication lags. It is not the origin-vintage analysis in the submitted report.", "",
+             f"Evaluation: {metrics['evaluation_first']} to {metrics['evaluation_last']}, {len(predictions)} matched months.", "",
+             "| Model | MAE (index points) | RMSE (index points) |", "|---|---:|---:|"]
     for m in models:
         lines.append(f"| {m['model']} | {m['mae']:.2f} | {m['rmse']:.2f} |")
-    lines += ["", "## 方法", "",
-              "- 从 2010 年开始训练，2018 年起逐月扩展窗口 OLS；训练标签时期严格早于测试时期。",
-              "- 月初预测：失业率和 PCE 使用目标月前两个月的观测。GDP 假设在季度结束后的下月底可用，保留季度观测日期，不插值。",
-              "- 这些日期仅是示范假设；所有数值仍可能包含事后修订，所以时间顺序切分并未解决历史版本泄漏。",
-              "- 与上月信心持续性预测在相同测试月份比较。月份缺失不插值，也不按上一非空行冒充上一月。",
-              "- 经验误差带使用此前至少 24 个样本外误差的绝对值 95% 分位数；不使用当前测试误差。它不是完成校准的正式预测区间。",
-              "- sentiment gap 只命名为 diagnostic_gap；未建媒体模型，不能判断媒体是否改善预测。", "",
-              "## 下一阶段", "", "补充真实发布日、历史版本、调查子指数和媒体语料，再运行正式 M1/M2/M3 对照。"]
-    (root / "reports/baseline_diagnostic.zh-CN.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    lines += ["", "Release dates are assumed. Revised-data leakage remains possible. Missing months and quarterly GDP are not interpolated.",
+              "Empirical bands use earlier absolute errors and do not guarantee calibrated coverage. No media effect is identified."]
+    (root / "reports/revised_data_baseline.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     return metrics
 

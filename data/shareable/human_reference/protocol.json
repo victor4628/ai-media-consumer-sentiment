@@ -1,0 +1,20 @@
+{
+  "reference_type": "single_independent_human_annotator",
+  "annotator_id": "human_01",
+  "human_annotators": 1,
+  "items": 300,
+  "news_items": 150,
+  "X_items": 150,
+  "valid_reference_labels": 293,
+  "provenance_correction_date": "2026-10-17",
+  "correction_authority": "Project-owner provenance declaration: the existing reference was independently human-labeled; its original model-source attribution was incorrect.",
+  "verification_boundary": "Annotator identity, annotation date and independent human work logs were not supplied. Source attribution rests on the owner declaration; this correction does not independently authenticate the labeling process.",
+  "previous_record_path": "Original reference record retained outside the public research release.",
+  "previous_record_sha256": "e1e34aba790362ff835141c1116f5dd15abca58c5ef2db2302d52f6b0b2e4dbc",
+  "current_labels_sha256": "65e24ffe6b7f32f031719878545bd839d790ec4a734e1c7e0c742c1b8c90ec5f",
+  "label_values_changed": false,
+  "missing_reference_labels": 7,
+  "missingness": "Existing null labels remain null; no replacement labels or failure causes are invented.",
+  "adjudication": "No new adjudication or additional annotation was performed; human\u2013ChatGPT disagreements remain available for inspection.",
+  "comparison": "Human reference is reviewer A; ChatGPT is reviewer B. Original development and held-out item identities remain fixed."
+}

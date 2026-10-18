@@ -9,9 +9,10 @@
   "reused_GPT_items": 300,
   "new_GPT_items": 1173,
   "reused_source_sha256": "0b8d5bf46c778d11a6f845abba561319cee59ae22b2c9512e4fde6387f109cd3",
-  "reviewer": "Cached DeepSeek V4 review of original 300-item sample only; never primary coding.",
-  "independence_limit": "Retrospective recoding after aggregate study and review results were seen. Old item-level DeepSeek labels withheld during new coding. Not prospective blind validation.",
-  "adjudication": "Disagreement is reported, not converted into truth. No human validation.",
+  "reviewer": "One independent human annotator; 300-item reference sample only, never primary coding.",
+  "independence_limit": "Retrospective primary coding after aggregate study summaries were seen; not prospective blind validation.",
+  "adjudication": "Human–ChatGPT disagreement is reported, not automatically resolved into consensus truth.",
   "analysis_rule": "Recompute all media-dependent results after all primary judgments are sealed. Do not tune judgments to outcomes or review agreement.",
-  "incremental_API_requests": 0
+  "incremental_API_requests": 0,
+  "reference_provenance": "data/shareable/human_reference/protocol.json"
 }

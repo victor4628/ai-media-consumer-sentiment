@@ -5,20 +5,24 @@
   "native_editable_charts": 8,
   "embedded_chart_workbooks": 8,
   "speaker_notes_exact_script_parity": true,
-  "script_words": 873,
-  "unit_tests_observed": 44,
+  "script_words": 908,
+  "unit_tests_observed": 50,
   "new_paid_API_calls": 0,
-  "visual_review": "All 12 PDF pages and 10 PPT imported-render pages inspected; overlapping report-chart legend and slide-9 footer corrected.",
+  "visual_review": "All 12 PDF pages previously reviewed. All 10 revised PPT slides rendered and visually inspected. Original chart values, formatting and embedded workbooks preserved; presentation-only revision recorded separately from the frozen study inputs.",
+  "baseline_verification": {
+    "frozen_hashes_verified": 5,
+    "approved_presentation_artifacts_verified": 2
+  },
   "boundaries": [
     "No native PowerPoint execution",
-    "No browser-layout inspection; offline JavaScript/DOM logic checked",
+    "Browser tool policy blocked file URLs; offline JavaScript/DOM logic checked",
     "No live speech rehearsal; duration estimated",
-    "Public reproduction excludes private extraction and AI inference"
+    "Public reproduction excludes private extraction and annotation authentication"
   ],
   "hashes": {
-    "output/report.pdf": "69eb7c4ee2dfbbfa14eacb9d4b96350525ec9435fec4f13436529f1496cce203",
-    "output/slides.pptx": "da79ce42e96e25f04af7468796fc50b9a902761c195a6ce973c6d48a9041f473",
-    "output/speaker_notes.md": "c14e1cbb3d122d1d04c0e39f5ac65003c5e0170732a9bf6cb8c985fd843352ee",
-    "output/dashboard.html": "1aefd7c3afc1a6b9a8e4f83f07b7ad2b9dfe4f9bbc743ccf98eabbde03d84d01"
+    "output/report.pdf": "4923f950de4ba6eac182ebc49d9ddd14b80719b7fb9ea5ac7967a19d3c8eb2d5",
+    "output/slides.pptx": "71a392e65a41edaf25267173be78d0294a70140543b013e2eabbacf30290a6d4",
+    "output/speaker_notes.md": "d589bba6777d3075964bb19c81fdcffeede47b73d9c9f04e291998cef71b939e",
+    "output/dashboard.html": "ff10b09130f1a4875ba11d515901e94926854901b0c750fbdbfb7741889389ac"
   }
 }

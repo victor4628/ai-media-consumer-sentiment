@@ -1,0 +1,2465 @@
+{
+  "scope": "Retrospective exploratory checks. Primary labels, forecasts and original reported intervals remain frozen.",
+  "common_lag_experiment": {
+    "eligible_n": 54,
+    "n": 30,
+    "training_history_rule": "All lags share training and test eligibility; calendar shifts occur before filtering. This differs from the original 40-month experiment.",
+    "test_start": "2023-12-01",
+    "test_end": "2026-08-01",
+    "metrics": {
+      "persistence": {
+        "n": 30,
+        "MAE": 3.7200000000000006,
+        "RMSE": 4.6406896039274175,
+        "mean_error": -0.10666666666666699
+      },
+      "baseline": {
+        "n": 30,
+        "MAE": 3.894359214841723,
+        "RMSE": 4.588963588531547,
+        "mean_error": 0.7029758555173582
+      },
+      "media_lag1": {
+        "n": 30,
+        "MAE": 3.4517794094710847,
+        "RMSE": 4.223867719400257,
+        "mean_error": 0.6461387284394914
+      },
+      "media_lag2": {
+        "n": 30,
+        "MAE": 3.78303189066852,
+        "RMSE": 4.465223371202631,
+        "mean_error": 1.0775460629546145
+      },
+      "media_lag3": {
+        "n": 30,
+        "MAE": 3.672663296340916,
+        "RMSE": 4.391576561971295,
+        "mean_error": 0.6145442014211066
+      }
+    },
+    "media_increments": {
+      "media_lag1": {
+        "n": 30,
+        "difference": -0.4425798053706385,
+        "interval": [
+          -0.7731760689887832,
+          -0.15717745683019965
+        ],
+        "block_months": 3,
+        "segments": [
+          19,
+          11
+        ],
+        "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+      },
+      "media_lag2": {
+        "n": 30,
+        "difference": -0.11132732417320265,
+        "interval": [
+          -0.515298514130764,
+          0.33775311834499216
+        ],
+        "block_months": 3,
+        "segments": [
+          19,
+          11
+        ],
+        "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+      },
+      "media_lag3": {
+        "n": 30,
+        "difference": -0.22169591850080744,
+        "interval": [
+          -0.6870861949993462,
+          0.23729474623660043
+        ],
+        "block_months": 3,
+        "segments": [
+          19,
+          11
+        ],
+        "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+      }
+    }
+  },
+  "coefficient_stability": {
+    "scope": "Original expanding-window standardized ridge coefficients; range and sign stability are descriptive, not causal effects or formal structural-break tests.",
+    "summary": [
+      {
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "n": 40,
+        "minimum": 0.1897954469054309,
+        "median": 0.791992169924342,
+        "maximum": 1.87420915191141,
+        "positive_share": 1.0,
+        "sign_changes_between_observed_origins": 0
+      },
+      {
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "n": 40,
+        "minimum": 1.7428404123300696,
+        "median": 2.4872496110891413,
+        "maximum": 3.917774733456118,
+        "positive_share": 1.0,
+        "sign_changes_between_observed_origins": 0
+      },
+      {
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "n": 40,
+        "minimum": 0.6007975553147543,
+        "median": 0.9200534382428558,
+        "maximum": 1.1486211921339005,
+        "positive_share": 1.0,
+        "sign_changes_between_observed_origins": 0
+      },
+      {
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "n": 40,
+        "minimum": -0.7196365096293044,
+        "median": 0.3009065950072359,
+        "maximum": 0.6259802780963462,
+        "positive_share": 0.85,
+        "sign_changes_between_observed_origins": 3
+      },
+      {
+        "model": "household_tone",
+        "feature": "news_tone",
+        "n": 40,
+        "minimum": 0.6644930345113806,
+        "median": 0.9868916135138227,
+        "maximum": 1.1944446093291123,
+        "positive_share": 1.0,
+        "sign_changes_between_observed_origins": 0
+      },
+      {
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "n": 40,
+        "minimum": -0.7590963300173746,
+        "median": 0.41535156599338985,
+        "maximum": 0.7726567027173592,
+        "positive_share": 0.875,
+        "sign_changes_between_observed_origins": 1
+      },
+      {
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "n": 40,
+        "minimum": 0.4774988439214156,
+        "median": 0.80921638000922,
+        "maximum": 0.9973797158378944,
+        "positive_share": 1.0,
+        "sign_changes_between_observed_origins": 0
+      },
+      {
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "n": 40,
+        "minimum": -0.6406476791089766,
+        "median": 0.46769423022098394,
+        "maximum": 0.964369075710659,
+        "positive_share": 0.85,
+        "sign_changes_between_observed_origins": 3
+      }
+    ],
+    "paths": [
+      {
+        "target_month": "2023-01-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.990498633129381
+      },
+      {
+        "target_month": "2023-03-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.9278855281041624
+      },
+      {
+        "target_month": "2023-04-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.6258471936490232
+      },
+      {
+        "target_month": "2023-05-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.5630422773547566
+      },
+      {
+        "target_month": "2023-07-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.7174032947130226
+      },
+      {
+        "target_month": "2023-09-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.6827641936159324
+      },
+      {
+        "target_month": "2023-10-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8227670485210112
+      },
+      {
+        "target_month": "2023-11-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.7612172913276728
+      },
+      {
+        "target_month": "2023-12-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.691693360051171
+      },
+      {
+        "target_month": "2024-01-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.6158840563504279
+      },
+      {
+        "target_month": "2024-02-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.6158840563504279
+      },
+      {
+        "target_month": "2024-03-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.5888895349695261
+      },
+      {
+        "target_month": "2024-04-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.588610289165525
+      },
+      {
+        "target_month": "2024-05-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.595550247382032
+      },
+      {
+        "target_month": "2024-06-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8554307093089603
+      },
+      {
+        "target_month": "2024-07-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8286732918132659
+      },
+      {
+        "target_month": "2024-08-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.7359093972690326
+      },
+      {
+        "target_month": "2024-09-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.2646229148432188
+      },
+      {
+        "target_month": "2024-10-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.2288501411954256
+      },
+      {
+        "target_month": "2024-11-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.1897954469054309
+      },
+      {
+        "target_month": "2024-12-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.4017856062890192
+      },
+      {
+        "target_month": "2025-01-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.4562592349264493
+      },
+      {
+        "target_month": "2025-02-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.4322631038254611
+      },
+      {
+        "target_month": "2025-03-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.2291330522562963
+      },
+      {
+        "target_month": "2025-04-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.4650299940844353
+      },
+      {
+        "target_month": "2025-05-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.9950393953614628
+      },
+      {
+        "target_month": "2025-06-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.3499770751806095
+      },
+      {
+        "target_month": "2025-08-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.3523044677195186
+      },
+      {
+        "target_month": "2025-09-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.3756602888487923
+      },
+      {
+        "target_month": "2025-10-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.737336552056685
+      },
+      {
+        "target_month": "2025-11-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.7897060878755642
+      },
+      {
+        "target_month": "2025-12-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.6810957992165882
+      },
+      {
+        "target_month": "2026-01-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.588380943406721
+      },
+      {
+        "target_month": "2026-02-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.7135296735895544
+      },
+      {
+        "target_month": "2026-03-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.87420915191141
+      },
+      {
+        "target_month": "2026-04-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.784362244426021
+      },
+      {
+        "target_month": "2026-05-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.832214461358808
+      },
+      {
+        "target_month": "2026-06-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.7500007190260332
+      },
+      {
+        "target_month": "2026-07-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.6909743254581908
+      },
+      {
+        "target_month": "2026-08-01",
+        "model": "economy_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.8079495542073003
+      },
+      {
+        "target_month": "2023-01-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 1.961659747483412
+      },
+      {
+        "target_month": "2023-03-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 1.909969318712867
+      },
+      {
+        "target_month": "2023-04-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 1.8719896189940477
+      },
+      {
+        "target_month": "2023-05-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.0681867343737195
+      },
+      {
+        "target_month": "2023-07-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.630027359611363
+      },
+      {
+        "target_month": "2023-09-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.465671729529997
+      },
+      {
+        "target_month": "2023-10-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.1753484288326854
+      },
+      {
+        "target_month": "2023-11-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.5088274926482863
+      },
+      {
+        "target_month": "2023-12-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.8916103326408917
+      },
+      {
+        "target_month": "2024-01-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.645608255419883
+      },
+      {
+        "target_month": "2024-02-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.645608255419883
+      },
+      {
+        "target_month": "2024-03-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.6197460583798904
+      },
+      {
+        "target_month": "2024-04-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.5789826047526083
+      },
+      {
+        "target_month": "2024-05-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.5833462814013366
+      },
+      {
+        "target_month": "2024-06-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.556789905045655
+      },
+      {
+        "target_month": "2024-07-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.7227008964668524
+      },
+      {
+        "target_month": "2024-08-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.413909086842937
+      },
+      {
+        "target_month": "2024-09-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.120535509023566
+      },
+      {
+        "target_month": "2024-10-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 1.9963720029011964
+      },
+      {
+        "target_month": "2024-11-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 1.819404108942845
+      },
+      {
+        "target_month": "2024-12-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 1.7464423411308223
+      },
+      {
+        "target_month": "2025-01-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 1.7428404123300696
+      },
+      {
+        "target_month": "2025-02-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 1.7538840896081032
+      },
+      {
+        "target_month": "2025-03-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 1.8139814968293324
+      },
+      {
+        "target_month": "2025-04-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.111961198783376
+      },
+      {
+        "target_month": "2025-05-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.26077064298681
+      },
+      {
+        "target_month": "2025-06-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.3129173976612383
+      },
+      {
+        "target_month": "2025-08-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.3711238765028533
+      },
+      {
+        "target_month": "2025-09-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.182252954000488
+      },
+      {
+        "target_month": "2025-10-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.2005707844393063
+      },
+      {
+        "target_month": "2025-11-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.642974344628946
+      },
+      {
+        "target_month": "2025-12-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.7689035423746464
+      },
+      {
+        "target_month": "2026-01-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.919736143060672
+      },
+      {
+        "target_month": "2026-02-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.8832042155793447
+      },
+      {
+        "target_month": "2026-03-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.973016494758991
+      },
+      {
+        "target_month": "2026-04-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 2.997831182826125
+      },
+      {
+        "target_month": "2026-05-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 3.3658285349696
+      },
+      {
+        "target_month": "2026-06-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 3.746445949425069
+      },
+      {
+        "target_month": "2026-07-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 3.917774733456118
+      },
+      {
+        "target_month": "2026-08-01",
+        "model": "economy_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 3.431141574455122
+      },
+      {
+        "target_month": "2023-01-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.7386465948523744
+      },
+      {
+        "target_month": "2023-03-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8887095678426405
+      },
+      {
+        "target_month": "2023-04-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.648611624378286
+      },
+      {
+        "target_month": "2023-05-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.6007975553147543
+      },
+      {
+        "target_month": "2023-07-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.6997173427623301
+      },
+      {
+        "target_month": "2023-09-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.719640931448028
+      },
+      {
+        "target_month": "2023-10-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.7572798144438453
+      },
+      {
+        "target_month": "2023-11-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.7158127092840577
+      },
+      {
+        "target_month": "2023-12-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.6830010610852405
+      },
+      {
+        "target_month": "2024-01-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.7047652080109587
+      },
+      {
+        "target_month": "2024-02-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.7047652080109587
+      },
+      {
+        "target_month": "2024-03-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.973806319794814
+      },
+      {
+        "target_month": "2024-04-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.9309541659658956
+      },
+      {
+        "target_month": "2024-05-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8385417700510102
+      },
+      {
+        "target_month": "2024-06-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.054788284680414
+      },
+      {
+        "target_month": "2024-07-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.0392820382939696
+      },
+      {
+        "target_month": "2024-08-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.0071039398510573
+      },
+      {
+        "target_month": "2024-09-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.9091527105198158
+      },
+      {
+        "target_month": "2024-10-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.9010226049591092
+      },
+      {
+        "target_month": "2024-11-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8921981906832374
+      },
+      {
+        "target_month": "2024-12-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8905301015738752
+      },
+      {
+        "target_month": "2025-01-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8626014438313525
+      },
+      {
+        "target_month": "2025-02-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8452013148133527
+      },
+      {
+        "target_month": "2025-03-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.6982398707771506
+      },
+      {
+        "target_month": "2025-04-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8374821292999723
+      },
+      {
+        "target_month": "2025-05-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.0210473225702268
+      },
+      {
+        "target_month": "2025-06-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.069130781658176
+      },
+      {
+        "target_month": "2025-08-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.0641895492900166
+      },
+      {
+        "target_month": "2025-09-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.0610562900462073
+      },
+      {
+        "target_month": "2025-10-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.1486211921339005
+      },
+      {
+        "target_month": "2025-11-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.1479569017770854
+      },
+      {
+        "target_month": "2025-12-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.103245955829787
+      },
+      {
+        "target_month": "2026-01-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.0892649895326465
+      },
+      {
+        "target_month": "2026-02-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.0726591751295154
+      },
+      {
+        "target_month": "2026-03-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.0782625679817686
+      },
+      {
+        "target_month": "2026-04-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.0375412793192806
+      },
+      {
+        "target_month": "2026-05-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.0421164562701082
+      },
+      {
+        "target_month": "2026-06-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.9997429686466336
+      },
+      {
+        "target_month": "2026-07-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.0072559313774077
+      },
+      {
+        "target_month": "2026-08-01",
+        "model": "memory_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.984998408235358
+      },
+      {
+        "target_month": "2023-01-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": -0.7196365096293044
+      },
+      {
+        "target_month": "2023-03-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": -0.5842888052363403
+      },
+      {
+        "target_month": "2023-04-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": -0.6073017128638268
+      },
+      {
+        "target_month": "2023-05-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": -0.5346648098643254
+      },
+      {
+        "target_month": "2023-07-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": -0.2595504070747515
+      },
+      {
+        "target_month": "2023-09-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.087133863159806
+      },
+      {
+        "target_month": "2023-10-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": -0.0438729289250167
+      },
+      {
+        "target_month": "2023-11-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.1165840638408684
+      },
+      {
+        "target_month": "2023-12-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.2046293726413446
+      },
+      {
+        "target_month": "2024-01-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4561789152936302
+      },
+      {
+        "target_month": "2024-02-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4561789152936302
+      },
+      {
+        "target_month": "2024-03-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4897971585518072
+      },
+      {
+        "target_month": "2024-04-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.475483988736477
+      },
+      {
+        "target_month": "2024-05-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.5856758144931266
+      },
+      {
+        "target_month": "2024-06-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.5581738391893657
+      },
+      {
+        "target_month": "2024-07-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.6074344287624769
+      },
+      {
+        "target_month": "2024-08-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4190782131845
+      },
+      {
+        "target_month": "2024-09-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.2970223755828676
+      },
+      {
+        "target_month": "2024-10-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.2826042974616841
+      },
+      {
+        "target_month": "2024-11-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.228711468702314
+      },
+      {
+        "target_month": "2024-12-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.2319333958093426
+      },
+      {
+        "target_month": "2025-01-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.2296840556981941
+      },
+      {
+        "target_month": "2025-02-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.2373173365737096
+      },
+      {
+        "target_month": "2025-03-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.2719068793082584
+      },
+      {
+        "target_month": "2025-04-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.3737020995003126
+      },
+      {
+        "target_month": "2025-05-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.3454548754594665
+      },
+      {
+        "target_month": "2025-06-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.3121838650997272
+      },
+      {
+        "target_month": "2025-08-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.3397111774433185
+      },
+      {
+        "target_month": "2025-09-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.2568290437641088
+      },
+      {
+        "target_month": "2025-10-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.2374888693454982
+      },
+      {
+        "target_month": "2025-11-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.312633088309483
+      },
+      {
+        "target_month": "2025-12-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.3012375076448879
+      },
+      {
+        "target_month": "2026-01-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.3005756823695839
+      },
+      {
+        "target_month": "2026-02-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.3153551608101835
+      },
+      {
+        "target_month": "2026-03-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.3154697297345343
+      },
+      {
+        "target_month": "2026-04-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.2952815812807129
+      },
+      {
+        "target_month": "2026-05-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.3821184934794415
+      },
+      {
+        "target_month": "2026-06-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4693951738879648
+      },
+      {
+        "target_month": "2026-07-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.46357879054711
+      },
+      {
+        "target_month": "2026-08-01",
+        "model": "memory_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.6259802780963462
+      },
+      {
+        "target_month": "2023-01-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.6644930345113806
+      },
+      {
+        "target_month": "2023-03-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.805847643396287
+      },
+      {
+        "target_month": "2023-04-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.6988238349360901
+      },
+      {
+        "target_month": "2023-05-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.7127842494657673
+      },
+      {
+        "target_month": "2023-07-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8957974381407555
+      },
+      {
+        "target_month": "2023-09-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.7398724438058107
+      },
+      {
+        "target_month": "2023-10-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.7824265674575306
+      },
+      {
+        "target_month": "2023-11-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.7924453875909397
+      },
+      {
+        "target_month": "2023-12-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.7890645654614336
+      },
+      {
+        "target_month": "2024-01-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.7857875722629275
+      },
+      {
+        "target_month": "2024-02-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.7857875722629275
+      },
+      {
+        "target_month": "2024-03-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.0772825740244905
+      },
+      {
+        "target_month": "2024-04-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.9286533433606164
+      },
+      {
+        "target_month": "2024-05-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.866848751147697
+      },
+      {
+        "target_month": "2024-06-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.10226136973388
+      },
+      {
+        "target_month": "2024-07-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.0894657942762438
+      },
+      {
+        "target_month": "2024-08-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.062332443646082
+      },
+      {
+        "target_month": "2024-09-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.9919548584093124
+      },
+      {
+        "target_month": "2024-10-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.981828368618333
+      },
+      {
+        "target_month": "2024-11-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.9753618712891212
+      },
+      {
+        "target_month": "2024-12-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.9308154295537436
+      },
+      {
+        "target_month": "2025-01-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8706598446265974
+      },
+      {
+        "target_month": "2025-02-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8616384872427009
+      },
+      {
+        "target_month": "2025-03-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.7484405617714183
+      },
+      {
+        "target_month": "2025-04-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8821001788458335
+      },
+      {
+        "target_month": "2025-05-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.0654289002679809
+      },
+      {
+        "target_month": "2025-06-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.1146597586512623
+      },
+      {
+        "target_month": "2025-08-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.117369346453679
+      },
+      {
+        "target_month": "2025-09-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.11457257565326
+      },
+      {
+        "target_month": "2025-10-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.1944446093291123
+      },
+      {
+        "target_month": "2025-11-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.1920156327646074
+      },
+      {
+        "target_month": "2025-12-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.1433488135352063
+      },
+      {
+        "target_month": "2026-01-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.1269312439903514
+      },
+      {
+        "target_month": "2026-02-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.107498256350664
+      },
+      {
+        "target_month": "2026-03-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.1005059690411811
+      },
+      {
+        "target_month": "2026-04-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.0652511872092485
+      },
+      {
+        "target_month": "2026-05-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.0695835651473782
+      },
+      {
+        "target_month": "2026-06-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.0321014798450503
+      },
+      {
+        "target_month": "2026-07-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.0464336332322632
+      },
+      {
+        "target_month": "2026-08-01",
+        "model": "household_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 1.008043727945684
+      },
+      {
+        "target_month": "2023-01-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": -0.7590963300173746
+      },
+      {
+        "target_month": "2023-03-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": -0.5893228290524006
+      },
+      {
+        "target_month": "2023-04-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": -0.5993137799527383
+      },
+      {
+        "target_month": "2023-05-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": -0.6089261231924524
+      },
+      {
+        "target_month": "2023-07-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": -0.5033585014598635
+      },
+      {
+        "target_month": "2023-09-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.0768831426097598
+      },
+      {
+        "target_month": "2023-10-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.0177163907144887
+      },
+      {
+        "target_month": "2023-11-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.132362542230835
+      },
+      {
+        "target_month": "2023-12-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.1782734031423579
+      },
+      {
+        "target_month": "2024-01-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.5073795089428181
+      },
+      {
+        "target_month": "2024-02-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.5073795089428181
+      },
+      {
+        "target_month": "2024-03-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.5281775944755903
+      },
+      {
+        "target_month": "2024-04-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4857589024613422
+      },
+      {
+        "target_month": "2024-05-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.5747991509383648
+      },
+      {
+        "target_month": "2024-06-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.5430992835199568
+      },
+      {
+        "target_month": "2024-07-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.5706784942316067
+      },
+      {
+        "target_month": "2024-08-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4217306321020602
+      },
+      {
+        "target_month": "2024-09-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.3352720475093862
+      },
+      {
+        "target_month": "2024-10-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.347019648887509
+      },
+      {
+        "target_month": "2024-11-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.3252576842809952
+      },
+      {
+        "target_month": "2024-12-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.3421683899438661
+      },
+      {
+        "target_month": "2025-01-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.3294178821249746
+      },
+      {
+        "target_month": "2025-02-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.336477826814676
+      },
+      {
+        "target_month": "2025-03-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.3848115134117518
+      },
+      {
+        "target_month": "2025-04-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4872895450164589
+      },
+      {
+        "target_month": "2025-05-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4588712388120296
+      },
+      {
+        "target_month": "2025-06-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4164628094867599
+      },
+      {
+        "target_month": "2025-08-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4413928099035865
+      },
+      {
+        "target_month": "2025-09-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.3765879838051201
+      },
+      {
+        "target_month": "2025-10-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.3616634937765519
+      },
+      {
+        "target_month": "2025-11-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4269884063552364
+      },
+      {
+        "target_month": "2025-12-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4161680148707545
+      },
+      {
+        "target_month": "2026-01-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4145351171160252
+      },
+      {
+        "target_month": "2026-02-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4312435359837318
+      },
+      {
+        "target_month": "2026-03-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.426416867294365
+      },
+      {
+        "target_month": "2026-04-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4140390788157913
+      },
+      {
+        "target_month": "2026-05-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4909647868943669
+      },
+      {
+        "target_month": "2026-06-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.5711319952618256
+      },
+      {
+        "target_month": "2026-07-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.5621730457176286
+      },
+      {
+        "target_month": "2026-08-01",
+        "model": "household_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.7726567027173592
+      },
+      {
+        "target_month": "2023-01-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.616765688232767
+      },
+      {
+        "target_month": "2023-03-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.6885594637655786
+      },
+      {
+        "target_month": "2023-04-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.4774988439214156
+      },
+      {
+        "target_month": "2023-05-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.5144389836873469
+      },
+      {
+        "target_month": "2023-07-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.565549108953361
+      },
+      {
+        "target_month": "2023-09-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.6729717988687902
+      },
+      {
+        "target_month": "2023-10-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.6896968302483161
+      },
+      {
+        "target_month": "2023-11-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.6040305001989196
+      },
+      {
+        "target_month": "2023-12-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.5581268541835307
+      },
+      {
+        "target_month": "2024-01-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.5597983331127339
+      },
+      {
+        "target_month": "2024-02-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.5597983331127339
+      },
+      {
+        "target_month": "2024-03-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.7665474414481838
+      },
+      {
+        "target_month": "2024-04-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.6970141856241885
+      },
+      {
+        "target_month": "2024-05-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.7134205797692366
+      },
+      {
+        "target_month": "2024-06-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.7683529584625028
+      },
+      {
+        "target_month": "2024-07-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8015328378139427
+      },
+      {
+        "target_month": "2024-08-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.7978285475144734
+      },
+      {
+        "target_month": "2024-09-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8421655093207349
+      },
+      {
+        "target_month": "2024-10-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8168999222044973
+      },
+      {
+        "target_month": "2024-11-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8194151032549506
+      },
+      {
+        "target_month": "2024-12-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8200101635075785
+      },
+      {
+        "target_month": "2025-01-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.7993727055752706
+      },
+      {
+        "target_month": "2025-02-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.7899096155639556
+      },
+      {
+        "target_month": "2025-03-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.6963645171538335
+      },
+      {
+        "target_month": "2025-04-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8180946724474759
+      },
+      {
+        "target_month": "2025-05-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.9233805496754804
+      },
+      {
+        "target_month": "2025-06-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.928084129464822
+      },
+      {
+        "target_month": "2025-08-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.9380920643184726
+      },
+      {
+        "target_month": "2025-09-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.929568944098262
+      },
+      {
+        "target_month": "2025-10-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.9973797158378944
+      },
+      {
+        "target_month": "2025-11-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.9933939286068234
+      },
+      {
+        "target_month": "2025-12-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.9501995926380952
+      },
+      {
+        "target_month": "2026-01-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.9353771078441177
+      },
+      {
+        "target_month": "2026-02-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.9198566929027931
+      },
+      {
+        "target_month": "2026-03-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.9164040871936024
+      },
+      {
+        "target_month": "2026-04-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8889461167178364
+      },
+      {
+        "target_month": "2026-05-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8876893398692511
+      },
+      {
+        "target_month": "2026-06-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8577702817837035
+      },
+      {
+        "target_month": "2026-07-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.884333408477582
+      },
+      {
+        "target_month": "2026-08-01",
+        "model": "method_controls_tone",
+        "feature": "news_tone",
+        "standardized_coefficient": 0.8583268659561525
+      },
+      {
+        "target_month": "2023-01-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": -0.6406476791089766
+      },
+      {
+        "target_month": "2023-03-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": -0.559081855194611
+      },
+      {
+        "target_month": "2023-04-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": -0.5823832571731468
+      },
+      {
+        "target_month": "2023-05-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": -0.6360439585189855
+      },
+      {
+        "target_month": "2023-07-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": -0.492148587759957
+      },
+      {
+        "target_month": "2023-09-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 5.8742232943985466e-05
+      },
+      {
+        "target_month": "2023-10-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": -0.1141082405532983
+      },
+      {
+        "target_month": "2023-11-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.1300481647569991
+      },
+      {
+        "target_month": "2023-12-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.2613673846527125
+      },
+      {
+        "target_month": "2024-01-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4365712377267968
+      },
+      {
+        "target_month": "2024-02-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4365712377267968
+      },
+      {
+        "target_month": "2024-03-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4685403554513583
+      },
+      {
+        "target_month": "2024-04-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4738506527173709
+      },
+      {
+        "target_month": "2024-05-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4727681932401715
+      },
+      {
+        "target_month": "2024-06-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4341197468518397
+      },
+      {
+        "target_month": "2024-07-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4203262688022147
+      },
+      {
+        "target_month": "2024-08-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4420508660566885
+      },
+      {
+        "target_month": "2024-09-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4604346093654954
+      },
+      {
+        "target_month": "2024-10-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4633325041287978
+      },
+      {
+        "target_month": "2024-11-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4534004865124497
+      },
+      {
+        "target_month": "2024-12-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4495508163045197
+      },
+      {
+        "target_month": "2025-01-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.431507706677343
+      },
+      {
+        "target_month": "2025-02-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.4668481049906096
+      },
+      {
+        "target_month": "2025-03-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.5223871388061676
+      },
+      {
+        "target_month": "2025-04-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.5831283470237455
+      },
+      {
+        "target_month": "2025-05-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.5484019850986037
+      },
+      {
+        "target_month": "2025-06-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.5413381370414918
+      },
+      {
+        "target_month": "2025-08-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.5778907103240596
+      },
+      {
+        "target_month": "2025-09-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.5520610678534444
+      },
+      {
+        "target_month": "2025-10-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.5641998958705124
+      },
+      {
+        "target_month": "2025-11-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.6659096021286973
+      },
+      {
+        "target_month": "2025-12-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.6686581101615076
+      },
+      {
+        "target_month": "2026-01-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.6638693146752186
+      },
+      {
+        "target_month": "2026-02-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.6760518555088927
+      },
+      {
+        "target_month": "2026-03-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.6717361464962804
+      },
+      {
+        "target_month": "2026-04-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.6437995028045245
+      },
+      {
+        "target_month": "2026-05-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.6863010720981729
+      },
+      {
+        "target_month": "2026-06-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.7364773510627052
+      },
+      {
+        "target_month": "2026-07-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.7200519679958928
+      },
+      {
+        "target_month": "2026-08-01",
+        "model": "method_controls_tone",
+        "feature": "twitter_tone",
+        "standardized_coefficient": 0.964369075710659
+      }
+    ]
+  },
+  "primary_period_stability": {
+    "before_2025": {
+      "metrics": {
+        "persistence": {
+          "n": 21,
+          "MAE": 3.7000000000000006,
+          "RMSE": 4.6232847527231025,
+          "mean_error": -0.7666666666666664
+        },
+        "method_controls": {
+          "n": 21,
+          "MAE": 3.5628698571389217,
+          "RMSE": 4.190860334143659,
+          "mean_error": -0.5318636983535929
+        },
+        "method_controls_tone": {
+          "n": 21,
+          "MAE": 3.306315685576055,
+          "RMSE": 4.055469225813759,
+          "mean_error": -0.40626355059347424
+        }
+      },
+      "media_increment": {
+        "n": 21,
+        "difference": -0.2565541715628659,
+        "interval": [
+          -0.6760675934107836,
+          0.12822680161939048
+        ],
+        "block_months": 3,
+        "segments": [
+          1,
+          3,
+          1,
+          16
+        ],
+        "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+      }
+    },
+    "from_2025": {
+      "metrics": {
+        "persistence": {
+          "n": 19,
+          "MAE": 3.752631578947369,
+          "RMSE": 4.380639222761903,
+          "mean_error": 1.1736842105263157
+        },
+        "method_controls": {
+          "n": 19,
+          "MAE": 4.1824958751048875,
+          "RMSE": 4.769295939030521,
+          "mean_error": 1.983946466968383
+        },
+        "method_controls_tone": {
+          "n": 19,
+          "MAE": 3.770748899328125,
+          "RMSE": 4.414912400200731,
+          "mean_error": 1.7320811170527914
+        }
+      },
+      "media_increment": {
+        "n": 19,
+        "difference": -0.4117469757767621,
+        "interval": [
+          -0.7296507315193456,
+          -0.1112015327183986
+        ],
+        "block_months": 3,
+        "segments": [
+          6,
+          13
+        ],
+        "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+      }
+    },
+    "by_year": {
+      "2023": {
+        "metrics": {
+          "persistence": {
+            "n": 9,
+            "MAE": 4.466666666666669,
+            "RMSE": 4.967673276069773,
+            "mean_error": -0.5111111111111105
+          },
+          "method_controls": {
+            "n": 9,
+            "MAE": 4.5682153231381495,
+            "RMSE": 4.946267224688595,
+            "mean_error": 0.6220782554841944
+          },
+          "method_controls_tone": {
+            "n": 9,
+            "MAE": 4.563105104865532,
+            "RMSE": 5.1492801379990505,
+            "mean_error": 1.0837675455876565
+          }
+        },
+        "media_increment": {
+          "n": 9,
+          "difference": -0.0051102182726173355,
+          "interval": null
+        }
+      },
+      "2024": {
+        "metrics": {
+          "persistence": {
+            "n": 12,
+            "MAE": 3.125,
+            "RMSE": 4.347125487031632,
+            "mean_error": -0.9583333333333334
+          },
+          "method_controls": {
+            "n": 12,
+            "MAE": 2.8088607576395006,
+            "RMSE": 3.519463524743691,
+            "mean_error": -1.3973201637319335
+          },
+          "method_controls_tone": {
+            "n": 12,
+            "MAE": 2.363723621108948,
+            "RMSE": 2.9825558113756476,
+            "mean_error": -1.5237868727293222
+          }
+        },
+        "media_increment": {
+          "n": 12,
+          "difference": -0.44513713653055237,
+          "interval": [
+            -0.9078768901361466,
+            0.08303761807736751
+          ],
+          "block_months": 3,
+          "segments": [
+            12
+          ],
+          "scope": "Segment-preserving circular block bootstrap; exploratory conditional on observed sparse months, not causal inference"
+        }
+      },
+      "2025": {
+        "metrics": {
+          "persistence": {
+            "n": 11,
+            "MAE": 3.809090909090909,
+            "RMSE": 4.645134306699078,
+            "mean_error": 1.9181818181818182
+          },
+          "method_controls": {
+            "n": 11,
+            "MAE": 4.782237159938706,
+            "RMSE": 5.3200705424089225,
+            "mean_error": 3.4105518486248982
+          },
+          "method_controls_tone": {
+            "n": 11,
+            "MAE": 4.426953602789478,
+            "RMSE": 5.002009936713678,
+            "mean_error": 3.1086843137775997
+          }
+        },
+        "media_increment": {
+          "n": 11,
+          "difference": -0.35528355714922744,
+          "interval": null
+        }
+      },
+      "2026": {
+        "metrics": {
+          "persistence": {
+            "n": 8,
+            "MAE": 3.6750000000000016,
+            "RMSE": 3.988420740092501,
+            "mean_error": 0.14999999999999947
+          },
+          "method_controls": {
+            "n": 8,
+            "MAE": 3.3578516084583887,
+            "RMSE": 3.886560738441002,
+            "mean_error": 0.022364067190674852
+          },
+          "method_controls_tone": {
+            "n": 8,
+            "MAE": 2.8684674320687664,
+            "RMSE": 3.4481234217083823,
+            "mean_error": -0.1607482784438199
+          }
+        },
+        "media_increment": {
+          "n": 8,
+          "difference": -0.4893841763896223,
+          "interval": null
+        }
+      }
+    }
+  },
+  "block_sensitivity": [
+    {
+      "left": "method_controls_tone",
+      "right": "method_controls",
+      "block_months_requested": 1,
+      "n": 40,
+      "MAE_difference": -0.3302707535644666,
+      "nominal_interval": [
+        -0.5877572599361254,
+        -0.07354071915162282
+      ]
+    },
+    {
+      "left": "method_controls_tone",
+      "right": "persistence",
+      "block_months_requested": 1,
+      "n": 40,
+      "MAE_difference": -0.19807853789171173,
+      "nominal_interval": [
+        -0.8385529043131835,
+        0.47262890851174383
+      ]
+    },
+    {
+      "left": "method_controls_tone",
+      "right": "method_controls",
+      "block_months_requested": 3,
+      "n": 40,
+      "MAE_difference": -0.3302707535644666,
+      "nominal_interval": [
+        -0.5870740736628712,
+        -0.08222157749720908
+      ]
+    },
+    {
+      "left": "method_controls_tone",
+      "right": "persistence",
+      "block_months_requested": 3,
+      "n": 40,
+      "MAE_difference": -0.19807853789171173,
+      "nominal_interval": [
+        -0.7891943898588409,
+        0.3786504312119894
+      ]
+    },
+    {
+      "left": "method_controls_tone",
+      "right": "method_controls",
+      "block_months_requested": 6,
+      "n": 40,
+      "MAE_difference": -0.3302707535644666,
+      "nominal_interval": [
+        -0.5574455294354198,
+        -0.11036342566699926
+      ]
+    },
+    {
+      "left": "method_controls_tone",
+      "right": "persistence",
+      "block_months_requested": 6,
+      "n": 40,
+      "MAE_difference": -0.19807853789171173,
+      "nominal_interval": [
+        -0.7335577388103987,
+        0.25565694224680285
+      ]
+    }
+  ],
+  "bootstrap_scope": "Calendar segments retained; circular blocks shorten within short segments. These intervals are nominal and exploratory.",
+  "multiplicity": {
+    "family": "All paired comparisons already recorded under original analysis.json increments, including unfavorable results.",
+    "family_n": 14,
+    "method": "Two-sided null-centered segment-preserving circular-block bootstrap, add-one correction, Holm adjustment across the entire recorded family; exploratory approximate inference only.",
+    "comparisons": [
+      {
+        "comparison": "economy_tone_vs_economy",
+        "MAE_difference": -0.5389020166210268,
+        "bootstrap_p_two_sided": 0.10225,
+        "Holm_adjusted_p": 1.0
+      },
+      {
+        "comparison": "household_tone_vs_household",
+        "MAE_difference": -0.025805324817302733,
+        "bootstrap_p_two_sided": 0.87725,
+        "Holm_adjusted_p": 1.0
+      },
+      {
+        "comparison": "household_vs_memory",
+        "MAE_difference": -0.16853588301470915,
+        "bootstrap_p_two_sided": 0.305,
+        "Holm_adjusted_p": 1.0
+      },
+      {
+        "comparison": "memory_all_content_vs_memory",
+        "MAE_difference": 0.537931221307009,
+        "bootstrap_p_two_sided": 0.30625,
+        "Holm_adjusted_p": 1.0
+      },
+      {
+        "comparison": "memory_emotional_share_vs_memory",
+        "MAE_difference": -0.11863862132814465,
+        "bootstrap_p_two_sided": 0.41575,
+        "Holm_adjusted_p": 1.0
+      },
+      {
+        "comparison": "memory_employment_topic_share_vs_memory",
+        "MAE_difference": -0.09138669865744227,
+        "bootstrap_p_two_sided": 0.38575,
+        "Holm_adjusted_p": 1.0
+      },
+      {
+        "comparison": "memory_household_share_vs_memory",
+        "MAE_difference": -0.06657249375756376,
+        "bootstrap_p_two_sided": 0.85325,
+        "Holm_adjusted_p": 1.0
+      },
+      {
+        "comparison": "memory_political_blame_share_vs_memory",
+        "MAE_difference": 0.0476752124043454,
+        "bootstrap_p_two_sided": 0.6315,
+        "Holm_adjusted_p": 1.0
+      },
+      {
+        "comparison": "memory_price_levels_share_vs_memory",
+        "MAE_difference": -0.07458201427181628,
+        "bootstrap_p_two_sided": 0.7855,
+        "Holm_adjusted_p": 1.0
+      },
+      {
+        "comparison": "memory_prices_topic_share_vs_memory",
+        "MAE_difference": 0.29917426855147455,
+        "bootstrap_p_two_sided": 0.12225,
+        "Holm_adjusted_p": 1.0
+      },
+      {
+        "comparison": "memory_tone_vs_memory",
+        "MAE_difference": -0.0005814983040892229,
+        "bootstrap_p_two_sided": 0.996,
+        "Holm_adjusted_p": 1.0
+      },
+      {
+        "comparison": "memory_vs_persistence",
+        "MAE_difference": 0.47367396367833264,
+        "bootstrap_p_two_sided": 0.134,
+        "Holm_adjusted_p": 1.0
+      },
+      {
+        "comparison": "method_controls_tone_vs_method_controls",
+        "MAE_difference": -0.3302707535644666,
+        "bootstrap_p_two_sided": 0.0105,
+        "Holm_adjusted_p": 0.14700000000000002
+      },
+      {
+        "comparison": "method_controls_tone_vs_persistence",
+        "MAE_difference": -0.19807853789171173,
+        "bootstrap_p_two_sided": 0.5055,
+        "Holm_adjusted_p": 1.0
+      }
+    ],
+    "limitation": "Holm correction does not remedy retrospective model selection, measurement error, sparse coverage or unmeasured confounding. Original interval endpoints remain unadjusted."
+  },
+  "autocorrelation": {
+    "method_controls_tone_error": {
+      "calendar_adjacent_pairs": 35,
+      "lag1_correlation": 0.4494789379551058,
+      "scope": "Descriptive correlation only; absent calendar months are not treated as adjacent."
+    },
+    "method_controls_error": {
+      "calendar_adjacent_pairs": 35,
+      "lag1_correlation": 0.4153561622457762,
+      "scope": "Descriptive correlation only; absent calendar months are not treated as adjacent."
+    },
+    "paired_absolute_error_difference": {
+      "calendar_adjacent_pairs": 35,
+      "lag1_correlation": -0.060517780062563545,
+      "scope": "Descriptive correlation only; absent calendar months are not treated as adjacent."
+    }
+  }
+}
